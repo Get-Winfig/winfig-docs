@@ -1,0 +1,165 @@
+site_name: Winfig Documentation
+site_url: https://get-winfig.github.io/winfig-docs
+repo_url: https://github.com/Get-Winfig/winfig-docs
+edit_uri: docs/
+use_directory_urls: true
+
+site_author: Armoghan-ul-Mohmin
+site_description: Documentation for Winfig, a Windows configuration management tool.
+copyright: >
+  Copyright &copy; 2025 <a href="https://github.com/Get-Winfig" target="_blank">Get-Winfig</a>.
+  All rights reserved.
+
+extra:
+  generator: false
+  # Social media links in footer
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Get-Winfig
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Armoghan12
+    - icon: fontawesome/brands/linkedin
+      link: http://www.linkedin.com/in/armoghan-ul-mohmin-4289a9248
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/___armoghan/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/armoghanul.mohmin
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:Armoghan@proton.me
+    - icon: fontawesome/solid/globe
+      link: https://Armoghan.netlify.app
+
+  # Cookie consent banner
+  consent:
+    enabled: true
+    cookie_name: Winfig_cookie_consent
+    title: Cookie consent
+    description: >-
+      We use cookies to improve your browsing experience and remember your preferences.
+      These cookies are only used locally and no data is shared with third parties.
+    actions:
+      - accept
+      - reject
+      - settings
+    cookies:
+      - name: Winfig_cookie_consent
+        description: Stores your cookie consent preference.
+        lifetime: 10
+      - name: Winfig_theme
+        description: Stores your theme preference (dark/light).
+        lifetime: 365
+      - name: Winfig_nav
+        description: Remembers your navigation settings.
+        lifetime: 30
+      - name: Winfig_search
+        description: Remembers your last search query.
+        lifetime: 7
+      - name: Winfig_social
+        description: Remembers your social link interactions.
+        lifetime: 30
+
+# ------------------------------------------------------------------
+# 1. THEME CONFIGURATION
+# ------------------------------------------------------------------
+theme:
+  name: material
+  favicon: images/favicon.ico
+  logo: images/Icon.png
+  palette:
+    - scheme: default
+      primary: 'blue'
+      accent: 'light blue'
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: 'blue'
+      accent: 'light blue'
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: JetBrains Mono
+    code: Hack Nerd Font
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - navigation.sections
+    - navigation.instant
+    - header.autohide
+
+# ------------------------------------------------------------------
+# 2. NAVIGATION CONFIGURATION
+# ------------------------------------------------------------------
+nav:
+  - Home: index.md
+
+not_in_nav: Readme.md
+
+# ------------------------------------------------------------------
+# 3. MARKDOWN EXTENSIONS CONFIGURATION
+# ------------------------------------------------------------------
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+# ------------------------------------------------------------------
+# 4. PLUGIN CONFIGURATION
+# ------------------------------------------------------------------
+plugins:
+  - search
+  - offline
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+      enable_git_follow: true
+  # Privacy Plugin Configuration
+  - privacy:
+      cache: true
+      cache_dir: docs/.cache
+      assets_fetch: true
+      assets_fetch_dir: docs/assets
+
+# ------------------------------------------------------------------
+# 5. EXTRA JAVASCRIPT AND CSS
+# ------------------------------------------------------------------
+extra_css:
+  - assets/Css/custom.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+  - assets/Js/mermaid-config.js
+  - assets/Js/script.js
