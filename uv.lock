@@ -625,6 +625,7 @@ dependencies = [
     { name = "mkdocs" },
     { name = "mkdocs-git-revision-date-localized-plugin" },
     { name = "mkdocs-material" },
+    { name = "watchdog" },
 ]
 
 [package.metadata]
@@ -632,4 +633,5 @@ requires-dist = [
     { name = "mkdocs", specifier = ">=1.6.1" },
     { name = "mkdocs-git-revision-date-localized-plugin", specifier = ">=1.4.7" },
     { name = "mkdocs-material", specifier = ">=9.6.22" },
+    { name = "watchdog", specifier = ">=6.0.0" },
 ]
