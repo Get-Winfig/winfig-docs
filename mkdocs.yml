@@ -102,8 +102,7 @@ theme:
 # ------------------------------------------------------------------
 nav:
   - Home: index.md
-
-not_in_nav: Readme.md
+  - Setup: setup.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
