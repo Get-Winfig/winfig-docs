@@ -1,0 +1,1917 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Winfig, a Windows configuration management tool.">
+      
+      
+        <meta name="author" content="Armoghan-ul-Mohmin">
+      
+      
+        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/bootstrap.html">
+      
+      
+        <link rel="prev" href="setup.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Bootstrap - Winfig Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="docs/assets/unpkg.com/iframe-worker/shim.js"></script>
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="docs/assets/fonts.googleapis.com/css.622a93ca.css">
+        <style>:root{--md-text-font:"JetBrains Mono";--md-code-font:"Hack Nerd Font"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/Css/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Winfig Documentation" class="md-header__button md-logo" aria-label="Winfig Documentation" data-md-component="logo">
+      
+  <img src="images/Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Winfig Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bootstrap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Get-Winfig/winfig-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="setup.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="bootstrap.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bootstrap
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Winfig Documentation" class="md-nav__button md-logo" aria-label="Winfig Documentation" data-md-component="logo">
+      
+  <img src="images/Icon.png" alt="logo">
+
+    </a>
+    Winfig Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Get-Winfig/winfig-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bootstrap
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="bootstrap.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bootstrap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-bootstrap-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Bootstrap Does
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootstrap-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bootstrap Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bootstrap Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#progress-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Methods
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debloat-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debloat Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registry-tweaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registry Tweaks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installed-tools-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installed Tools &amp; Applications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagnostic-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostic Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 align="center">Winfig Bootstrap: Bootstrapping Your Windows Environment</h1>
+
+<p><img alt="Winfig Banner" src="images/Banner.png" /></p>
+<div align="center">
+  <strong>Your Complete Windows Configuration and Automation Framework</strong>
+</div>
+
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><strong>Winfig Bootstrap</strong> is a foundational module within the Winfig ecosystem designed to provide a comprehensive solution for setting up a complete Windows development environment. This enterprise-grade toolkit automatically configures your system with essential tools, package managers, and development utilities.</p>
+<hr />
+<h2 id="features-overview">Features Overview<a class="headerlink" href="#features-overview" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Safety &amp; Backup</strong></td>
+<td>Creates restoration points and validates system</td>
+</tr>
+<tr>
+<td><strong>System Validation</strong></td>
+<td>Verifies prerequisites and compatibility</td>
+</tr>
+<tr>
+<td><strong>Bloatware Removal</strong></td>
+<td>Removes 40+ unnecessary applications</td>
+</tr>
+<tr>
+<td><strong>Package Managers</strong></td>
+<td>Integrates Chocolatey and Winget</td>
+</tr>
+<tr>
+<td><strong>Registry Tweaks</strong></td>
+<td>Applies 15+ performance optimizations</td>
+</tr>
+<tr>
+<td><strong>Tool Installation</strong></td>
+<td>Installs 50+ essential utilities</td>
+</tr>
+<tr>
+<td><strong>Winutil Integration</strong></td>
+<td>CTT Winutil for system management</td>
+</tr>
+<tr>
+<td><strong>Logging &amp; Reporting</strong></td>
+<td>Detailed operation logs and auditing</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>Before running Winfig Bootstrap, ensure your system meets these requirements:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Operating System</strong>: Windows 11 (Build 22000 or higher)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>PowerShell</strong>: Version 5.1 or higher</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Privileges</strong>: Administrator/elevated privileges required</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Internet</strong>: Active internet connection required</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Storage</strong>: Minimum 10GB free disk space</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Execution Policy</strong>: Must allow script execution (RemoteSigned, Unrestricted, or Bypass)</li>
+</ul>
+<hr />
+<h2 id="what-bootstrap-does">What Bootstrap Does<a class="headerlink" href="#what-bootstrap-does" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Safety First</strong></p>
+<hr />
+<p>Creates system restore points and validates prerequisites before making any changes</p>
+</li>
+<li>
+<p><strong>Remove Bloatware</strong></p>
+<hr />
+<p>Intelligently removes 40+ unnecessary apps and services to optimize performance</p>
+</li>
+<li>
+<p><strong>Registry Optimization</strong></p>
+<hr />
+<p>Applies 15+ essential registry tweaks for better privacy and usability</p>
+</li>
+<li>
+<p><strong>Tool Installation</strong></p>
+<hr />
+<p>Installs 50+ essential development tools, utilities, and applications</p>
+</li>
+</ul>
+</div>
+<p><img alt="Bootstrap Summary" src="images/8.png" /></p>
+<hr />
+<h2 id="bootstrap-workflow">Bootstrap Workflow<a class="headerlink" href="#bootstrap-workflow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Start Bootstrap] --&gt; B[Create Restore Point]
+    B --&gt; C[Validate System Prerequisites]
+    C --&gt; D[Setup Package Managers]
+    D --&gt; E[Debloat System]
+    E --&gt; F[Apply Registry Tweaks]
+    F --&gt; G[Run CTT Winutil]
+    G --&gt; H[Install Essential Tools]
+    H --&gt; I[Complete Bootstrap]</code></pre>
+<h3 id="progress-tracking">Progress Tracking<a class="headerlink" href="#progress-tracking" title="Permanent link">&para;</a></h3>
+<p>The script provides real-time feedback:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Phase 1</strong>: System Preparation (2-5 minutes)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Phase 2</strong>: Package Manager Setup (5-10 minutes)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Phase 3</strong>: Debloat the system (5-10 minutes)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Phase 4</strong>: Apply Registry Tweaks (3-7 minutes)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Phase 5</strong>: Run CTT Winutil (5-10 minutes)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Phase 6</strong>: Install Tools (30-60 minutes)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Total Time</p>
+<p>Complete bootstrap typically takes <strong>40-90 minutes</strong> depending on your internet connection and system specifications.</p>
+</div>
+<hr />
+<p><img alt="Bootstrap Progress Phases" src="images/10.png" /></p>
+<h2 id="installation-methods">Installation Methods<a class="headerlink" href="#installation-methods" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content">
+<p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
+<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-bootstrap</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">bootstrap</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Why Web Install?</p>
+<ul>
+<li>Always gets the latest version</li>
+<li>No manual download required</li>
+<li>Automatic script verification</li>
+</ul>
+</div>
+<p><img alt="Web Install Demo" src="images/9.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Local Install</label><div class="tabbed-content">
+<p><strong>Download and run manually</strong> for offline environments:</p>
+<div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-bootstrap/main/bootstrap.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;bootstrap.ps1&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">Bootstrap</span><span class="p">.</span><span class="n">ps1</span>
+<span class="p">.\</span><span class="n">Bootstrap</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Ensure you have the latest script version</li>
+<li>Manual updates required for new releases</li>
+<li>Verify script integrity before running</li>
+</ul>
+</div>
+<p><img alt="Local Install Demo" src="images/11.png" /></p>
+</div>
+</div>
+<hr />
+<h2 id="debloat-features">Debloat Features<a class="headerlink" href="#debloat-features" title="Permanent link">&para;</a></h2>
+<p><img alt="Bloatware Removal" src="images/12.png" /></p>
+<div class="admonition abstract">
+<p class="admonition-title">Bloatware Removal Summary</p>
+<p>Bootstrap removes <strong>40+ unnecessary applications</strong> across 6 categories to optimize your Windows environment and improve system performance.</p>
+</div>
+<div class="tabbed-set" data-tabs="2:6"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Microsoft Built-in Apps</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cortana</strong></td>
+<td>Microsoft's virtual assistant</td>
+</tr>
+<tr>
+<td><strong>Widgets</strong></td>
+<td>Windows 11 widgets panel and platform runtime</td>
+</tr>
+<tr>
+<td><strong>Get Help</strong></td>
+<td>Microsoft help application</td>
+</tr>
+<tr>
+<td><strong>Weather</strong></td>
+<td>Microsoft Weather app</td>
+</tr>
+<tr>
+<td><strong>News</strong></td>
+<td>Microsoft News app</td>
+</tr>
+<tr>
+<td><strong>Microsoft To Do</strong></td>
+<td>Task management application</td>
+</tr>
+<tr>
+<td><strong>Solitaire Collection</strong></td>
+<td>Card games collection</td>
+</tr>
+<tr>
+<td><strong>Feedback Hub</strong></td>
+<td>Windows feedback collection tool</td>
+</tr>
+<tr>
+<td><strong>Office Hub</strong></td>
+<td>Microsoft Office launcher</td>
+</tr>
+<tr>
+<td><strong>Power Automate Desktop</strong></td>
+<td>Workflow automation tool</td>
+</tr>
+<tr>
+<td><strong>3D Viewer</strong></td>
+<td>3D model viewing application</td>
+</tr>
+<tr>
+<td><strong>Skype</strong></td>
+<td>Video calling application (consumer version)</td>
+</tr>
+<tr>
+<td><strong>Tips App</strong></td>
+<td>Windows tips and tutorials</td>
+</tr>
+<tr>
+<td><strong>OneNote for Windows 10</strong></td>
+<td>Note-taking application (legacy version)</td>
+</tr>
+<tr>
+<td><strong>Sticky Notes</strong></td>
+<td>Digital sticky notes application</td>
+</tr>
+<tr>
+<td><strong>Mixed Reality Portal</strong></td>
+<td>VR/AR platform interface</td>
+</tr>
+<tr>
+<td><strong>Quick Assist</strong></td>
+<td>Remote assistance tool</td>
+</tr>
+<tr>
+<td><strong>Dev Home</strong></td>
+<td>Developer environment setup tool</td>
+</tr>
+<tr>
+<td><strong>Microsoft Security</strong></td>
+<td>Security management dashboard</td>
+</tr>
+<tr>
+<td><strong>Start Experiences App</strong></td>
+<td>Start menu enhancement features</td>
+</tr>
+<tr>
+<td><strong>Microsoft PC Manager</strong></td>
+<td>System optimization tool</td>
+</tr>
+<tr>
+<td><strong>Maps</strong></td>
+<td>Microsoft Maps application</td>
+</tr>
+<tr>
+<td><strong>Alarms &amp; Clock</strong></td>
+<td>Time management utilities</td>
+</tr>
+<tr>
+<td><strong>People</strong></td>
+<td>Contact management application</td>
+</tr>
+<tr>
+<td><strong>Movies &amp; TV</strong></td>
+<td>Media player application</td>
+</tr>
+<tr>
+<td><strong>Groove Music</strong></td>
+<td>Music player application</td>
+</tr>
+<tr>
+<td><strong>Get Started</strong></td>
+<td>Windows introduction app</td>
+</tr>
+<tr>
+<td><strong>Microsoft Pay</strong></td>
+<td>Digital wallet application</td>
+</tr>
+<tr>
+<td><strong>Mobile Plans</strong></td>
+<td>Cellular plan management</td>
+</tr>
+<tr>
+<td><strong>Microsoft Messaging</strong></td>
+<td>SMS/messaging application</td>
+</tr>
+<tr>
+<td><strong>Snip &amp; Sketch / Snipping Tool</strong></td>
+<td>Screenshot utilities</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Xbox and Gaming Apps</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Xbox Console Companion</strong></td>
+<td>Legacy Xbox application</td>
+</tr>
+<tr>
+<td><strong>Xbox Gaming App</strong></td>
+<td>Modern Xbox gaming platform</td>
+</tr>
+<tr>
+<td><strong>Xbox Identity Provider</strong></td>
+<td>Xbox authentication service</td>
+</tr>
+<tr>
+<td><strong>Xbox Speech To Text Overlay</strong></td>
+<td>Gaming accessibility feature</td>
+</tr>
+<tr>
+<td><strong>Xbox Game Overlay</strong></td>
+<td>In-game overlay system</td>
+</tr>
+<tr>
+<td><strong>Xbox Live in-game experience</strong></td>
+<td>Gaming social features</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Microsoft Teams</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microsoft Teams (Personal)</strong></td>
+<td>Consumer video calling</td>
+</tr>
+<tr>
+<td><strong>Microsoft Teams</strong></td>
+<td>Business communication platform</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4">Third-Party Preinstalled Apps</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Spotify</strong></td>
+<td>Music streaming application</td>
+</tr>
+<tr>
+<td><strong>Disney+</strong></td>
+<td>Video streaming service</td>
+</tr>
+<tr>
+<td><strong>Instagram</strong></td>
+<td>Social media application</td>
+</tr>
+<tr>
+<td><strong>LinkedIn</strong></td>
+<td>Professional networking application</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><label for="__tabbed_2_5">Search and Web Features</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bing Search</strong></td>
+<td>Integrated web search functionality</td>
+</tr>
+<tr>
+<td><strong>Clipchamp</strong></td>
+<td>Video editing application</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_2_6" name="__tabbed_2" type="radio" /><label for="__tabbed_2_6">System Integration Apps</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Widgets Platform Runtime</strong></td>
+<td>Backend for widgets system</td>
+</tr>
+<tr>
+<td><strong>Start Experiences App</strong></td>
+<td>Enhanced start menu features</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Safe Removal</p>
+<p>All applications are safely removed without affecting core Windows functionality. The process only removes existing applications and will not attempt to uninstall apps that are not present.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Recovery</p>
+<p>Removed applications can be reinstalled from the Microsoft Store if needed. A system restore point is created before any changes.</p>
+</div>
+<hr />
+<h2 id="registry-tweaks">Registry Tweaks<a class="headerlink" href="#registry-tweaks" title="Permanent link">&para;</a></h2>
+<p><img alt="Registry Tweaks" src="images/13.png" /></p>
+<div class="admonition abstract">
+<p class="admonition-title">Registry Optimization Summary</p>
+<p>Bootstrap applies <strong>20+ essential registry tweaks</strong> across 7 categories to enhance system performance, security, privacy, and usability.</p>
+</div>
+<div class="tabbed-set" data-tabs="3:7"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Appearance &amp; Theming</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tweak</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Dark Mode for Apps</strong></td>
+<td>Sets applications to use dark theme</td>
+</tr>
+<tr>
+<td><strong>Enable Dark Mode for System</strong></td>
+<td>Sets system interface to use dark theme</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Search &amp; Start Menu</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tweak</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Disable Bing Search in Start Menu</strong></td>
+<td>Removes web search integration from Start menu</td>
+</tr>
+<tr>
+<td><strong>Show Search Icon in Taskbar</strong></td>
+<td>Displays search icon instead of search box</td>
+</tr>
+<tr>
+<td><strong>Hide Recommended Section in Start Menu</strong></td>
+<td>Removes suggested apps and files from Start menu</td>
+</tr>
+<tr>
+<td><strong>Hide Recommended Files in Explorer</strong></td>
+<td>Removes file recommendations in File Explorer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Boot &amp; System Messages</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tweak</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Verbose Boot Messages</strong></td>
+<td>Shows detailed startup information</td>
+</tr>
+<tr>
+<td><strong>Show Crash Details on BSOD</strong></td>
+<td>Displays technical information during system crashes</td>
+</tr>
+<tr>
+<td><strong>Disable Sad Face on BSOD</strong></td>
+<td>Removes emoticon from Blue Screen of Death</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><label for="__tabbed_3_4">Education Features</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tweak</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Disable Education Environment Features</strong></td>
+<td>Turns off education-specific functionality</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><label for="__tabbed_3_5">Mouse &amp; Input</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tweak</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Enhanced Pointer Precision</strong></td>
+<td>Improves mouse accuracy</td>
+</tr>
+<tr>
+<td><strong>Set Mouse Acceleration Threshold 1</strong></td>
+<td>Configures first acceleration point (6)</td>
+</tr>
+<tr>
+<td><strong>Set Mouse Acceleration Threshold 2</strong></td>
+<td>Configures second acceleration point (10)</td>
+</tr>
+<tr>
+<td><strong>Disable Sticky Keys Notifications</strong></td>
+<td>Prevents accessibility prompts</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_3_6" name="__tabbed_3" type="radio" /><label for="__tabbed_3_6">File Explorer</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tweak</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show Hidden Files and Folders</strong></td>
+<td>Displays hidden system files and folders</td>
+</tr>
+<tr>
+<td><strong>Show File Extensions</strong></td>
+<td>Shows file extensions for all file types</td>
+</tr>
+<tr>
+<td><strong>Hide Task View Button</strong></td>
+<td>Removes Task View button from taskbar</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_3_7" name="__tabbed_3" type="radio" /><label for="__tabbed_3_7">Privacy &amp; Telemetry</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tweak</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Disable Implicit Text Input Collection</strong></td>
+<td>Prevents text input data collection</td>
+</tr>
+<tr>
+<td><strong>Disable Implicit Ink Input Collection</strong></td>
+<td>Prevents handwriting data collection</td>
+</tr>
+<tr>
+<td><strong>Disable Silently Installed Apps/Suggestions</strong></td>
+<td>Stops automatic app installations</td>
+</tr>
+<tr>
+<td><strong>Disable Consumer Features</strong></td>
+<td>Removes pre-installed apps and suggestions</td>
+</tr>
+<tr>
+<td><strong>Disable Windows Telemetry/Data Collection</strong></td>
+<td>Turns off system data collection</td>
+</tr>
+<tr>
+<td><strong>Disable Spotlight/Ads on Lock Screen</strong></td>
+<td>Removes advertising from lock screen</td>
+</tr>
+<tr>
+<td><strong>Disable Customer Experience Improvement Program (CEIP)</strong></td>
+<td>Stops participation in feedback program</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Registry Safety</p>
+<p>All registry modifications are applied safely with proper validation. A system restore point is created before any changes are made.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Benefits</p>
+<p>These tweaks improve system performance, enhance privacy, reduce telemetry, and create a cleaner Windows experience while maintaining system stability.</p>
+</div>
+<hr />
+<h2 id="installed-tools-applications">Installed Tools &amp; Applications<a class="headerlink" href="#installed-tools-applications" title="Permanent link">&para;</a></h2>
+<p><img alt="Installed Tools Summary" src="images/14.png" /></p>
+<div class="admonition abstract">
+<p class="admonition-title">Package Summary</p>
+<p>Bootstrap installs <strong>50+ carefully selected tools</strong> across 8 categories, with optional installations marked for user choice.</p>
+</div>
+<div class="tabbed-set" data-tabs="4:8"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Development</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Git</strong></td>
+<td>Version control system for tracking code changes</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Visual Studio Code</strong></td>
+<td>Feature-rich code editor with IntelliSense</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>GitHub CLI</strong></td>
+<td>Official GitHub command-line interface</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Sublime Text 4</strong></td>
+<td>High-performance text editor</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Neovim</strong></td>
+<td>Hyperextensible Vim-based text editor</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Neovide</strong></td>
+<td>Modern GUI for Neovim</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Programming Languages</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Go</strong></td>
+<td>Statically typed compiled language</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Rust</strong></td>
+<td>Systems programming language</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>LLVM-MinGW</strong></td>
+<td>C++ build tools and compiler</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>uv</strong></td>
+<td>Ultra-fast Python package installer</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>nvm-windows</strong></td>
+<td>Node.js version manager</td>
+<td>Required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Terminal &amp; CLI Tools</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PowerShell</strong></td>
+<td>Cross-platform automation platform</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Windows Terminal</strong></td>
+<td>Modern terminal application</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>LazyGit</strong></td>
+<td>Beautiful terminal interface for Git</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>OneFetch</strong></td>
+<td>Project information with ASCII art</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Bat</strong></td>
+<td>Enhanced file viewer with syntax highlighting</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>fzf</strong></td>
+<td>Blazing-fast command-line fuzzy finder</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>ripgrep</strong></td>
+<td>Ultra-fast text search tool</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Starship</strong></td>
+<td>Minimal, fast, customizable prompt</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Zoxide</strong></td>
+<td>Smarter cd command</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Fastfetch</strong></td>
+<td>System information tool</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Delta</strong></td>
+<td>Syntax-highlighting pager for Git</td>
+<td>Required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><label for="__tabbed_4_4">System Utilities</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DevToys</strong></td>
+<td>Comprehensive developer toolbox</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>7-Zip</strong></td>
+<td>High-compression file archiver</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>ShareX</strong></td>
+<td>Advanced screen capture tool</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>PowerToys</strong></td>
+<td>Collection of Windows utilities</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Nilesoft Shell</strong></td>
+<td>Enhanced Windows context menu</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>gsudo</strong></td>
+<td>Sudo for Windows command-line</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>OpenHashTab</strong></td>
+<td>File checksum verification in Explorer</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Super File</strong></td>
+<td>Modern dual-pane file manager</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>AutoHotkey</strong></td>
+<td>Scripting for hotkeys and automation</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>HashMyFiles</strong></td>
+<td>Lightweight hash calculation utility</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>ExifTool</strong></td>
+<td>Metadata reading/writing tool</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>Ntop</strong></td>
+<td>Htop-like system monitor for Windows</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Windhawk</strong></td>
+<td>Windows customization tool</td>
+<td>Required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><label for="__tabbed_4_5">Web &amp; Internet</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HTTrack</strong></td>
+<td>Website downloader for offline browsing</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Zen Browser</strong></td>
+<td>Privacy-focused web browser</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>OpenVPN</strong></td>
+<td>Open-source VPN solution</td>
+<td>Required</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_4_6" name="__tabbed_4" type="radio" /><label for="__tabbed_4_6">Communication &amp; Productivity</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Thunderbird</strong></td>
+<td>Full-featured email and calendar client</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Notion</strong></td>
+<td>All-in-one workspace for notes and tasks</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Obsidian</strong></td>
+<td>Powerful knowledge base on Markdown files</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Zoom</strong></td>
+<td>HD video meetings and webinars</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Discord</strong></td>
+<td>Voice, video, and text chat platform</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Telegram</strong></td>
+<td>Cloud-based instant messaging</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_4_7" name="__tabbed_4" type="radio" /><label for="__tabbed_4_7">Cloud Storage</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OneDrive</strong></td>
+<td>Microsoft cloud storage with Office integration</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Google Drive</strong></td>
+<td>Google file storage and collaboration</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Dropbox</strong></td>
+<td>Cloud storage with file synchronization</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="__tabbed_4_8" name="__tabbed_4" type="radio" /><label for="__tabbed_4_8">Remote Access</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AnyDesk</strong></td>
+<td>Fast remote desktop access solution</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Installation Types</p>
+<ul>
+<li><strong>Required</strong>: Automatically installed for optimal development environment</li>
+<li><strong>Optional</strong>: User prompted for confirmation during installation</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Customization</p>
+<p>You can modify the package list in the script to add or remove tools based on your specific needs.</p>
+</div>
+<hr />
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Common Issues</p>
+<p>Most installation problems fall into these categories:</p>
+</div>
+<div class="tabbed-set" data-tabs="5:4"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Execution Policy</label><div class="tabbed-content">
+<p><strong>Problem</strong>: <code>execution of scripts is disabled on this system</code>
+<img alt="Execution Policy Error" src="images/15.png" /></p>
+<p><strong>Solution</strong>:
+<div class="highlight"><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span> <span class="n">-Force</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Administrator Rights</label><div class="tabbed-content">
+<p><strong>Problem</strong>: <code>Access denied</code> or permission errors</p>
+<p><strong>Solution</strong>:
+1. Right-click PowerShell icon
+2. Select "Run as Administrator"
+3. Confirm UAC prompt</p>
+</div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">Network Issues</label><div class="tabbed-content">
+<p><strong>Problem</strong>: Downloads fail or timeout</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Check internet connection</li>
+<li>Disable VPN temporarily</li>
+<li>Try different DNS (8.8.8.8)</li>
+<li>Run Windows Network Troubleshooter</li>
+</ul>
+</div>
+<input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><label for="__tabbed_5_4">Package Failures</label><div class="tabbed-content">
+<p><strong>Problem</strong>: Individual packages fail to install</p>
+<p><strong>Solutions</strong>:
+<div class="highlight"><pre><span></span><code><span class="c"># Reset Windows Update components</span>
+<span class="n">net</span> <span class="n">stop</span> <span class="n">wuauserv</span>
+<span class="n">net</span> <span class="nb">start </span><span class="n">wuauserv</span>
+
+<span class="c"># Clear package manager cache</span>
+<span class="n">winget</span> <span class="n">source</span> <span class="n">reset</span> <span class="p">-</span><span class="n">-force</span>
+<span class="n">choco</span> <span class="n">cache</span> <span class="n">clean</span>
+</code></pre></div></p>
+</div>
+</div>
+<h3 id="diagnostic-commands">Diagnostic Commands<a class="headerlink" href="#diagnostic-commands" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">System Health Check</span><pre><span></span><code><span class="c"># Check system integrity</span>
+<span class="n">sfc</span> <span class="p">/</span><span class="n">scannow</span>
+
+<span class="c"># Verify package managers</span>
+<span class="n">winget</span> <span class="p">-</span><span class="n">-version</span>
+<span class="n">choco</span> <span class="p">-</span><span class="n">-version</span>
+
+<span class="c"># Test internet connectivity</span>
+<span class="nb">Test-NetConnection</span> <span class="n">-ComputerName</span> <span class="s2">&quot;8.8.8.8&quot;</span> <span class="n">-Port</span> <span class="n">53</span>
+</code></pre></div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 19, 2025 21:14:26 UTC">November 19, 2025</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 19, 2025 21:14:26 UTC">November 19, 2025</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 <a href="https://github.com/Get-Winfig" target="_blank" rel="noopener">Get-Winfig</a>. All rights reserved.
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Get-Winfig" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/Armoghan12" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="http://www.linkedin.com/in/armoghan-ul-mohmin-4289a9248" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/___armoghan/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/armoghanul.mohmin" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:Armoghan@proton.me" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://Armoghan.netlify.app" target="_blank" rel="noopener" title="Armoghan.netlify.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+  
+
+<h4>Cookie consent</h4>
+<p>We use cookies to improve your browsing experience and remember your preferences. These cookies are only used locally and no data is shared with third parties.</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+    
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.top", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.sections", "navigation.instant", "header.autohide", "service-worker", "manifest"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="docs/assets/unpkg.com/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="assets/Js/mermaid-config.js"></script>
+      
+        <script src="assets/Js/script.js"></script>
+      
+    
+  </body>
+</html>
