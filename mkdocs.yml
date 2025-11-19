@@ -96,6 +96,8 @@ theme:
     - navigation.sections
     - navigation.instant
     - header.autohide
+    - service-worker
+    - manifest
 
 # ------------------------------------------------------------------
 # 2. NAVIGATION CONFIGURATION
@@ -103,6 +105,7 @@ theme:
 nav:
   - Home: index.md
   - Setup: setup.md
+  - Bootstrap: bootstrap.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
