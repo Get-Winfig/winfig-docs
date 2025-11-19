@@ -113,7 +113,7 @@ The script provides real-time feedback:
     **One-line installation** - Downloads and runs automatically:
 
     ```powershell title="Run in Administrative PowerShell"
-    Invoke-WebRequest -useb https://raw.githubusercontent.com/Get-Winfig/winfig-bootstrap/main/bootstrap.ps1 | Invoke-Expression
+    Invoke-RestMethod -useb https://raw.githubusercontent.com/Get-Winfig/winfig-bootstrap/main/bootstrap.ps1 | Invoke-Expression
     ```
 
     !!! success "Why Web Install?"
