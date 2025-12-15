@@ -164,6 +164,6 @@ extra_css:
   - assets/Css/custom.css
 
 extra_javascript:
-  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@11.12.2/dist/mermaid.min.js
   - assets/Js/mermaid-config.js
   - assets/Js/script.js
