@@ -207,10 +207,10 @@ pre:hover .custom-copy-btn {
 
 /* Uniform card icon size for app cards */
 .md-typeset img.card-icon {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    display: block;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: contain !important;
+    display: block !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
 }
