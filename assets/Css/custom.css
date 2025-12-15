@@ -204,3 +204,13 @@ pre:hover .custom-copy-btn {
     opacity: 1 !important;
     background: rgba(0, 0, 0, 0.8) !important;
 }
+
+/* Uniform card icon size for app cards */
+.md-typeset img.card-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
