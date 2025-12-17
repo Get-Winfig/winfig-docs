@@ -108,6 +108,7 @@ nav:
   - Bootstrap: bootstrap.md
   - Wallpapers: https://get-winfig.github.io/winfig-wallpaper/
   - Apps: apps.md
+  - Terminal: terminal.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
