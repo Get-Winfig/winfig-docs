@@ -720,24 +720,25 @@
 <p><strong>Winfig Terminal</strong> is a setup script that automates the customization and configuration of Windows Terminal to enhance your command-line experience. It allows you to easily configure profiles, themes, and settings to suit your workflow.</p>
 <hr />
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Easy Installation:</strong> Simple script to set up Windows Terminal with your preferred configurations.</li>
-<li><strong>Custom Profiles:</strong> Pre-configured profiles for PowerShell, Command Prompt, WSL, and more.</li>
-<li><strong>Theming:</strong> Apply custom themes and color schemes to enhance the visual appeal.</li>
-<li><strong>Automation:</strong> Automate repetitive tasks and configurations with ease.</li>
-<li><strong>Extensibility:</strong> Easily extend and modify configurations to fit your needs.</li>
-<li><strong>Open Source:</strong> Fully open-source and community-driven.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Easy Installation:</strong> Simple script to set up Windows Terminal with your preferred configurations.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Custom Profiles:</strong> Pre-configured profiles for PowerShell, Command Prompt, WSL, and more.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Theming:</strong> Apply custom themes and color schemes to enhance the visual appeal.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Automation:</strong> Automate repetitive tasks and configurations with ease.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Extensibility:</strong> Easily extend and modify configurations to fit your needs.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Open Source:</strong> Fully open-source and community-driven.</li>
 </ul>
 <hr />
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://aka.ms/terminal">Windows Terminal</a> installed</li>
-<li><a href="https://github.com/PowerShell/PowerShell">PowerShell 7+</a></li>
-<li><a href="https://git-scm.com/download/win">Git</a> installed</li>
-<li>Administrator privileges for certain configurations</li>
-<li>Internet access for downloading dependencies</li>
-<li><a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts</a> for enhanced terminal appearance</li>
-<li><em>(Optional)</em> <a href="https://aka.ms/wsl">Windows Subsystem for Linux (WSL)</a> for Linux profiles</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://aka.ms/terminal">Windows Terminal</a> installed</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 7+</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> installed</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for certain configurations</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts</a> for enhanced terminal appearance</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <em>(Optional)</em> <a href="https://aka.ms/wsl">Windows Subsystem for Linux (WSL)</a> for Linux profiles</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <em>(Optional)</em> <a href="https://github.com/Distrobox/distrobox">Distrobox inside WSL</a> for Linux profiles</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Quick Install</p>
@@ -750,6 +751,10 @@
   <code>winget install --id Git.Git -e</code></li>
 <li><strong>Nerd Fonts:</strong>
   Download from <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts</a> and install your favorite patched font.</li>
+<li><strong>WSL:</strong>
+  <code>wsl --install</code> (Requires Windows 10 version 2004 and higher or Windows 11)</li>
+<li><strong>Distrobox:</strong>
+  Follow the installation instructions on the <a href="https://github.com/Distrobox/distrobox">Distrobox GitHub page</a>.</li>
 </ul>
 </div>
 <hr />
