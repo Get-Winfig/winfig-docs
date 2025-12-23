@@ -1,4 +1,4 @@
-<h1 align="center">Winfig Neovim: </h1>
+<h1 align="center">Winfig Neovim: Terminal Based Editor</h1>
 
 ![Winfig Banner](images/Banner.png)
 
@@ -200,8 +200,6 @@ Winfig Neovim uses [LazyVim](https://www.lazyvim.org) as its base configuration,
 |  <kbd>Leader</kbd>+<kbd>cR</kbd> | Typescript Rename File       | Normal           |
 
 > 💡 *Tip: You can further customize these keybindings in keymaps file!*
-
----
 
 ---
 

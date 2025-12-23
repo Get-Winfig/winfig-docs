@@ -110,6 +110,7 @@ nav:
   - Apps: apps.md
   - Terminal: terminal.md
   - Nvim: nvim.md
+  - VsCode: code.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
