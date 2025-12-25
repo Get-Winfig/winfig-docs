@@ -111,6 +111,7 @@ nav:
   - Terminal: terminal.md
   - Nvim: nvim.md
   - VsCode: code.md
+  - Sublime Text: subl.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
