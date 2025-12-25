@@ -807,6 +807,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#troubleshooting-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Guide
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1122,6 +1133,57 @@ Go to <code>Preferences</code> &gt; <code>Settings</code> or edit the JSON file 
 <summary>How do I get support or report an issue?</summary>
 <p>Please open an issue on the <a href="https://github.com/Get-Winfig/winfig-subl/issues">GitHub repository</a> for help, bug reports, or feature requests.</p>
 </details>
+<hr />
+<h2 id="troubleshooting-guide">Troubleshooting Guide<a class="headerlink" href="#troubleshooting-guide" title="Permanent link">&para;</a></h2>
+<p>If you encounter any issues while using Winfig SublimeText, here are some common problems and their solutions:</p>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plugin not appearing after install</td>
+<td>Restart Sublime Text. Use <code>Package Control: Install Package</code> to reinstall if needed.</td>
+</tr>
+<tr>
+<td>Nerd Font not displaying correctly</td>
+<td>Ensure the font is installed on your system and set <code>"font_face": "FiraCode Nerd Font"</code> in settings.</td>
+</tr>
+<tr>
+<td>Theme or color scheme not applied</td>
+<td>Go to <code>Preferences</code> &gt; <code>Select Theme</code> and choose your preferred theme.</td>
+</tr>
+<tr>
+<td>Settings changes not taking effect</td>
+<td>Save the settings file and restart Sublime Text.</td>
+</tr>
+<tr>
+<td>Error on startup or after plugin install</td>
+<td>Remove or disable the problematic plugin via Package Control, then restart Sublime Text.</td>
+</tr>
+<tr>
+<td>Cannot open integrated terminal</td>
+<td>Ensure the Terminal plugin is installed and use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>, then type <code>Terminal: Open Terminal</code>.</td>
+</tr>
+<tr>
+<td>Markdown preview not working</td>
+<td>Make sure MarkdownPreview is installed. Use the Command Palette to run <code>Markdown Preview: Preview in Browser</code>.</td>
+</tr>
+<tr>
+<td>Lost or corrupted settings</td>
+<td>Restore from a backup if available, or delete <code>%APPDATA%\Sublime Text</code> to reset to defaults.</td>
+</tr>
+<tr>
+<td>Package Control missing or broken</td>
+<td>Reinstall <a href="https://packagecontrol.io/installation">Package Control</a> using the Command Palette.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>If your issue is not listed here, please check the <a href="https://www.sublimetext.com/docs/">official Sublime Text documentation</a> or open an issue on the <a href="https://github.com/Get-Winfig/winfig-subl/issues">Winfig SublimeText GitHub repository</a>.</p>
 
 
 
