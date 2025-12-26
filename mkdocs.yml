@@ -112,6 +112,8 @@ nav:
   - Nvim: nvim.md
   - VsCode: code.md
   - Sublime Text: subl.md
+  - Dotfiles:
+    - ShareX: dotfiles/shareX.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
