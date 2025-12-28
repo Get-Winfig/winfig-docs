@@ -114,6 +114,7 @@ nav:
   - Sublime Text: subl.md
   - Dotfiles:
     - ShareX: dotfiles/shareX.md
+    - Nilesoft Shell: dotfiles/nilesoft.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION

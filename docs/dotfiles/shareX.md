@@ -24,8 +24,6 @@ With Winfig’s curated ShareX dotfiles, you get a pre-configured setup for fast
 - **Cloud Integration:** Seamless uploads to Imgur, Dropbox, Google Drive, and more.
 
 ---
-
----
 ## Requirements
 
 - [x] [ShareX](https://getsharex.com/) installed on Windows 11
