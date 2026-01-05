@@ -2,46 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/index.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/apps.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/bootstrap.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/code.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/nvim.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/setup.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/subl.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/terminal.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/fastfetch.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
+    </url>
+    <url>
+         <loc>https://get-winfig.github.io/winfig-docs/dotfiles/git.html</loc>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/nilesoft.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/shareX.html</loc>
-         <lastmod>2025-12-30</lastmod>
+         <lastmod>2026-01-05</lastmod>
     </url>
 </urlset>
