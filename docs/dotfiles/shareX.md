@@ -136,11 +136,11 @@ Your ShareX dotfiles are organized for modularity and easy customization:
 
 | Hotkey                        | Description                          |
 |-------------------------------|--------------------------------------|
-| Ctrl + Print Screen           | Capture region                       |
-| Print Screen                  | Capture entire screen                |
-| Alt + Print Screen            | Capture active window                |
-| Shift + Print Screen          | Start/Stop screen recording          |
-| Ctrl + Shift + Print Screen   | Start/Stop screen recording (GIF)    |
+| <kbd>Ctrl</kbd> + <kbd>Print Screen</kbd>          | Capture region                       |
+| <kbd>Print Screen</kbd>                  | Capture entire screen                |
+| <kbd>Alt</kbd> + <kbd>Print Screen</kbd>            | Capture active window                |
+| <kbd>Shift</kbd> + <kbd>Print Screen</kbd>          | Start/Stop screen recording          |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Print Screen</kbd>   | Start/Stop screen recording (GIF)    |
 
 > *These are the ShareX defaults. You can view or change them in ShareX > Hotkey Settings.*
 

@@ -149,6 +149,7 @@ The included PowerShell setup script automates your entire Git environment confi
 
 ## Usage
 
+
 ### Everyday Git Workflow
 
 - **Stage, commit, and push with style:**
@@ -170,7 +171,7 @@ The included PowerShell setup script automates your entire Git environment confi
   ```sh
   git mergetool
   ```
-  VS Code opens with a merge view for easy conflict resolution.
+  VS Code opens with a merge view for easy conflict resolution <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open command palette in VS Code.
 
 - **Sign commits with GPG:**
   Commits are automatically signed using your configured GPG key.
@@ -184,8 +185,11 @@ The included PowerShell setup script automates your entire Git environment confi
   ```sh
   tig
   ```
+
+![Tig](../images/28.png)
+
   - Browse commit history, diffs, branches, and stashes in a fast, keyboard-driven interface.
-  - Use `/` to search, `l` to view logs, and `d` for detailed diffs—all with Catppuccin colors.
+  - Use <kbd>/</kbd> to search, <kbd>L</kbd> to view logs, and <kbd>D</kbd> for detailed diffs—all with Catppuccin colors.
 
 ### Example: Conventional Commit Message
 

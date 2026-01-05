@@ -117,6 +117,7 @@ nav:
     - Nilesoft Shell: dotfiles/nilesoft.md
     - Fastfetch: dotfiles/fastfetch.md
     - Git: dotfiles/git.md
+    - Lazygit: dotfiles/lazygit.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
