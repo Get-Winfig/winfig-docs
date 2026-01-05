@@ -116,6 +116,7 @@ nav:
     - ShareX: dotfiles/shareX.md
     - Nilesoft Shell: dotfiles/nilesoft.md
     - Fastfetch: dotfiles/fastfetch.md
+    - Git: dotfiles/git.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
