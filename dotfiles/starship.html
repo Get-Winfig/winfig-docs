@@ -12,13 +12,11 @@
         <meta name="author" content="Armoghan-ul-Mohmin">
       
       
-        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/git.html">
+        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/starship.html">
       
       
-        <link rel="prev" href="fastfetch.html">
+        <link rel="prev" href="bat.html">
       
-      
-        <link rel="next" href="lazygit.html">
       
       
         
@@ -29,7 +27,7 @@
     
     
       
-        <title>Git - Winfig Documentation</title>
+        <title>Starship - Winfig Documentation</title>
       
     
     
@@ -117,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git
+              Starship
             
           </span>
         </div>
@@ -851,6 +849,90 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="git.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lazygit.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lazygit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -868,7 +950,7 @@
   <span class="md-ellipsis">
     
   
-    Git
+    Starship
   
 
     
@@ -879,14 +961,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="git.html" class="md-nav__link md-nav__link--active">
+      <a href="starship.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Git
+    Starship
   
 
     
@@ -954,52 +1036,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-git-setup-with-winfig" class="md-nav__link">
+  <a href="#configuration-highlights" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Automated Git Setup with Winfig
+        Configuration Highlights
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Automated Git Setup with Winfig">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-the-script-does" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What the Script Does
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-your-keys-to-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding Your Keys to GitHub
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why This Matters
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1016,10 +1059,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#everyday-git-workflow" class="md-nav__link">
+  <a href="#enable-starship-in-your-shell" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Everyday Git Workflow
+        Enable Starship in Your Shell
       
     </span>
   </a>
@@ -1027,21 +1070,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tig-terminal-git-ui" class="md-nav__link">
+  <a href="#what-you-get" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tig: Terminal Git UI
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-conventional-commit-message" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example: Conventional Commit Message
+        What You Get
       
     </span>
   </a>
@@ -1050,17 +1082,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-highlights" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Highlights
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1095,90 +1116,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="lazygit.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Lazygit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="bat.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Bat
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="starship.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Starship
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1206,7 +1143,7 @@
   
 
 
-<h1 align="center">Git: Beautiful, Productive, and Secure Version Control</h1>
+<h1 align="center">Starship: The Catppuccin-Powered Prompt for Any Shell</h1>
 
 <p><img alt="Winfig Banner" src="../images/Banner.png" /></p>
 <div align="center">
@@ -1215,73 +1152,61 @@
 
 <hr />
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p><strong>Git</strong> is the industry-standard distributed version control system, enabling you to track changes, collaborate, and manage codebases of any size.
-With Winfig Dots, Git is supercharged with a beautiful Catppuccin theme, advanced diffing, secure commit signing, and a streamlined workflow for modern development.</p>
+<p><strong>Starship</strong> is a blazing-fast, highly customizable prompt for any shell—PowerShell, Bash, Zsh, and more. It brings beautiful icons, contextual info, and a Catppuccin Mocha palette to your terminal, making every session productive and visually stunning. With Winfig Dots, Starship is pre-configured for Windows with a modern, icon-rich, and language-aware prompt.</p>
 <hr />
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Catppuccin Themed Diffs:</strong> All diffs and logs are styled with the Catppuccin color palette via Delta for a visually appealing and readable experience.</li>
-<li><strong>Delta Integration:</strong> Enhanced side-by-side diffs, syntax highlighting, and navigation for all Git operations.</li>
-<li><strong>Conventional Commits:</strong> Commit messages follow the Conventional Commit format, enforced by a custom template.</li>
-<li><strong>GPG Commit Signing:</strong> Secure your commits with GPG, ensuring authenticity and trust.</li>
-<li><strong>VS Code as Editor &amp; Merge Tool:</strong> Seamless editing and conflict resolution with Visual Studio Code.</li>
-<li><strong>Git LFS Support:</strong> Effortlessly manage large files with Git LFS.</li>
-<li><strong>Tig Integration:</strong> Use Tig, a powerful text-mode interface for Git, for fast, interactive repository exploration.</li>
-<li><strong>Modular Config:</strong> Includes custom includes, global ignore, and reusable config snippets.</li>
-<li><strong>Productivity Shortcuts:</strong> Custom aliases, pager, and diff tool settings for a faster workflow.</li>
+<li><strong>Catppuccin Mocha Palette:</strong> Gorgeous, modern colors for every segment and symbol.</li>
+<li><strong>Multi-Language Support:</strong> Shows version and context for Node.js, Python, Rust, Go, Java, PHP, C, Lua, and more.</li>
+<li><strong>Powerful Git Integration:</strong> Branch, status, and icons for every repo state.</li>
+<li><strong>OS &amp; Directory Icons:</strong> Custom icons for OS, folders, and common directories.</li>
+<li><strong>Segmented Powerline Style:</strong> Beautiful, multi-color segments with Unicode separators.</li>
+<li><strong>Fast &amp; Cross-Shell:</strong> Works with PowerShell, Bash, Zsh, and more.</li>
+<li><strong>Customizable Prompt:</strong> Easily tweak format, palette, and modules.</li>
 </ul>
 <hr />
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git.scm.com/">Git</a> installed on Windows 11</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-lfs.com/">Git LFS</a> installed on Windows 11</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/dandavison/delta">Delta</a> for enhanced diffs</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://code.visualstudio.com/">Visual Studio Code</a> for editor and merge tool</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://gpg4win.org/">GPG</a> for commit signing</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> installed for dotfile management</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://starship.rs/">Starship</a> installed on Windows 11</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://www.nerdfonts.com/">Nerd Font</a> for icons and symbols</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> or any modern shell</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> for Git integration</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for certain configurations</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Quick Install</p>
 <ul>
-<li><strong>Git:</strong>
-  <code>winget install --id Git.Git -e</code></li>
-<li><strong>Git LFS:</strong>
-  <code>winget install --id Git.Git-LFS -e</code></li>
-<li><strong>Visual Studio Code:</strong>
-  <code>winget install --id Microsoft.VisualStudioCode -e</code></li>
-<li><strong>Delta:</strong>
-  <code>choco install git-delta</code></li>
-<li><strong>GPG:</strong>
-  <code>winget install --id GnuPG.GPG4Win -e</code></li>
+<li><strong>Starship:</strong>
+  <code>winget install --id Starship.Starship -e</code></li>
+<li><strong>Nerd Font:</strong>
+  Download and install from <a href="https://www.nerdfonts.com/font-downloads">Nerd Fonts</a></li>
 <li><strong>PowerShell 7 (optional, recommended):</strong>
   <code>winget install --id Microsoft.Powershell -e</code></li>
 </ul>
 </div>
 <hr />
 <h2 id="installation-methods">Installation Methods<a class="headerlink" href="#installation-methods" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content"></div>
+</div>
 <p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
-<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-dots</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Git</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+<div class="codehilite"><pre><span></span><code><span class="err">```</span><span class="n">powershell</span><span class="w"> </span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Run in Administrative PowerShell&quot;</span>
+<span class="n">Invoke</span><span class="o">-</span><span class="n">RestMethod</span><span class="w"> </span><span class="o">-</span><span class="n">useb</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">Get</span><span class="o">-</span><span class="n">Winfig</span><span class="o">/</span><span class="n">winfig</span><span class="o">-</span><span class="n">dots</span><span class="o">/</span><span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">Starship</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">ps1</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Invoke</span><span class="o">-</span><span class="n">Expression</span>
+<span class="err">```</span>
+
+<span class="o">!!!</span><span class="w"> </span><span class="n">success</span><span class="w"> </span><span class="s2">&quot;Why Web Install?&quot;</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">Always</span><span class="w"> </span><span class="n">gets</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">latest</span><span class="w"> </span><span class="n">version</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="n">manual</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">required</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">Automatic</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="n">verification</span>
+<span class="o">!</span><span class="p">[</span><span class="n">Web</span><span class="w"> </span><span class="n">Install</span><span class="w"> </span><span class="n">Demo</span><span class="p">](</span><span class="o">../</span><span class="n">images</span><span class="o">/</span><span class="mf">19.</span><span class="n">png</span><span class="p">)</span>
 </code></pre></div>
-<div class="admonition success">
-<p class="admonition-title">Why Web Install?</p>
-<ul>
-<li>Always gets the latest version</li>
-<li>No manual download required</li>
-<li>Automatic script verification</li>
-</ul>
-</div>
-<p><img alt="Web Install Demo" src="../images/19.png" /></p>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Local Install</label><div class="tabbed-content">
+
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Local Install</label><div class="tabbed-content">
 <p><strong>Download and run manually</strong> for offline environments:</p>
 <div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
-<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Git/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Starship/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
 <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
@@ -1298,144 +1223,71 @@ With Winfig Dots, Git is supercharged with a beautiful Catppuccin theme, advance
 </div>
 </div>
 <hr />
-<h2 id="automated-git-setup-with-winfig">Automated Git Setup with Winfig<a class="headerlink" href="#automated-git-setup-with-winfig" title="Permanent link">&para;</a></h2>
-<p>The included PowerShell setup script automates your entire Git environment configuration for Windows, making onboarding seamless and secure.</p>
-<h3 id="what-the-script-does">What the Script Does<a class="headerlink" href="#what-the-script-does" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Configures UTF-8 output</strong> for full Unicode and emoji support in Git and terminals.</li>
-<li><strong>Sets up color palettes and prompts</strong> for a beautiful, interactive experience.</li>
-<li><strong>Creates all required dotfiles directories</strong> in your user profile.</li>
-<li><strong>Checks for required tools:</strong> Git, GPG, and OpenSSH.</li>
-<li><strong>Clones or updates your Winfig Dotfiles repo</strong> automatically.</li>
-<li><strong>Generates or detects SSH keys</strong> for GitHub authentication.</li>
-<li><strong>Generates or detects GPG keys</strong> for commit signing.</li>
-<li><strong>Personalizes your <code>.gitconfig</code></strong> with your name, email, GPG key, and GPG program path.</li>
-<li><strong>Symlinks all config files</strong> (gitconfig, gitignore, tigrc, Catppuccin theme, commit template) to your home directory.</li>
-<li><strong>Creates a <code>setup-instructions.txt</code> file</strong> with your SSH and GPG public keys and step-by-step instructions for adding them to GitHub.</li>
-</ul>
-<hr />
-<h3 id="adding-your-keys-to-github">Adding Your Keys to GitHub<a class="headerlink" href="#adding-your-keys-to-github" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Open <code>setup-instructions.txt</code></strong> (it opens automatically after setup, or find it in your user profile folder).</li>
-<li><strong>Copy the SSH public key</strong> and add it to GitHub:</li>
-<li>Go to GitHub → Settings → SSH and GPG keys → New SSH key</li>
-<li>Paste the key and give it a descriptive title.</li>
-<li><strong>Copy the GPG public key</strong> and add it to GitHub:</li>
-<li>Go to GitHub → Settings → SSH and GPG keys → New GPG key</li>
-<li>Paste the key and give it a meaningful name.</li>
-<li><strong>Test your setup:</strong></li>
-<li>SSH: <code>ssh -T git@github.com</code></li>
-<li>GPG: Make a signed commit: <code>git commit -S -m "Test signed commit"</code></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Security Note</p>
-<ul>
-<li>The <code>setup-instructions.txt</code> file contains sensitive information.</li>
-<li><strong>Delete it after adding your keys to GitHub.</strong></li>
-<li>Never share your private keys.</li>
-</ul>
-</div>
-<hr />
-<h3 id="why-this-matters">Why This Matters<a class="headerlink" href="#why-this-matters" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>No manual key generation or config editing required.</strong></li>
-<li><strong>All keys and configs are ready for secure, signed, and authenticated GitHub usage.</strong></li>
-<li><strong>You get a beautiful, themed, and fully automated Git experience out of the box.</strong></li>
-</ul>
-<hr />
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<h3 id="everyday-git-workflow">Everyday Git Workflow<a class="headerlink" href="#everyday-git-workflow" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p><strong>Stage, commit, and push with style:</strong>
-  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit
-git<span class="w"> </span>push
-</code></pre></div>
-  Your commit message will use the Conventional Commit format, guided by your custom template.</p>
-</li>
-<li>
-<p><strong>View beautiful diffs and logs:</strong>
-  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>diff
-git<span class="w"> </span>log
-</code></pre></div>
-  All output is themed with Catppuccin colors via Delta.</p>
-</li>
-<li>
-<p><strong>Resolve conflicts in VS Code:</strong>
-  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>mergetool
-</code></pre></div>
-  VS Code opens with a merge view for easy conflict resolution <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open command palette in VS Code.</p>
-</li>
-<li>
-<p><strong>Sign commits with GPG:</strong>
-  Commits are automatically signed using your configured GPG key.</p>
-</li>
-<li>
-<p><strong>Work with large files:</strong>
-  Git LFS is enabled for seamless large file management.</p>
-</li>
-</ul>
-<h3 id="tig-terminal-git-ui">Tig: Terminal Git UI<a class="headerlink" href="#tig-terminal-git-ui" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Launch Tig for interactive repo browsing:</strong>
-  <div class="highlight"><pre><span></span><code>tig
-</code></pre></div></li>
-</ul>
-<p><img alt="Tig" src="../images/28.png" /></p>
-<ul>
-<li>Browse commit history, diffs, branches, and stashes in a fast, keyboard-driven interface.</li>
-<li>Use <kbd>/</kbd> to search, <kbd>L</kbd> to view logs, and <kbd>D</kbd> for detailed diffs—all with Catppuccin colors.</li>
-</ul>
-<h3 id="example-conventional-commit-message">Example: Conventional Commit Message<a class="headerlink" href="#example-conventional-commit-message" title="Permanent link">&para;</a></h3>
-<p>Your commit template enforces the <a href="https://www.conventionalcommits.org/">Conventional Commits</a> standard:
-<div class="highlight"><pre><span></span><code>feat(scope): add new feature
-
-- Short summary of the change
-
-BREAKING CHANGE: description of breaking change
-</code></pre></div></p>
-<hr />
 <h2 id="configuration-highlights">Configuration Highlights<a class="headerlink" href="#configuration-highlights" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Catppuccin Theme:</strong>
-  All diffs, logs, and status outputs are styled with Catppuccin via Delta (<code>features = catppuccin-macchiato</code>, <code>syntax-theme = catppuccin-frappe</code>).</li>
-<li><strong>Delta as Pager &amp; Diff Tool:</strong>
-  Delta is set as the default pager and diff tool for all relevant commands.</li>
-<li><strong>VS Code Integration:</strong>
-  Both the editor and merge tool are set to VS Code for a seamless experience.</li>
-<li><strong>GPG Signing:</strong>
-  Commits are signed by default for security and authenticity.</li>
-<li><strong>Global Ignore &amp; Includes:</strong>
-  Uses a global <code>.gitignore</code> and includes modular config snippets (e.g., Catppuccin settings).</li>
-<li><strong>Custom Log Format:</strong>
-  Logs are decorated with color, author, date, GPG status, and more for clarity.</li>
+<li><strong>Catppuccin Mocha Palette:</strong>
+  All segments use the Catppuccin Mocha color palette for a cohesive, modern look.</li>
+<li><strong>Powerline Segments:</strong>
+  Unicode separators and multi-color backgrounds for each module.</li>
+<li><strong>OS &amp; Directory Icons:</strong>
+  Custom icons for Windows, Linux, macOS, and common folders.</li>
+<li><strong>Language Modules:</strong>
+  Shows version and icon for Node.js, Python, Rust, Go, Java, PHP, C, Lua, and more.</li>
+<li><strong>Git Branch &amp; Status:</strong>
+  Beautiful icons and color-coded status for every repo state.</li>
+<li><strong>Time, Kubernetes, Docker:</strong>
+  Contextual info for cloud/dev workflows.</li>
+<li><strong>Prompt Symbols:</strong>
+  Custom success, error, and Vim mode symbols.</li>
+</ul>
+<p><img alt="starship" src="../images/30.png" /></p>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="enable-starship-in-your-shell">Enable Starship in Your Shell<a class="headerlink" href="#enable-starship-in-your-shell" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>PowerShell:</strong>
+  Add this to your <code>$PROFILE</code>:
+  <div class="highlight"><pre><span></span><code><span class="nb">Invoke-Expression</span> <span class="p">(&amp;</span><span class="n">starship</span> <span class="n">init</span> <span class="n">powershell</span><span class="p">)</span>
+</code></pre></div></li>
+<li><strong>Bash:</strong>
+  Add this to your <code>~/.bashrc</code>:
+  <div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>starship<span class="w"> </span>init<span class="w"> </span>bash<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div></li>
+<li><strong>Zsh:</strong>
+  Add this to your <code>~/.zshrc</code>:
+  <div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>starship<span class="w"> </span>init<span class="w"> </span>zsh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div></li>
+</ul>
+<h3 id="what-you-get">What You Get<a class="headerlink" href="#what-you-get" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Beautiful, icon-rich prompt</strong> with Catppuccin colors and Powerline segments</li>
+<li><strong>Context-aware info</strong>: Git branch/status, language versions, OS, time, Kubernetes, Docker, and more</li>
+<li><strong>Fast, async rendering</strong> for instant feedback</li>
 </ul>
 <hr />
 <h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permanent link">&para;</a></h2>
 <details class="question">
-<summary>How do I enable/disable commit signing?</summary>
-<p>Edit the <code>[commit]</code> section in your <code>.gitconfig</code> and set <code>gpgSign = true</code> or <code>false</code>.</p>
+<summary>How do I change the Starship theme?</summary>
+<p>Edit the <code>palette</code> and color values in your <code>starship.toml</code>. Winfig Dots uses Catppuccin Mocha by default.</p>
 </details>
 <details class="question">
-<summary>How do I use the Catppuccin theme for diffs?</summary>
-<p>Delta is configured in your <code>.gitconfig</code> to use Catppuccin themes for all diffs and logs.</p>
+<summary>How do I add Starship to my shell?</summary>
+<p>Add the appropriate <code>starship init</code> command to your shell profile (see Usage section).</p>
 </details>
 <details class="question">
-<summary>How do I use my own GPG key?</summary>
-<p>Set your key ID in the <code>[user]</code> section (<code>signingkey = &lt;YOUR-GPG-KEY-ID&gt;</code>) and ensure GPG is installed.</p>
+<summary>How do I get the icons to show?</summary>
+<p>Install a Nerd Font and set it as your terminal font.</p>
 </details>
 <details class="question">
-<summary>How do I use Tig?</summary>
-<p>Just run <code>tig</code> in your repository. Use the keyboard to navigate, search, and view diffs.</p>
+<summary>How do I customize segments or order?</summary>
+<p>Edit the <code>format</code> string in your <code>starship.toml</code> to add, remove, or rearrange modules.</p>
 </details>
 <details class="question">
-<summary>How do I use the Conventional Commit template?</summary>
-<p>When you run <code>git commit</code>, the template appears. Follow the format for type, scope, and message.</p>
+<summary>How do I update Starship?</summary>
+<p>Use your package manager (<code>winget upgrade Starship.Starship</code>) or download the latest release from GitHub.</p>
 </details>
 <details class="question">
-<summary>How do I update Delta or other tools?</summary>
-<p>Use your package manager (<code>choco upgrade git-delta</code>, <code>winget upgrade Git.Git</code>).</p>
+<summary>Where is my Starship config file?</summary>
+<p>Usually at <code>%USERPROFILE%\.config\starship.toml</code> on Windows or <code>~/.config/starship.toml</code> on Linux/macOS.</p>
 </details>
 <hr />
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
@@ -1448,32 +1300,28 @@ BREAKING CHANGE: description of breaking change
 </thead>
 <tbody>
 <tr>
-<td>Diffs/logs not colored</td>
-<td>Ensure Delta is installed and set as pager/diff tool in <code>.gitconfig</code>.</td>
+<td>Starship not found</td>
+<td>Ensure it’s installed and in your PATH. Try restarting your terminal.</td>
 </tr>
 <tr>
-<td>GPG signing fails</td>
-<td>Check your GPG installation and key configuration.</td>
+<td>Icons not showing</td>
+<td>Install a Nerd Font and set it as your terminal font.</td>
 </tr>
 <tr>
-<td>Merge tool not opening</td>
-<td>Ensure VS Code is installed and in your PATH.</td>
+<td>Colors/theme not applied</td>
+<td>Check your <code>starship.toml</code> and terminal color support.</td>
 </tr>
 <tr>
-<td>Large files not tracked</td>
-<td>Run <code>git lfs install</code> and track files with <code>git lfs track</code>.</td>
+<td>Prompt not loading</td>
+<td>Ensure you added the <code>starship init</code> command to your shell profile.</td>
 </tr>
 <tr>
-<td>Tig not found</td>
-<td>Install Tig and ensure it’s in your PATH.</td>
-</tr>
-<tr>
-<td>Commit template not used</td>
-<td>Check <code>[commit] template</code> path in <code>.gitconfig</code>.</td>
+<td>Git info missing</td>
+<td>Make sure Git is installed and the folder is a Git repo.</td>
 </tr>
 </tbody>
 </table>
-<p>If your issue isn’t listed, check the <a href="https://git-scm.com/doc">Git documentation</a> or <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig GitHub Issues</a>.</p>
+<p>If your issue isn’t listed, check the <a href="https://starship.rs/guide/">Starship documentation</a> or <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig GitHub Issues</a>.</p>
 
 
 
