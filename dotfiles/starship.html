@@ -1187,21 +1187,21 @@
 </div>
 <hr />
 <h2 id="installation-methods">Installation Methods<a class="headerlink" href="#installation-methods" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content"></div>
-</div>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content">
 <p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">```</span><span class="n">powershell</span><span class="w"> </span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Run in Administrative PowerShell&quot;</span>
-<span class="n">Invoke</span><span class="o">-</span><span class="n">RestMethod</span><span class="w"> </span><span class="o">-</span><span class="n">useb</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">Get</span><span class="o">-</span><span class="n">Winfig</span><span class="o">/</span><span class="n">winfig</span><span class="o">-</span><span class="n">dots</span><span class="o">/</span><span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">Starship</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">ps1</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Invoke</span><span class="o">-</span><span class="n">Expression</span>
-<span class="err">```</span>
-
-<span class="o">!!!</span><span class="w"> </span><span class="n">success</span><span class="w"> </span><span class="s2">&quot;Why Web Install?&quot;</span>
-<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">Always</span><span class="w"> </span><span class="n">gets</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">latest</span><span class="w"> </span><span class="n">version</span>
-<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="n">manual</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">required</span>
-<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">Automatic</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="n">verification</span>
-<span class="o">!</span><span class="p">[</span><span class="n">Web</span><span class="w"> </span><span class="n">Install</span><span class="w"> </span><span class="n">Demo</span><span class="p">](</span><span class="o">../</span><span class="n">images</span><span class="o">/</span><span class="mf">19.</span><span class="n">png</span><span class="p">)</span>
+<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-dots</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Starship</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
 </code></pre></div>
-
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Local Install</label><div class="tabbed-content">
+<div class="admonition success">
+<p class="admonition-title">Why Web Install?</p>
+<ul>
+<li>Always gets the latest version</li>
+<li>No manual download required</li>
+<li>Automatic script verification</li>
+</ul>
+</div>
+<p><img alt="Web Install Demo" src="../images/19.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Local Install</label><div class="tabbed-content">
 <p><strong>Download and run manually</strong> for offline environments:</p>
 <div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
 </code></pre></div>
