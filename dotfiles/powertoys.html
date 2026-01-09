@@ -12,13 +12,13 @@
         <meta name="author" content="Armoghan-ul-Mohmin">
       
       
-        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/git.html">
+        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/powertoys.html">
       
       
-        <link rel="prev" href="fastfetch.html">
+        <link rel="prev" href="shareX.html">
       
       
-        <link rel="next" href="lazygit.html">
+        <link rel="next" href="nilesoft.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Git - Winfig Documentation</title>
+        <title>PowerToys - Winfig Documentation</title>
       
     
     
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git
+              PowerToys
             
           </span>
         </div>
@@ -795,90 +795,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="powertoys.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PowerToys
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="nilesoft.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Nilesoft Shell
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="fastfetch.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Fastfetch
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -896,7 +812,7 @@
   <span class="md-ellipsis">
     
   
-    Git
+    PowerToys
   
 
     
@@ -907,14 +823,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="git.html" class="md-nav__link md-nav__link--active">
+      <a href="powertoys.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Git
+    PowerToys
   
 
     
@@ -982,22 +898,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-git-setup-with-winfig" class="md-nav__link">
+  <a href="#post-installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Automated Git Setup with Winfig
+        Post-Installation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Automated Git Setup with Winfig">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-usage-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips &amp; Usage Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keymaps-enabled-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keymaps &amp; Enabled Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keymaps &amp; Enabled Modules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-the-script-does" class="md-nav__link">
+  <a href="#advance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What the Script Does
+        Advance
       
     </span>
   </a>
@@ -1005,10 +943,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#adding-your-keys-to-github" class="md-nav__link">
+  <a href="#file-manager" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding Your Keys to GitHub
+        File Manager
       
     </span>
   </a>
@@ -1016,10 +954,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
+  <a href="#input-output" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Matters
+        Input / Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windowing-layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windowing &amp; Layouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Tools
       
     </span>
   </a>
@@ -1028,67 +988,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Usage
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#everyday-git-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Everyday Git Workflow
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tig-terminal-git-ui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tig: Terminal Git UI
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-conventional-commit-message" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example: Conventional Commit Message
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-highlights" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Highlights
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1118,6 +1017,90 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nilesoft.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nilesoft Shell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fastfetch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fastfetch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="git.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1234,7 +1217,7 @@
   
 
 
-<h1 align="center">Git: Beautiful, Productive, and Secure Version Control</h1>
+<h1 align="center">PowerToys: Advanced Windows Productivity Suite</h1>
 
 <p><img alt="Winfig Banner" src="../images/Banner.png" /></p>
 <div align="center">
@@ -1243,56 +1226,60 @@
 
 <hr />
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p><strong>Git</strong> is the industry-standard distributed version control system, enabling you to track changes, collaborate, and manage codebases of any size.
-With Winfig Dots, Git is supercharged with a beautiful Catppuccin theme, advanced diffing, secure commit signing, and a streamlined workflow for modern development.</p>
+<p><strong>PowerToys</strong> is a powerful, open-source suite of utilities from Microsoft that supercharges Windows productivity. With Winfig Dots, PowerToys is pre-configured for advanced workflows, custom keybindings, and enhanced system tools—making Windows 11 faster, smarter, and more customizable than ever.</p>
 <hr />
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Catppuccin Themed Diffs:</strong> All diffs and logs are styled with the Catppuccin color palette via Delta for a visually appealing and readable experience.</li>
-<li><strong>Delta Integration:</strong> Enhanced side-by-side diffs, syntax highlighting, and navigation for all Git operations.</li>
-<li><strong>Conventional Commits:</strong> Commit messages follow the Conventional Commit format, enforced by a custom template.</li>
-<li><strong>GPG Commit Signing:</strong> Secure your commits with GPG, ensuring authenticity and trust.</li>
-<li><strong>VS Code as Editor &amp; Merge Tool:</strong> Seamless editing and conflict resolution with Visual Studio Code.</li>
-<li><strong>Git LFS Support:</strong> Effortlessly manage large files with Git LFS.</li>
-<li><strong>Tig Integration:</strong> Use Tig, a powerful text-mode interface for Git, for fast, interactive repository exploration.</li>
-<li><strong>Modular Config:</strong> Includes custom includes, global ignore, and reusable config snippets.</li>
-<li><strong>Productivity Shortcuts:</strong> Custom aliases, pager, and diff tool settings for a faster workflow.</li>
+<li><strong>Custom Keybindings:</strong> Advanced, ergonomic shortcuts for every tool.</li>
+<li><strong>Command Not Found Handler:</strong> Instantly suggests fixes for mistyped commands.</li>
+<li><strong>Environment Variables Manager:</strong> Edit and manage environment variables with a GUI.</li>
+<li><strong>Hosts File Editor:</strong> Safely edit your system hosts file.</li>
+<li><strong>Registry Preview:</strong> View and edit Windows Registry files with syntax highlighting.</li>
+<li><strong>File Explorer Add-ons:</strong> Preview SVG, Markdown, PDF, and more directly in Explorer.</li>
+<li><strong>File Locksmith:</strong> See which processes are locking a file.</li>
+<li><strong>Image Resizer:</strong> Batch resize images from the context menu.</li>
+<li><strong>New+ Templates:</strong> Custom templates symlinked for quick file creation.</li>
+<li><strong>Peek:</strong> Quick file preview with <kbd>Space</kbd>.</li>
+<li><strong>PowerRename:</strong> Advanced batch renaming tool.</li>
+<li><strong>Find My Mouse:</strong> Shake mouse to locate cursor instantly.</li>
+<li><strong>Always On Top:</strong> Pin any window with <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>T</kbd>.</li>
+<li><strong>Workspaces:</strong> Organize windows with <kbd>Win</kbd> + <kbd>/</kbd>.</li>
+<li><strong>ZoomIt:</strong> Advanced screen zoom, draw, and timer tools.</li>
+<li><strong>Text Extractor:</strong> OCR any screen region with <kbd>Win</kbd> + <kbd>T</kbd>.</li>
+<li><strong>Shortcut Guide:</strong> View all shortcuts with <kbd>Alt</kbd> + <kbd>F1</kbd>.</li>
+<li><strong>PowerToys Run:</strong> Fast launcher with <kbd>Win</kbd> + <kbd>Space</kbd> (Calculator, Programs, URLs, etc.).</li>
+<li><strong>Color Picker:</strong> Pick colors anywhere with <kbd>Win</kbd> + <kbd>C</kbd>.</li>
+<li><strong>Awake:</strong> Keep your PC awake on demand.</li>
+<li><strong>Advanced Paste:</strong> Smart clipboard and paste enhancements.</li>
 </ul>
 <hr />
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git.scm.com/">Git</a> installed on Windows 11</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-lfs.com/">Git LFS</a> installed on Windows 11</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/dandavison/delta">Delta</a> for enhanced diffs</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://code.visualstudio.com/">Visual Studio Code</a> for editor and merge tool</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://gpg4win.org/">GPG</a> for commit signing</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://docs.microsoft.com/powertoys/">PowerToys</a> installed on Windows 11</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> installed for dotfile management</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for certain configurations</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts (Hack Nerd Font)</a> for enhanced terminal and UI appearance</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Quick Install</p>
 <ul>
+<li><strong>PowerToys:</strong>
+    <code>winget install --id Microsoft.PowerToys -e</code></li>
 <li><strong>Git:</strong>
-  <code>winget install --id Git.Git -e</code></li>
-<li><strong>Git LFS:</strong>
-  <code>winget install --id Git.Git-LFS -e</code></li>
-<li><strong>Visual Studio Code:</strong>
-  <code>winget install --id Microsoft.VisualStudioCode -e</code></li>
-<li><strong>Delta:</strong>
-  <code>choco install git-delta</code></li>
-<li><strong>GPG:</strong>
-  <code>winget install --id GnuPG.GPG4Win -e</code></li>
+    <code>winget install --id Git.Git -e</code></li>
 <li><strong>PowerShell 7 (optional, recommended):</strong>
-  <code>winget install --id Microsoft.Powershell -e</code></li>
+    <code>winget install --id Microsoft.Powershell -e</code></li>
+<li><strong>Hack Nerd Fonts:</strong>
+    Download from <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts</a> and install your favorite patched font.</li>
 </ul>
 </div>
 <hr />
 <h2 id="installation-methods">Installation Methods<a class="headerlink" href="#installation-methods" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content">
 <p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
-<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-dots</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Git</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-dots</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Powertoys</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
 </code></pre></div>
 <div class="admonition success">
 <p class="admonition-title">Why Web Install?</p>
@@ -1309,7 +1296,7 @@ With Winfig Dots, Git is supercharged with a beautiful Catppuccin theme, advance
 <div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
-<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Git/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Powertoys/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
 <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
@@ -1326,144 +1313,129 @@ With Winfig Dots, Git is supercharged with a beautiful Catppuccin theme, advance
 </div>
 </div>
 <hr />
-<h2 id="automated-git-setup-with-winfig">Automated Git Setup with Winfig<a class="headerlink" href="#automated-git-setup-with-winfig" title="Permanent link">&para;</a></h2>
-<p>The included PowerShell setup script automates your entire Git environment configuration for Windows, making onboarding seamless and secure.</p>
-<h3 id="what-the-script-does">What the Script Does<a class="headerlink" href="#what-the-script-does" title="Permanent link">&para;</a></h3>
+<h2 id="post-installation">Post-Installation<a class="headerlink" href="#post-installation" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Restart PowerToys</strong> to apply new settings.</li>
+<li><strong>Test Keybindings:</strong> Try enabled shortcuts (see below) to confirm functionality.</li>
+<li><strong>Review Modules:</strong> Open PowerToys Settings to enable/disable or tweak modules.</li>
+<li><strong>Customize Templates:</strong> Add files to your Templates folder for New+.</li>
+<li><strong>Backup:</strong> Export your settings for future use or sharing.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Need Help?</p>
 <ul>
-<li><strong>Configures UTF-8 output</strong> for full Unicode and emoji support in Git and terminals.</li>
-<li><strong>Sets up color palettes and prompts</strong> for a beautiful, interactive experience.</li>
-<li><strong>Creates all required dotfiles directories</strong> in your user profile.</li>
-<li><strong>Checks for required tools:</strong> Git, GPG, and OpenSSH.</li>
-<li><strong>Clones or updates your Winfig Dotfiles repo</strong> automatically.</li>
-<li><strong>Generates or detects SSH keys</strong> for GitHub authentication.</li>
-<li><strong>Generates or detects GPG keys</strong> for commit signing.</li>
-<li><strong>Personalizes your <code>.gitconfig</code></strong> with your name, email, GPG key, and GPG program path.</li>
-<li><strong>Symlinks all config files</strong> (gitconfig, gitignore, tigrc, Catppuccin theme, commit template) to your home directory.</li>
-<li><strong>Creates a <code>setup-instructions.txt</code> file</strong> with your SSH and GPG public keys and step-by-step instructions for adding them to GitHub.</li>
-</ul>
-<hr />
-<h3 id="adding-your-keys-to-github">Adding Your Keys to GitHub<a class="headerlink" href="#adding-your-keys-to-github" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Open <code>setup-instructions.txt</code></strong> (it opens automatically after setup, or find it in your user profile folder).</li>
-<li><strong>Copy the SSH public key</strong> and add it to GitHub:</li>
-<li>Go to GitHub → Settings → SSH and GPG keys → New SSH key</li>
-<li>Paste the key and give it a descriptive title.</li>
-<li><strong>Copy the GPG public key</strong> and add it to GitHub:</li>
-<li>Go to GitHub → Settings → SSH and GPG keys → New GPG key</li>
-<li>Paste the key and give it a meaningful name.</li>
-<li><strong>Test your setup:</strong></li>
-<li>SSH: <code>ssh -T git@github.com</code></li>
-<li>GPG: Make a signed commit: <code>git commit -S -m "Test signed commit"</code></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Security Note</p>
-<ul>
-<li>The <code>setup-instructions.txt</code> file contains sensitive information.</li>
-<li><strong>Delete it after adding your keys to GitHub.</strong></li>
-<li>Never share your private keys.</li>
+<li>Visit the <a href="https://docs.microsoft.com/powertoys/">PowerToys documentation</a> for advanced features.</li>
+<li><a href="https://github.com/Get-Winfig/winfig-docs/issues">Open an issue</a> if you encounter problems with the Winfig setup.</li>
 </ul>
 </div>
 <hr />
-<h3 id="why-this-matters">Why This Matters<a class="headerlink" href="#why-this-matters" title="Permanent link">&para;</a></h3>
+<h2 id="tips-usage-notes">Tips &amp; Usage Notes<a class="headerlink" href="#tips-usage-notes" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>No manual key generation or config editing required.</strong></li>
-<li><strong>All keys and configs are ready for secure, signed, and authenticated GitHub usage.</strong></li>
-<li><strong>You get a beautiful, themed, and fully automated Git experience out of the box.</strong></li>
+<li><strong>Custom Keymaps:</strong> Winfig PowerToys dotfiles use advanced, ergonomic shortcuts for every module.</li>
+<li><strong>Templates:</strong> Add your own templates to <code>%USERPROFILE%\.Dotfiles\winfig-dots\Powertoys</code> (symlinked to <code>C:\Windows\Resources\Templates</code>).</li>
+<li><strong>Safe Customization:</strong> All configs are modular—feel free to tweak or extend as you like!</li>
+<li><strong>Minimal Bloat:</strong> Only essential modules and plugins are enabled for speed and clarity.</li>
 </ul>
 <hr />
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<h3 id="everyday-git-workflow">Everyday Git Workflow<a class="headerlink" href="#everyday-git-workflow" title="Permanent link">&para;</a></h3>
+<h2 id="keymaps-enabled-modules">Keymaps &amp; Enabled Modules<a class="headerlink" href="#keymaps-enabled-modules" title="Permanent link">&para;</a></h2>
+<h3 id="advance">Advance<a class="headerlink" href="#advance" title="Permanent link">&para;</a></h3>
 <ul>
+<li><strong>Command Not Found:</strong></li>
+<li><strong>Environment Variables:</strong></li>
+<li><strong>Hosts File Editor:</strong></li>
+<li><strong>Registry Preview:</strong></li>
+</ul>
+<h3 id="file-manager">File Manager<a class="headerlink" href="#file-manager" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>File Explorer add-ons:</strong></li>
+<li><strong>File Locksmith:</strong></li>
+<li><strong>Image Resizer:</strong></li>
 <li>
-<p><strong>Stage, commit, and push with style:</strong>
-  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit
-git<span class="w"> </span>push
-</code></pre></div>
-  Your commit message will use the Conventional Commit format, guided by your custom template.</p>
+<p><strong>New+:</strong>
+    Templates: <code>%USERPROFILE%\.Dotfiles\winfig-dots\Powertoys</code> → <code>C:\Windows\Resources\Templates</code></p>
 </li>
 <li>
-<p><strong>View beautiful diffs and logs:</strong>
-  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>diff
-git<span class="w"> </span>log
-</code></pre></div>
-  All output is themed with Catppuccin colors via Delta.</p>
+<p><strong>Peek:</strong>
+    Keymap: <kbd>Space</kbd></p>
 </li>
 <li>
-<p><strong>Resolve conflicts in VS Code:</strong>
-  <div class="highlight"><pre><span></span><code>git<span class="w"> </span>mergetool
-</code></pre></div>
-  VS Code opens with a merge view for easy conflict resolution <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open command palette in VS Code.</p>
-</li>
-<li>
-<p><strong>Sign commits with GPG:</strong>
-  Commits are automatically signed using your configured GPG key.</p>
-</li>
-<li>
-<p><strong>Work with large files:</strong>
-  Git LFS is enabled for seamless large file management.</p>
+<p><strong>PowerRename:</strong></p>
 </li>
 </ul>
-<h3 id="tig-terminal-git-ui">Tig: Terminal Git UI<a class="headerlink" href="#tig-terminal-git-ui" title="Permanent link">&para;</a></h3>
+<h3 id="input-output">Input / Output<a class="headerlink" href="#input-output" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Launch Tig for interactive repo browsing:</strong>
-  <div class="highlight"><pre><span></span><code>tig
-</code></pre></div></li>
+<li><strong>Mouse utilities:</strong>
+  Only <strong>Find My Mouse</strong> is enabled (Shake mouse to view cursor position)</li>
 </ul>
-<p><img alt="Tig" src="../images/28.png" /></p>
+<h3 id="windowing-layouts">Windowing &amp; Layouts<a class="headerlink" href="#windowing-layouts" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Browse commit history, diffs, branches, and stashes in a fast, keyboard-driven interface.</li>
-<li>Use <kbd>/</kbd> to search, <kbd>L</kbd> to view logs, and <kbd>D</kbd> for detailed diffs—all with Catppuccin colors.</li>
+<li>
+<p><strong>Always On Top:</strong>
+    Shortcut: <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>T</kbd></p>
+</li>
+<li>
+<p><strong>Workspaces:</strong>
+    Shortcut: <kbd>Win</kbd> + <kbd>/</kbd></p>
+</li>
+<li>
+<p><strong>Always On Top (Alt):</strong>
+    Shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></p>
+</li>
 </ul>
-<h3 id="example-conventional-commit-message">Example: Conventional Commit Message<a class="headerlink" href="#example-conventional-commit-message" title="Permanent link">&para;</a></h3>
-<p>Your commit template enforces the <a href="https://www.conventionalcommits.org/">Conventional Commits</a> standard:
-<div class="highlight"><pre><span></span><code>feat(scope): add new feature
-
-- Short summary of the change
-
-BREAKING CHANGE: description of breaking change
-</code></pre></div></p>
-<hr />
-<h2 id="configuration-highlights">Configuration Highlights<a class="headerlink" href="#configuration-highlights" title="Permanent link">&para;</a></h2>
+<h3 id="system-tools">System Tools<a class="headerlink" href="#system-tools" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Catppuccin Theme:</strong>
-  All diffs, logs, and status outputs are styled with Catppuccin via Delta (<code>features = catppuccin-macchiato</code>, <code>syntax-theme = catppuccin-frappe</code>).</li>
-<li><strong>Delta as Pager &amp; Diff Tool:</strong>
-  Delta is set as the default pager and diff tool for all relevant commands.</li>
-<li><strong>VS Code Integration:</strong>
-  Both the editor and merge tool are set to VS Code for a seamless experience.</li>
-<li><strong>GPG Signing:</strong>
-  Commits are signed by default for security and authenticity.</li>
-<li><strong>Global Ignore &amp; Includes:</strong>
-  Uses a global <code>.gitignore</code> and includes modular config snippets (e.g., Catppuccin settings).</li>
-<li><strong>Custom Log Format:</strong>
-  Logs are decorated with color, author, date, GPG status, and more for clarity.</li>
+<li>
+<p><strong>ZoomIt:</strong></p>
+<ul>
+<li><kbd>Ctrl</kbd> + <kbd>1</kbd>: Zoom</li>
+<li><kbd>Ctrl</kbd> + <kbd>4</kbd>: Live Zoom</li>
+<li><kbd>Ctrl</kbd> + <kbd>2</kbd>: Draw Without Zoom</li>
+<li><kbd>Ctrl</kbd> + <kbd>3</kbd>: Start Break Timer (1 min)</li>
+<li><kbd>Ctrl</kbd> + <kbd>5</kbd>: Record Video</li>
+<li><kbd>Ctrl</kbd> + <kbd>6</kbd>: Copy Region</li>
+</ul>
+</li>
+<li>
+<p><strong>Text Extractor:</strong>
+    Shortcut: <kbd>Win</kbd> + <kbd>T</kbd></p>
+</li>
+<li>
+<p><strong>Shortcut Guide:</strong>
+    Shortcut: <kbd>Alt</kbd> + <kbd>F1</kbd></p>
+</li>
+<li>
+<p><strong>PowerToys Run:</strong>
+    Shortcut: <kbd>Win</kbd> + <kbd>Space</kbd>
+    Enabled Plugins:</p>
+<ol>
+<li>Calculator</li>
+<li>PowerToys</li>
+<li>Programs</li>
+<li>URL Handler</li>
+</ol>
+</li>
+<li>
+<p><strong>Color Picker:</strong>
+    Shortcut: <kbd>Win</kbd> + <kbd>C</kbd></p>
+</li>
+<li>
+<p><strong>Awake:</strong></p>
+</li>
+<li><strong>Advanced Paste:</strong></li>
 </ul>
 <hr />
 <h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permanent link">&para;</a></h2>
 <details class="question">
-<summary>How do I enable/disable commit signing?</summary>
-<p>Edit the <code>[commit]</code> section in your <code>.gitconfig</code> and set <code>gpgSign = true</code> or <code>false</code>.</p>
+<summary>Can I use my own PowerToys settings?</summary>
+<p>Yes! Back up your current settings before applying Winfig dotfiles. You can always restore or merge your preferences later.</p>
 </details>
 <details class="question">
-<summary>How do I use the Catppuccin theme for diffs?</summary>
-<p>Delta is configured in your <code>.gitconfig</code> to use Catppuccin themes for all diffs and logs.</p>
+<summary>Is this safe to use?</summary>
+<p>All scripts and configs are open source. Review them on <a href="https://github.com/Get-Winfig/winfig-dots">GitHub</a> before running.</p>
 </details>
 <details class="question">
-<summary>How do I use my own GPG key?</summary>
-<p>Set your key ID in the <code>[user]</code> section (<code>signingkey = &lt;YOUR-GPG-KEY-ID&gt;</code>) and ensure GPG is installed.</p>
-</details>
-<details class="question">
-<summary>How do I use Tig?</summary>
-<p>Just run <code>tig</code> in your repository. Use the keyboard to navigate, search, and view diffs.</p>
-</details>
-<details class="question">
-<summary>How do I use the Conventional Commit template?</summary>
-<p>When you run <code>git commit</code>, the template appears. Follow the format for type, scope, and message.</p>
-</details>
-<details class="question">
-<summary>How do I update Delta or other tools?</summary>
-<p>Use your package manager (<code>choco upgrade git-delta</code>, <code>winget upgrade Git.Git</code>).</p>
+<summary>How do I update my PowerToys dotfiles?</summary>
+<p>Simply re-run the web install command to fetch and apply the latest version.</p>
 </details>
 <hr />
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
@@ -1476,32 +1448,24 @@ BREAKING CHANGE: description of breaking change
 </thead>
 <tbody>
 <tr>
-<td>Diffs/logs not colored</td>
-<td>Ensure Delta is installed and set as pager/diff tool in <code>.gitconfig</code>.</td>
+<td>Hotkeys not working</td>
+<td>Check for conflicts with other apps or reassign in PowerToys Settings.</td>
 </tr>
 <tr>
-<td>GPG signing fails</td>
-<td>Check your GPG installation and key configuration.</td>
+<td>Module not enabled</td>
+<td>Open PowerToys Settings and enable the desired module.</td>
 </tr>
 <tr>
-<td>Merge tool not opening</td>
-<td>Ensure VS Code is installed and in your PATH.</td>
+<td>Settings not applied</td>
+<td>Ensure you replaced the correct settings file and restarted PowerToys.</td>
 </tr>
 <tr>
-<td>Large files not tracked</td>
-<td>Run <code>git lfs install</code> and track files with <code>git lfs track</code>.</td>
-</tr>
-<tr>
-<td>Tig not found</td>
-<td>Install Tig and ensure it’s in your PATH.</td>
-</tr>
-<tr>
-<td>Commit template not used</td>
-<td>Check <code>[commit] template</code> path in <code>.gitconfig</code>.</td>
+<td>Script errors during install</td>
+<td>Run PowerShell as Administrator and check execution policy.</td>
 </tr>
 </tbody>
 </table>
-<p>If your issue isn’t listed, check the <a href="https://git-scm.com/doc">Git documentation</a> or <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig GitHub Issues</a>.</p>
+<p>If your issue isn’t listed, check the <a href="https://docs.microsoft.com/powertoys/">PowerToys FAQ</a> or <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig GitHub Issues</a>.</p>
 
 
 
