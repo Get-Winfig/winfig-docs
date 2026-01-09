@@ -114,6 +114,7 @@ nav:
   - Sublime Text: subl.md
   - Dotfiles:
     - ShareX: dotfiles/shareX.md
+    - PowerToys: dotfiles/powertoys.md
     - Nilesoft Shell: dotfiles/nilesoft.md
     - Fastfetch: dotfiles/fastfetch.md
     - Git: dotfiles/git.md
