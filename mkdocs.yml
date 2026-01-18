@@ -121,6 +121,7 @@ nav:
     - Lazygit: dotfiles/lazygit.md
     - Bat: dotfiles/bat.md
     - Starship: dotfiles/starship.md
+    - Powershell: dotfiles/powershell.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
