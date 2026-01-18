@@ -1,0 +1,2586 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Winfig, a Windows configuration management tool.">
+      
+      
+        <meta name="author" content="Armoghan-ul-Mohmin">
+      
+      
+        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/powershell.html">
+      
+      
+        <link rel="prev" href="starship.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Powershell - Winfig Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="../docs/assets/unpkg.com/iframe-worker/shim.js"></script>
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../docs/assets/fonts.googleapis.com/css.622a93ca.css">
+        <style>:root{--md-text-font:"JetBrains Mono";--md-code-font:"Hack Nerd Font"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/Css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Winfig Documentation" class="md-header__button md-logo" aria-label="Winfig Documentation" data-md-component="logo">
+      
+  <img src="../images/Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Winfig Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Powershell
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Get-Winfig/winfig-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../setup.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bootstrap.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bootstrap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://get-winfig.github.io/winfig-wallpaper/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Wallpapers
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../apps.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Apps
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../terminal.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Terminal
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../nvim.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Nvim
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../code.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  VsCode
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../subl.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sublime Text
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="shareX.html" class="md-tabs__link">
+          
+  
+  
+  Dotfiles
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Winfig Documentation" class="md-nav__button md-logo" aria-label="Winfig Documentation" data-md-component="logo">
+      
+  <img src="../images/Icon.png" alt="logo">
+
+    </a>
+    Winfig Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Get-Winfig/winfig-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bootstrap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bootstrap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://get-winfig.github.io/winfig-wallpaper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wallpapers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apps.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terminal.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nvim.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nvim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VsCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subl.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sublime Text
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dotfiles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dotfiles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="shareX.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShareX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="powertoys.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PowerToys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nilesoft.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nilesoft Shell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fastfetch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fastfetch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="git.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lazygit.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lazygit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="starship.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Starship
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Powershell
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="powershell.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Powershell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Methods
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-usage-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips &amp; Usage Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        timer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        trash
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hastebin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hastebin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networkinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        networkinfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weather" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        weather
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        update
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aliases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-shortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git Shortcuts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tig-shortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tig Shortcuts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System &amp; Info
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-directory-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File &amp; Directory Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-system-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process &amp; System Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-content-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Content Helpers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility-misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility &amp; Misc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-tools-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Tools Aliases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Locations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Miscellaneous Utilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequently-asked-questions-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frequently Asked Questions (FAQ)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 align="center">PowerShell: Winfig Dots Automation & Productivity Profile</h1>
+
+<p><img alt="Winfig Banner" src="../images/Banner.png" /></p>
+<div align="center">
+  <strong>Part of the Winfig Dots ecosystem for seamless Windows customization and productivity</strong>
+</div>
+
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><strong>Winfig PowerShell Profile</strong> is a modern, modular, and highly customizable PowerShell environment for Windows automation, productivity, and developer workflows. It brings together advanced functions, ergonomic aliases, beautiful prompt theming, and seamless integration with tools like fzf, bat, and git.</p>
+<hr />
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Custom keybindings</strong> for navigation and history</li>
+<li><strong>fzf integration</strong> for interactive selection</li>
+<li><strong>Command-not-found</strong> suggestions with winget</li>
+<li><strong>Unified server launcher</strong> for dev servers</li>
+<li><strong>Smart timer</strong> for command timing</li>
+<li><strong>Modern trash</strong> (safe delete)</li>
+<li><strong>Hastebin uploader</strong> with preview</li>
+<li><strong>Weather &amp; network info</strong> commands</li>
+<li><strong>One-command update/upgrade</strong></li>
+<li><strong>Colorful, informative output</strong></li>
+<li><strong>Handy aliases</strong> for frequent tasks</li>
+</ul>
+<hr />
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://docs.microsoft.com/powertoys/">PowerToys</a> installed on Windows 11</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> installed for dotfile management</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for certain configurations</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts (Hack Nerd Font)</a> for enhanced terminal and UI appearance</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Quick Install</p>
+<ul>
+<li><strong>PowerShell 7:</strong>
+    <code>winget install --id Microsoft.Powershell -e</code></li>
+<li><strong>Git:</strong>
+    <code>winget install --id Git.Git -e</code></li>
+<li><strong>PowerShell 7 (optional, recommended):</strong>
+    <code>winget install --id Microsoft.Powershell -e</code></li>
+<li><strong>fzf:</strong>
+    <code>winget install --id Junegunn.fzf -e</code></li>
+<li><strong>bat:</strong>
+    <code>winget install --id sharkdp.bat -e</code></li>
+<li><strong>Hack Nerd Fonts:</strong>
+    Download from <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts</a> and install your favorite patched font.</li>
+</ul>
+</div>
+<hr />
+<h2 id="installation-methods">Installation Methods<a class="headerlink" href="#installation-methods" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content">
+<p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
+<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-dots</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Powershell</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Why Web Install?</p>
+<ul>
+<li>Always gets the latest version</li>
+<li>No manual download required</li>
+<li>Automatic script verification</li>
+</ul>
+</div>
+<p><img alt="Web Install Demo" src="../images/19.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Local Install</label><div class="tabbed-content">
+<p><strong>Download and run manually</strong> for offline environments:</p>
+<div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Powershell/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+<span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Ensure you have the latest script version</li>
+<li>Manual updates required for new releases</li>
+<li>Verify script integrity before running</li>
+</ul>
+</div>
+<p><img alt="Local Install Demo" src="../images/20.png" /></p>
+</div>
+</div>
+<hr />
+<h2 id="post-installation">Post-Installation<a class="headerlink" href="#post-installation" title="Permanent link">&para;</a></h2>
+<p>After installation, follow these steps:</p>
+<ol>
+<li><strong>Reload Profile:</strong>
+    <div class="highlight"><pre><span></span><code><span class="p">.</span> <span class="nv">$PROFILE</span>
+</code></pre></div></li>
+<li><strong>Test Key Features:</strong><ul>
+<li>Try aliases (e.g., <code>hb</code>, <code>zi</code>)</li>
+<li>Use functions like <code>server</code>, <code>timer</code>, <code>trash</code>, <code>hastebin</code></li>
+<li>Check fuzzy search (fzf) and color output (bat)</li>
+</ul>
+</li>
+<li><strong>Customize:</strong><ul>
+<li>Edit or add functions in <code>functions/</code></li>
+<li>Add aliases in <code>Aliases.ps1</code></li>
+<li>Adjust config in <code>Config/</code></li>
+</ul>
+</li>
+<li><strong>Update Regularly:</strong><ul>
+<li>Pull latest changes and rerun <code>setup.ps1</code> as needed</li>
+</ul>
+</li>
+<li><strong>Troubleshoot:</strong><ul>
+<li>If something doesn't work, check the Troubleshooting section below</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="tips-usage-notes">Tips &amp; Usage Notes<a class="headerlink" href="#tips-usage-notes" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Use a Nerd Font in your terminal for best icon and prompt appearance.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Customize your prompt, colors, and banners in the Config folder.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Reload your profile with <code>. $PROFILE</code> after making changes.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Keep your tools (fzf, bat, git, PowerShell) up to date for best compatibility.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Review and edit modular config files for easy personalization.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> The setup script is safe to re-run for updates or repairs.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> For advanced tweaks, explore the Initialize.ps1 and Config scripts.</li>
+</ul>
+<hr />
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<h3 id="server">server<a class="headerlink" href="#server" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Launch a local development server (Node.js, Python, Hugo, PHP, etc.) with fuzzy selection, service preview, and custom port/path options.</p>
+</div>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Usage</label><div class="tabbed-content">
+<p><div class="highlight"><span class="filename">Start a server (choose type interactively)</span><pre><span></span><code><span class="n">server</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Start a Python server on port 8080</span><pre><span></span><code><span class="n">server</span> <span class="n">python</span> <span class="n">8080</span>
+</code></pre></div></p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Uses <kbd>fzf</kbd> for interactive selection</li>
+<li>Previews service details before launch</li>
+<li>Supports custom ports and paths</li>
+</ul>
+</div>
+<p><img alt="server" src="../images/31.png" /></p>
+<h3 id="timer">timer<a class="headerlink" href="#timer" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Time the execution duration of any command or script, displaying the result in seconds.</p>
+</div>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Usage</label><div class="tabbed-content">
+<p><div class="highlight"><span class="filename">Time a script or command</span><pre><span></span><code><span class="n">timer</span> <span class="p">{</span> <span class="nb">Get-Process</span> <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Time a file copy</span><pre><span></span><code><span class="n">timer</span> <span class="p">{</span> <span class="nb">Copy-Item</span> <span class="n">file</span><span class="p">.</span><span class="n">txt</span> <span class="n">D</span><span class="p">:\</span><span class="n">Backup</span> <span class="p">}</span>
+</code></pre></div></p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Accepts any command as input</li>
+<li>Shows a colorized summary of execution time</li>
+</ul>
+</div>
+<p><img alt="timer" src="../images/32.png" /></p>
+<h3 id="trash">trash<a class="headerlink" href="#trash" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Move files or directories to the Windows Recycle Bin using the Shell COM object.</p>
+</div>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Usage</label><div class="tabbed-content">
+<p><div class="highlight"><span class="filename">Move a file to the Recycle Bin</span><pre><span></span><code><span class="n">trash</span> <span class="n">file</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Move a folder to the Recycle Bin</span><pre><span></span><code><span class="n">trash</span> <span class="p">.\</span><span class="n">old_folder</span>
+</code></pre></div></p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Provides feedback on success or failure</li>
+</ul>
+</div>
+<p><img alt="trash" src="../images/33.png" /></p>
+<h3 id="hastebin">hastebin<a class="headerlink" href="#hastebin" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Upload file content to Hastebin, with interactive file selection and live preview using fzf and bat.</p>
+</div>
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Usage</label><div class="tabbed-content">
+<p><div class="highlight"><span class="filename">Upload a file to Hastebin (interactive picker)</span><pre><span></span><code><span class="n">hastebin</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Pipe command output to Hastebin</span><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">script</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="n">hastebin</span>
+</code></pre></div></p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Uses <kbd>fzf</kbd> and <kbd>bat</kbd> for selection and preview</li>
+<li>Copies the resulting URL to your clipboard</li>
+</ul>
+</div>
+<p><img alt="hastebin" src="../images/34.png" /></p>
+<h3 id="networkinfo">networkinfo<a class="headerlink" href="#networkinfo" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Display detailed network information for the current system.</p>
+</div>
+<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Usage</label><div class="tabbed-content">
+<div class="highlight"><span class="filename">Show all network details</span><pre><span></span><code><span class="n">networkinfo</span>
+</code></pre></div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Shows IP addresses, adapters, and more</li>
+</ul>
+</div>
+<p><img alt="networkinfo" src="../images/35.png" /></p>
+<h3 id="weather">weather<a class="headerlink" href="#weather" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Fetch and display the current weather for your configured location.</p>
+</div>
+<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Usage</label><div class="tabbed-content">
+<p><div class="highlight"><span class="filename">Show weather for your default location</span><pre><span></span><code><span class="n">weather</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Show weather for a specific city</span><pre><span></span><code><span class="n">weather</span> <span class="s2">&quot;New York&quot;</span>
+</code></pre></div></p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Requires internet connection</li>
+</ul>
+</div>
+<p><img alt="weather" src="../images/36.png" /></p>
+<h3 id="update">update<a class="headerlink" href="#update" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Check for available updates for winget, chocolatey, and PowerShell modules, displaying a clear summary.</p>
+</div>
+<div class="tabbed-set" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">Usage</label><div class="tabbed-content">
+<div class="highlight"><span class="filename">List all available updates</span><pre><span></span><code><span class="n">update</span>
+</code></pre></div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Does not install updates, only lists them</li>
+</ul>
+</div>
+<h3 id="upgrade">upgrade<a class="headerlink" href="#upgrade" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Purpose</p>
+<p>Install all available updates for winget, chocolatey, and PowerShell modules.</p>
+</div>
+<div class="tabbed-set" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Usage</label><div class="tabbed-content">
+<div class="highlight"><span class="filename">Upgrade everything in one go</span><pre><span></span><code><span class="n">upgrade</span>
+</code></pre></div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">How it works</p>
+<ul>
+<li>Provides a summary of updated packages and modules</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Usage Tips</p>
+<ul>
+<li>All functions are modular and can be called directly (e.g., <code>server</code>, <code>timer</code>, <code>trash</code>).</li>
+<li>For detailed help, run:
+    <div class="highlight"><pre><span></span><code>    <span class="nb">Get-Help</span> <span class="p">&lt;</span><span class="n">FunctionName</span><span class="p">&gt;</span>
+</code></pre></div>
+    (Requires comment-based help in the function script.)</li>
+</ul>
+</div>
+<hr />
+<h2 id="aliases">Aliases<a class="headerlink" href="#aliases" title="Permanent link">&para;</a></h2>
+<p>Below are the most useful and productivity-boosting aliases and functions included in your profile. All aliases are modular and can be customized in <code>Aliases.ps1</code>.</p>
+<hr />
+<h3 id="git-shortcuts">Git Shortcuts<a class="headerlink" href="#git-shortcuts" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">gst</td>
+<td style="text-align: left;">Git status</td>
+<td style="text-align: left;"><code>gst</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gbr</td>
+<td style="text-align: left;">Git branch</td>
+<td style="text-align: left;"><code>gbr</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gcomit</td>
+<td style="text-align: left;">Git commit</td>
+<td style="text-align: left;"><code>gcomit</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gcmmit</td>
+<td style="text-align: left;">Git commit with message</td>
+<td style="text-align: left;"><code>gcmmit "Initial commit"</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gammend</td>
+<td style="text-align: left;">Git commit --amend</td>
+<td style="text-align: left;"><code>gammend</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gamendnm</td>
+<td style="text-align: left;">Git commit --amend --no-edit</td>
+<td style="text-align: left;"><code>gamendnm</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">glog</td>
+<td style="text-align: left;">Git log</td>
+<td style="text-align: left;"><code>glog</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gdf</td>
+<td style="text-align: left;">Git diff</td>
+<td style="text-align: left;"><code>gdf</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gpull</td>
+<td style="text-align: left;">Git pull</td>
+<td style="text-align: left;"><code>gpull</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gfetch</td>
+<td style="text-align: left;">Git fetch</td>
+<td style="text-align: left;"><code>gfetch</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gpush</td>
+<td style="text-align: left;">Git push</td>
+<td style="text-align: left;"><code>gpush</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gad</td>
+<td style="text-align: left;">Git add all changes</td>
+<td style="text-align: left;"><code>gad</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gcl</td>
+<td style="text-align: left;">Git clone</td>
+<td style="text-align: left;"><code>gcl https://github.com/user/repo.git</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">guncommit</td>
+<td style="text-align: left;">Undo last commit, keep changes</td>
+<td style="text-align: left;"><code>guncommit</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gcheckout</td>
+<td style="text-align: left;">Checkout new branch</td>
+<td style="text-align: left;"><code>gcheckout feature-x</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="tig-shortcuts">Tig Shortcuts<a class="headerlink" href="#tig-shortcuts" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">t</td>
+<td style="text-align: left;">Launch tig</td>
+<td style="text-align: left;"><code>t</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">tb</td>
+<td style="text-align: left;">Tig blame</td>
+<td style="text-align: left;"><code>tb</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">tst</td>
+<td style="text-align: left;">Tig status</td>
+<td style="text-align: left;"><code>tst</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">tlog</td>
+<td style="text-align: left;">Tig log</td>
+<td style="text-align: left;"><code>tlog</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">tdf</td>
+<td style="text-align: left;">Tig diff</td>
+<td style="text-align: left;"><code>tdf</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="system-info">System &amp; Info<a class="headerlink" href="#system-info" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">sysinfo</td>
+<td style="text-align: left;">Show system info</td>
+<td style="text-align: left;"><code>sysinfo</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">myip</td>
+<td style="text-align: left;">Show public IP</td>
+<td style="text-align: left;"><code>myip</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">localip</td>
+<td style="text-align: left;">Show local IP</td>
+<td style="text-align: left;"><code>localip</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">flushdns</td>
+<td style="text-align: left;">Flush DNS cache</td>
+<td style="text-align: left;"><code>flushdns</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">path</td>
+<td style="text-align: left;">List PATH entries</td>
+<td style="text-align: left;"><code>path</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="file-directory-navigation">File &amp; Directory Navigation<a class="headerlink" href="#file-directory-navigation" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">..</td>
+<td style="text-align: left;">Go up one directory</td>
+<td style="text-align: left;"><code>..</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">...</td>
+<td style="text-align: left;">Go up two directories</td>
+<td style="text-align: left;"><code>...</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">....</td>
+<td style="text-align: left;">Go up three directories</td>
+<td style="text-align: left;"><code>....</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">mkcd</td>
+<td style="text-align: left;">Make and cd into directory</td>
+<td style="text-align: left;"><code>mkcd MyFolder</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">edit-here</td>
+<td style="text-align: left;">Open current dir in VS Code</td>
+<td style="text-align: left;"><code>edit-here</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">here</td>
+<td style="text-align: left;">Open current dir in Explorer</td>
+<td style="text-align: left;"><code>here</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="file-operations">File Operations<a class="headerlink" href="#file-operations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">touch</td>
+<td style="text-align: left;">Create empty file</td>
+<td style="text-align: left;"><code>touch file.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">la</td>
+<td style="text-align: left;">List all files (PowerColorLS)</td>
+<td style="text-align: left;"><code>la</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">ll</td>
+<td style="text-align: left;">Long list with sizes</td>
+<td style="text-align: left;"><code>ll</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">lf</td>
+<td style="text-align: left;">List only files</td>
+<td style="text-align: left;"><code>lf</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">ld</td>
+<td style="text-align: left;">List only directories</td>
+<td style="text-align: left;"><code>ld</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">lh</td>
+<td style="text-align: left;">List hidden files</td>
+<td style="text-align: left;"><code>lh</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">back</td>
+<td style="text-align: left;">Go to previous directory</td>
+<td style="text-align: left;"><code>back</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">lastmod</td>
+<td style="text-align: left;">5 most recently modified files</td>
+<td style="text-align: left;"><code>lastmod</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">oldest</td>
+<td style="text-align: left;">5 oldest files</td>
+<td style="text-align: left;"><code>oldest</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">recent</td>
+<td style="text-align: left;">5 most recently accessed files</td>
+<td style="text-align: left;"><code>recent</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="process-system-control">Process &amp; System Control<a class="headerlink" href="#process-system-control" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">pkill</td>
+<td style="text-align: left;">Kill process by name</td>
+<td style="text-align: left;"><code>pkill notepad</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">clr</td>
+<td style="text-align: left;">Clear console</td>
+<td style="text-align: left;"><code>clr</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">reload</td>
+<td style="text-align: left;">Reload profile</td>
+<td style="text-align: left;"><code>reload</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">edit-profile</td>
+<td style="text-align: left;">Edit profile in VS Code</td>
+<td style="text-align: left;"><code>edit-profile</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="file-content-helpers">File Content Helpers<a class="headerlink" href="#file-content-helpers" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">head</td>
+<td style="text-align: left;">Show first n lines</td>
+<td style="text-align: left;"><code>head file.txt 20</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">tail</td>
+<td style="text-align: left;">Show last n lines (follow)</td>
+<td style="text-align: left;"><code>tail file.txt 20 -f</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="hashing">Hashing<a class="headerlink" href="#hashing" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">md5</td>
+<td style="text-align: left;">MD5 hash of file</td>
+<td style="text-align: left;"><code>md5 file.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">sha1</td>
+<td style="text-align: left;">SHA1 hash of file</td>
+<td style="text-align: left;"><code>sha1 file.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">sha256</td>
+<td style="text-align: left;">SHA256 hash of file</td>
+<td style="text-align: left;"><code>sha256 file.txt</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="utility-misc">Utility &amp; Misc<a class="headerlink" href="#utility-misc" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">which</td>
+<td style="text-align: left;">Find command path</td>
+<td style="text-align: left;"><code>which git</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">open</td>
+<td style="text-align: left;">Open file or dir</td>
+<td style="text-align: left;"><code>open file.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">edit</td>
+<td style="text-align: left;">Edit file(s) in VS Code</td>
+<td style="text-align: left;"><code>edit file.txt</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="external-tools-aliases">External Tools Aliases<a class="headerlink" href="#external-tools-aliases" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">cat</td>
+<td style="text-align: left;">Alias for bat.exe (PowerShell 7+)</td>
+<td style="text-align: left;"><code>cat file.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">h</td>
+<td style="text-align: left;">Alias for Get-History (PowerShell 7+)</td>
+<td style="text-align: left;"><code>h</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">grep</td>
+<td style="text-align: left;">Alias for Select-String</td>
+<td style="text-align: left;"><code>grep "pattern" file.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">lg</td>
+<td style="text-align: left;">Launch LazyGit</td>
+<td style="text-align: left;"><code>lg</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">htop</td>
+<td style="text-align: left;">Launch NTop</td>
+<td style="text-align: left;"><code>htop</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">neofetch</td>
+<td style="text-align: left;">Launch FastFetch</td>
+<td style="text-align: left;"><code>neofetch</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">view</td>
+<td style="text-align: left;">Preview Markdown with Glow</td>
+<td style="text-align: left;"><code>view README.md</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">j</td>
+<td style="text-align: left;">Zoxide jump</td>
+<td style="text-align: left;"><code>j folder</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">ji</td>
+<td style="text-align: left;">Zoxide interactive</td>
+<td style="text-align: left;"><code>ji</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">sudo</td>
+<td style="text-align: left;">Windows sudo (gsudo.exe)</td>
+<td style="text-align: left;"><code>sudo notepad</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">gitfetch</td>
+<td style="text-align: left;">Onefetch for git stats</td>
+<td style="text-align: left;"><code>gitfetch</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="custom-locations">Custom Locations<a class="headerlink" href="#custom-locations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Dotfiles</td>
+<td style="text-align: left;">Go to Dotfiles dir</td>
+<td style="text-align: left;"><code>Dotfiles</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">TEMP</td>
+<td style="text-align: left;">Go to TEMP dir</td>
+<td style="text-align: left;"><code>TEMP</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Desktop</td>
+<td style="text-align: left;">Go to Desktop</td>
+<td style="text-align: left;"><code>Desktop</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Documents</td>
+<td style="text-align: left;">Go to Documents</td>
+<td style="text-align: left;"><code>Documents</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">UserProfile</td>
+<td style="text-align: left;">Go to UserProfile</td>
+<td style="text-align: left;"><code>UserProfile</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Downloads</td>
+<td style="text-align: left;">Go to Downloads</td>
+<td style="text-align: left;"><code>Downloads</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Pictures</td>
+<td style="text-align: left;">Go to Pictures</td>
+<td style="text-align: left;"><code>Pictures</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Videos</td>
+<td style="text-align: left;">Go to Videos</td>
+<td style="text-align: left;"><code>Videos</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">ShareXScreenshots</td>
+<td style="text-align: left;">Go to ShareX screenshots</td>
+<td style="text-align: left;"><code>ShareXScreenshots</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="miscellaneous-utilities">Miscellaneous Utilities<a class="headerlink" href="#miscellaneous-utilities" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Alias/Function</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">man</td>
+<td style="text-align: left;">Show full help for command</td>
+<td style="text-align: left;"><code>man Get-ChildItem</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">file</td>
+<td style="text-align: left;">Show basic file info</td>
+<td style="text-align: left;"><code>file file.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">winutil</td>
+<td style="text-align: left;">Run WinUtil full-release</td>
+<td style="text-align: left;"><code>winutil</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">winutildev</td>
+<td style="text-align: left;">Run WinUtil dev-release</td>
+<td style="text-align: left;"><code>winutildev</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Customization</p>
+<ul>
+<li>All aliases are defined in <code>Aliases.ps1</code> and can be edited or extended.</li>
+<li>Use <code>Get-Alias</code> or <code>Get-Command</code> to explore more.</li>
+</ul>
+</div>
+<hr />
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>Can I use my own PowerShell profile or dotfiles?</summary>
+<p>Yes! Back up your current profile before applying Winfig dotfiles. You can always merge or restore your customizations later.</p>
+</details>
+<details class="question">
+<summary>Is it safe to run these scripts?</summary>
+<p>All scripts and configs are open source. Review them on <a href="https://github.com/Get-Winfig/winfig-dots">GitHub</a> before running.</p>
+</details>
+<details class="question">
+<summary>How do I update my PowerShell profile?</summary>
+<p>Pull the latest changes from the repo and re-run <code>setup.ps1</code>.</p>
+</details>
+<details class="question">
+<summary>How do I reload the profile after editing?</summary>
+<p>Run <code>. $PROFILE</code> or <code>reload</code> in your PowerShell session.</p>
+</details>
+<details class="question">
+<summary>How do I add my own functions or aliases?</summary>
+<p>Place new scripts in <code>functions/</code> or add aliases to <code>Aliases.ps1</code>, then reload the profile.</p>
+</details>
+<details class="question">
+<summary>What if I use both PowerShell 5 and 7?</summary>
+<p>The setup script configures both versions automatically. You can use the same dotfiles for both.</p>
+</details>
+<hr />
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Profile changes not loading</td>
+<td>Run <code>. $PROFILE</code> to reload the profile.</td>
+</tr>
+<tr>
+<td>fzf or bat not found</td>
+<td>Ensure they are installed and in your PATH.</td>
+</tr>
+<tr>
+<td>Aliases/functions not working</td>
+<td>Check for typos and reload the profile.</td>
+</tr>
+<tr>
+<td>Script errors during setup</td>
+<td>Run PowerShell as Administrator and check execution policy.</td>
+</tr>
+<tr>
+<td>Encoding issues</td>
+<td>Make sure your terminal uses UTF-8 encoding.</td>
+</tr>
+<tr>
+<td>Module install errors</td>
+<td>Use <code>Install-Module -Scope CurrentUser</code> and check your internet connection.</td>
+</tr>
+</tbody>
+</table>
+<p>If your issue isn’t listed, check the <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig Dots Issues</a> or open a new issue for help.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 18, 2026 14:18:36 UTC">January 18, 2026</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 18, 2026 14:18:36 UTC">January 18, 2026</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 <a href="https://github.com/Get-Winfig" target="_blank" rel="noopener">Get-Winfig</a>. All rights reserved.
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Get-Winfig" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/Armoghan12" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="http://www.linkedin.com/in/armoghan-ul-mohmin-4289a9248" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/___armoghan/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/armoghanul.mohmin" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:Armoghan@proton.me" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://Armoghan.netlify.app" target="_blank" rel="noopener" title="Armoghan.netlify.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+  
+
+<h4>Cookie consent</h4>
+<p>We use cookies to improve your browsing experience and remember your preferences. These cookies are only used locally and no data is shared with third parties.</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+    
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.sections", "navigation.instant", "header.autohide", "service-worker", "manifest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../docs/assets/unpkg.com/mermaid@11.12.2/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/Js/mermaid-config.js"></script>
+      
+        <script src="../assets/Js/script.js"></script>
+      
+    
+  </body>
+</html>
