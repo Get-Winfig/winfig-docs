@@ -122,6 +122,7 @@ nav:
     - Bat: dotfiles/bat.md
     - Starship: dotfiles/starship.md
     - Powershell: dotfiles/powershell.md
+    - AutoHotkey: dotfiles/ahk.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
