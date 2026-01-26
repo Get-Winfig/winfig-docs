@@ -124,6 +124,7 @@ nav:
     - Powershell: dotfiles/powershell.md
     - AutoHotkey: dotfiles/ahk.md
     - Komorebi: dotfiles/komorebi.md
+    - YASB: dotfiles/yasb.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION

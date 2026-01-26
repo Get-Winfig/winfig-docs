@@ -59,7 +59,7 @@
   **One-line installation** - Downloads and runs automatically:
 
     ```powershell title="Run in Administrative PowerShell"
-    Invoke-RestMethod -useb https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Bat/setup.ps1 | Invoke-Expression
+    Invoke-RestMethod -useb https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Komorebic/setup.ps1 | Invoke-Expression
     ```
 
     !!! success "Why Web Install?"
@@ -78,7 +78,7 @@
 
     ```powershell title="2. Download Script"
     # Download from GitHub
-    Invoke-WebRequest -useb "https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Bat/setup.ps1" -OutFile "setup.ps1"
+    Invoke-WebRequest -useb "https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Komorebic/setup.ps1" -OutFile "setup.ps1"
     ```
 
     ```powershell title="3. Unblock and Run"
