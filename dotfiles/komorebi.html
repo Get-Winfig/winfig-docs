@@ -12,13 +12,11 @@
         <meta name="author" content="Armoghan-ul-Mohmin">
       
       
-        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/powershell.html">
+        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/komorebi.html">
       
       
-        <link rel="prev" href="starship.html">
+        <link rel="prev" href="ahk.html">
       
-      
-        <link rel="next" href="ahk.html">
       
       
         
@@ -29,7 +27,7 @@
     
     
       
-        <title>Powershell - Winfig Documentation</title>
+        <title>Komorebi - Winfig Documentation</title>
       
     
     
@@ -117,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Powershell
+              Komorebi
             
           </span>
         </div>
@@ -991,6 +989,62 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="powershell.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Powershell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ahk.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AutoHotkey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1008,7 +1062,7 @@
   <span class="md-ellipsis">
     
   
-    Powershell
+    Komorebi
   
 
     
@@ -1019,14 +1073,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="powershell.html" class="md-nav__link md-nav__link--active">
+      <a href="komorebi.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Powershell
+    Komorebi
   
 
     
@@ -1094,44 +1148,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#post-installation" class="md-nav__link">
+  <a href="#hotkey-reference-whkdrc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Post-Installation
+        Hotkey Reference (whkdrc)
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips-usage-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tips &amp; Usage Notes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="Hotkey Reference (whkdrc)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
+  <a href="#focus-windows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        server
+        Focus Windows
       
     </span>
   </a>
@@ -1139,10 +1171,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#timer" class="md-nav__link">
+  <a href="#move-windows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        timer
+        Move Windows
       
     </span>
   </a>
@@ -1150,10 +1182,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#trash" class="md-nav__link">
+  <a href="#stack-windows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        trash
+        Stack Windows
       
     </span>
   </a>
@@ -1161,10 +1193,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hastebin" class="md-nav__link">
+  <a href="#resize" class="md-nav__link">
     <span class="md-ellipsis">
       
-        hastebin
+        Resize
       
     </span>
   </a>
@@ -1172,10 +1204,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#networkinfo" class="md-nav__link">
+  <a href="#manipulate-windows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        networkinfo
+        Manipulate Windows
       
     </span>
   </a>
@@ -1183,10 +1215,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#weather" class="md-nav__link">
+  <a href="#window-manager-options" class="md-nav__link">
     <span class="md-ellipsis">
       
-        weather
+        Window Manager Options
       
     </span>
   </a>
@@ -1194,10 +1226,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update" class="md-nav__link">
+  <a href="#layouts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        update
+        Layouts
       
     </span>
   </a>
@@ -1205,10 +1237,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#upgrade" class="md-nav__link">
+  <a href="#workspaces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        upgrade
+        Workspaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-windows-across-workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Move Windows Across Workspaces
       
     </span>
   </a>
@@ -1221,151 +1264,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#aliases" class="md-nav__link">
+  <a href="#customization-tips" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Aliases
+        Customization Tips
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Aliases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-shortcuts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Git Shortcuts
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tig-shortcuts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tig Shortcuts
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#system-info" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        System &amp; Info
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#file-directory-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        File &amp; Directory Navigation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#file-operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        File Operations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#process-system-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Process &amp; System Control
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#file-content-helpers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        File Content Helpers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hashing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hashing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#utility-misc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Utility &amp; Misc
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#external-tools-aliases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        External Tools Aliases
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-locations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Locations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#miscellaneous-utilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Miscellaneous Utilities
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1400,62 +1305,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ahk.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AutoHotkey
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="komorebi.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Komorebi
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1483,7 +1332,7 @@
   
 
 
-<h1 align="center">PowerShell: Winfig Dots Automation & Productivity Profile</h1>
+<h1 align="center">Komorebi: Advanced Tiling Window Management for Windows</h1>
 
 <p><img alt="Winfig Banner" src="../images/Banner.png" /></p>
 <div align="center">
@@ -1492,71 +1341,66 @@
 
 <hr />
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p><strong>Winfig PowerShell Profile</strong> is a modern, modular, and highly customizable PowerShell environment for Windows automation, productivity, and developer workflows. It brings together advanced functions, ergonomic aliases, beautiful prompt theming, and seamless integration with tools like fzf, bat, and git.</p>
+<p><strong>Komorebi</strong> is a fast, feature-rich tiling window manager for Windows, bringing advanced workspace, stacking, and automation features to your desktop. With Winfig Dots, Komorebi is pre-configured for beautiful borders, smooth animations, workspace rules, and seamless integration with whkd for ergonomic keyboard-driven workflows.</p>
 <hr />
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Custom keybindings</strong> for navigation and history</li>
-<li><strong>fzf integration</strong> for interactive selection</li>
-<li><strong>Command-not-found</strong> suggestions with winget</li>
-<li><strong>Unified server launcher</strong> for dev servers</li>
-<li><strong>Smart timer</strong> for command timing</li>
-<li><strong>Modern trash</strong> (safe delete)</li>
-<li><strong>Hastebin uploader</strong> with preview</li>
-<li><strong>Weather &amp; network info</strong> commands</li>
-<li><strong>One-command update/upgrade</strong></li>
-<li><strong>Colorful, informative output</strong></li>
-<li><strong>Handy aliases</strong> for frequent tasks</li>
+<li>True tiling window management on Windows</li>
+<li>Customizable workspaces with per-app rules</li>
+<li>Beautiful rounded borders and Catppuccin-inspired colors</li>
+<li>Smooth animations (144fps, cubic easing)</li>
+<li>Stack, monocle, and BSP layouts</li>
+<li>Keyboard-driven navigation and manipulation (via whkd)</li>
+<li>Transparency, floating, and monocle toggles</li>
+<li>Seamless integration with Winfig Dots ecosystem</li>
 </ul>
 <hr />
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://docs.microsoft.com/powertoys/">PowerToys</a> installed on Windows 11</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> installed for dotfile management</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for certain configurations</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts (Hack Nerd Font)</a> for enhanced terminal and UI appearance</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/LGUG2Z/komorebi">Komorebi</a> v0.1.28+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/whkd/whkd">whkd</a> for hotkey handling</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for scripting</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Windows 11 (recommended)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://www.nerdfonts.com/">Nerd Font</a> for icons and symbols</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for installation</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Quick Install</p>
 <ul>
-<li><strong>PowerShell 7:</strong>
-    <code>winget install --id Microsoft.Powershell -e</code></li>
+<li><strong>Komorebi:</strong>
+  <code>winget install --id LGUG2Z.Komorebi -e</code></li>
+<li><strong>whkd:</strong>
+  <code>winget install --id LGUG2Z.whkd -e</code></li>
 <li><strong>Git:</strong>
-    <code>winget install --id Git.Git -e</code></li>
+  <code>winget install --id Git.Git -e</code></li>
 <li><strong>PowerShell 7 (optional, recommended):</strong>
-    <code>winget install --id Microsoft.Powershell -e</code></li>
-<li><strong>fzf:</strong>
-    <code>winget install --id Junegunn.fzf -e</code></li>
-<li><strong>bat:</strong>
-    <code>winget install --id sharkdp.bat -e</code></li>
-<li><strong>Hack Nerd Fonts:</strong>
-    Download from <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip">Nerd Fonts</a> and install your favorite patched font.</li>
+  <code>winget install --id Microsoft.Powershell -e</code></li>
+<li><strong>Nerd Font:</strong>
+  Download and install from <a href="https://www.nerdfonts.com/font-downloads">Nerd Fonts</a></li>
 </ul>
 </div>
 <hr />
 <h2 id="installation-methods">Installation Methods<a class="headerlink" href="#installation-methods" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content"></div>
+</div>
 <p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
-<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-dots</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Powershell</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+<div class="codehilite"><pre><span></span><code><span class="err">```</span><span class="n">powershell</span><span class="w"> </span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Run in Administrative PowerShell&quot;</span>
+<span class="n">Invoke</span><span class="o">-</span><span class="n">RestMethod</span><span class="w"> </span><span class="o">-</span><span class="n">useb</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">Get</span><span class="o">-</span><span class="n">Winfig</span><span class="o">/</span><span class="n">winfig</span><span class="o">-</span><span class="n">dots</span><span class="o">/</span><span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">Bat</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">ps1</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Invoke</span><span class="o">-</span><span class="n">Expression</span>
+<span class="err">```</span>
+
+<span class="o">!!!</span><span class="w"> </span><span class="n">success</span><span class="w"> </span><span class="s2">&quot;Why Web Install?&quot;</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">Always</span><span class="w"> </span><span class="n">gets</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">latest</span><span class="w"> </span><span class="n">version</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="n">manual</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">required</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">Automatic</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="n">verification</span>
+<span class="o">!</span><span class="p">[</span><span class="n">Web</span><span class="w"> </span><span class="n">Install</span><span class="w"> </span><span class="n">Demo</span><span class="p">](</span><span class="o">../</span><span class="n">images</span><span class="o">/</span><span class="mf">19.</span><span class="n">png</span><span class="p">)</span>
 </code></pre></div>
-<div class="admonition success">
-<p class="admonition-title">Why Web Install?</p>
-<ul>
-<li>Always gets the latest version</li>
-<li>No manual download required</li>
-<li>Automatic script verification</li>
-</ul>
-</div>
-<p><img alt="Web Install Demo" src="../images/19.png" /></p>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Local Install</label><div class="tabbed-content">
+
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Local Install</label><div class="tabbed-content">
 <p><strong>Download and run manually</strong> for offline environments:</p>
 <div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
-<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Powershell/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-dots/refs/heads/main/Bat/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
 <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
@@ -1573,781 +1417,324 @@
 </div>
 </div>
 <hr />
-<h2 id="post-installation">Post-Installation<a class="headerlink" href="#post-installation" title="Permanent link">&para;</a></h2>
-<p>After installation, follow these steps:</p>
-<ol>
-<li><strong>Reload Profile:</strong>
-    <div class="highlight"><pre><span></span><code><span class="p">.</span> <span class="nv">$PROFILE</span>
-</code></pre></div></li>
-<li><strong>Test Key Features:</strong><ul>
-<li>Try aliases (e.g., <code>hb</code>, <code>zi</code>)</li>
-<li>Use functions like <code>server</code>, <code>timer</code>, <code>trash</code>, <code>hastebin</code></li>
-<li>Check fuzzy search (fzf) and color output (bat)</li>
-</ul>
-</li>
-<li><strong>Customize:</strong><ul>
-<li>Edit or add functions in <code>functions/</code></li>
-<li>Add aliases in <code>Aliases.ps1</code></li>
-<li>Adjust config in <code>Config/</code></li>
-</ul>
-</li>
-<li><strong>Update Regularly:</strong><ul>
-<li>Pull latest changes and rerun <code>setup.ps1</code> as needed</li>
-</ul>
-</li>
-<li><strong>Troubleshoot:</strong><ul>
-<li>If something doesn't work, check the Troubleshooting section below</li>
-</ul>
-</li>
-</ol>
+<h2 id="hotkey-reference-whkdrc">Hotkey Reference (whkdrc)<a class="headerlink" href="#hotkey-reference-whkdrc" title="Permanent link">&para;</a></h2>
+<p>All navigation and manipulation is keyboard-driven via whkd. Below is a categorized table of all hotkeys from your real configuration:</p>
+<h3 id="focus-windows">Focus Windows<a class="headerlink" href="#focus-windows" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>H</kbd></td>
+<td>Focus left</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>J</kbd></td>
+<td>Focus down</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>K</kbd></td>
+<td>Focus up</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>L</kbd></td>
+<td>Focus right</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>[</kbd></td>
+<td>Cycle focus previous</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>]</kbd></td>
+<td>Cycle focus next</td>
+</tr>
+</tbody>
+</table>
+<h3 id="move-windows">Move Windows<a class="headerlink" href="#move-windows" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd></td>
+<td>Move left</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></td>
+<td>Move down</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td>
+<td>Move up</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td>
+<td>Move right</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd></td>
+<td>Promote window</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stack-windows">Stack Windows<a class="headerlink" href="#stack-windows" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Left</kbd></td>
+<td>Stack left</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Down</kbd></td>
+<td>Stack down</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Up</kbd></td>
+<td>Stack up</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Right</kbd></td>
+<td>Stack right</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>;</kbd></td>
+<td>Unstack</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>[</kbd></td>
+<td>Cycle stack previous</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>]</kbd></td>
+<td>Cycle stack next</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resize">Resize<a class="headerlink" href="#resize" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>+</kbd></td>
+<td>Resize horizontal increase</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>-</kbd></td>
+<td>Resize horizontal decrease</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd></td>
+<td>Resize vertical increase</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>-</kbd></td>
+<td>Resize vertical decrease</td>
+</tr>
+</tbody>
+</table>
+<h3 id="manipulate-windows">Manipulate Windows<a class="headerlink" href="#manipulate-windows" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>T</kbd></td>
+<td>Toggle float</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></td>
+<td>Toggle monocle</td>
+</tr>
+</tbody>
+</table>
+<h3 id="window-manager-options">Window Manager Options<a class="headerlink" href="#window-manager-options" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></td>
+<td>Retile</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>P</kbd></td>
+<td>Toggle pause</td>
+</tr>
+</tbody>
+</table>
+<h3 id="layouts">Layouts<a class="headerlink" href="#layouts" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>X</kbd></td>
+<td>Flip layout horizontal</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Y</kbd></td>
+<td>Flip layout vertical</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workspaces">Workspaces<a class="headerlink" href="#workspaces" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>1</kbd></td>
+<td>Focus workspace 1</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>2</kbd></td>
+<td>Focus workspace 2</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>3</kbd></td>
+<td>Focus workspace 3</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>4</kbd></td>
+<td>Focus workspace 4</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>5</kbd></td>
+<td>Focus workspace 5</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>6</kbd></td>
+<td>Focus workspace 6</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>7</kbd></td>
+<td>Focus workspace 7</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>8</kbd></td>
+<td>Focus workspace 8</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>9</kbd></td>
+<td>Focus workspace 9</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>0</kbd></td>
+<td>Focus workspace 10</td>
+</tr>
+</tbody>
+</table>
+<h3 id="move-windows-across-workspaces">Move Windows Across Workspaces<a class="headerlink" href="#move-windows-across-workspaces" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd></td>
+<td>Move to workspace 1</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd></td>
+<td>Move to workspace 2</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd></td>
+<td>Move to workspace 3</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd></td>
+<td>Move to workspace 4</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>5</kbd></td>
+<td>Move to workspace 5</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>6</kbd></td>
+<td>Move to workspace 6</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>7</kbd></td>
+<td>Move to workspace 7</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>8</kbd></td>
+<td>Move to workspace 8</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd></td>
+<td>Move to workspace 9</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd></td>
+<td>Move to workspace 10</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="tips-usage-notes">Tips &amp; Usage Notes<a class="headerlink" href="#tips-usage-notes" title="Permanent link">&para;</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Use a Nerd Font in your terminal for best icon and prompt appearance.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Customize your prompt, colors, and banners in the Config folder.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Reload your profile with <code>. $PROFILE</code> after making changes.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Keep your tools (fzf, bat, git, PowerShell) up to date for best compatibility.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Review and edit modular config files for easy personalization.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> The setup script is safe to re-run for updates or repairs.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> For advanced tweaks, explore the Initialize.ps1 and Config scripts.</li>
-</ul>
-<hr />
-<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
-<h3 id="server">server<a class="headerlink" href="#server" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Launch a local development server (Node.js, Python, Hugo, PHP, etc.) with fuzzy selection, service preview, and custom port/path options.</p>
-</div>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Usage</label><div class="tabbed-content">
-<p><div class="highlight"><span class="filename">Start a server (choose type interactively)</span><pre><span></span><code><span class="n">server</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Start a Python server on port 8080</span><pre><span></span><code><span class="n">server</span> <span class="n">python</span> <span class="n">8080</span>
-</code></pre></div></p>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
+<h2 id="customization-tips">Customization Tips<a class="headerlink" href="#customization-tips" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Uses <kbd>fzf</kbd> for interactive selection</li>
-<li>Previews service details before launch</li>
-<li>Supports custom ports and paths</li>
+<li>Edit <code>komorebi.json</code> to change border colors, animation, or workspace rules</li>
+<li>Edit <code>whkdrc</code> to remap hotkeys or add new commands</li>
+<li>Use Nerd Fonts for best stackbar appearance</li>
+<li>Combine with AutoHotkey for even more automation</li>
 </ul>
-</div>
-<p><img alt="server" src="../images/31.png" /></p>
-<h3 id="timer">timer<a class="headerlink" href="#timer" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Time the execution duration of any command or script, displaying the result in seconds.</p>
-</div>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Usage</label><div class="tabbed-content">
-<p><div class="highlight"><span class="filename">Time a script or command</span><pre><span></span><code><span class="n">timer</span> <span class="p">{</span> <span class="nb">Get-Process</span> <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Time a file copy</span><pre><span></span><code><span class="n">timer</span> <span class="p">{</span> <span class="nb">Copy-Item</span> <span class="n">file</span><span class="p">.</span><span class="n">txt</span> <span class="n">D</span><span class="p">:\</span><span class="n">Backup</span> <span class="p">}</span>
-</code></pre></div></p>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
-<ul>
-<li>Accepts any command as input</li>
-<li>Shows a colorized summary of execution time</li>
-</ul>
-</div>
-<p><img alt="timer" src="../images/32.png" /></p>
-<h3 id="trash">trash<a class="headerlink" href="#trash" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Move files or directories to the Windows Recycle Bin using the Shell COM object.</p>
-</div>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Usage</label><div class="tabbed-content">
-<p><div class="highlight"><span class="filename">Move a file to the Recycle Bin</span><pre><span></span><code><span class="n">trash</span> <span class="n">file</span><span class="p">.</span><span class="n">txt</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Move a folder to the Recycle Bin</span><pre><span></span><code><span class="n">trash</span> <span class="p">.\</span><span class="n">old_folder</span>
-</code></pre></div></p>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
-<ul>
-<li>Provides feedback on success or failure</li>
-</ul>
-</div>
-<p><img alt="trash" src="../images/33.png" /></p>
-<h3 id="hastebin">hastebin<a class="headerlink" href="#hastebin" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Upload file content to Hastebin, with interactive file selection and live preview using fzf and bat.</p>
-</div>
-<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Usage</label><div class="tabbed-content">
-<p><div class="highlight"><span class="filename">Upload a file to Hastebin (interactive picker)</span><pre><span></span><code><span class="n">hastebin</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Pipe command output to Hastebin</span><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">script</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="n">hastebin</span>
-</code></pre></div></p>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
-<ul>
-<li>Uses <kbd>fzf</kbd> and <kbd>bat</kbd> for selection and preview</li>
-<li>Copies the resulting URL to your clipboard</li>
-</ul>
-</div>
-<p><img alt="hastebin" src="../images/34.png" /></p>
-<h3 id="networkinfo">networkinfo<a class="headerlink" href="#networkinfo" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Display detailed network information for the current system.</p>
-</div>
-<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Usage</label><div class="tabbed-content">
-<div class="highlight"><span class="filename">Show all network details</span><pre><span></span><code><span class="n">networkinfo</span>
-</code></pre></div>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
-<ul>
-<li>Shows IP addresses, adapters, and more</li>
-</ul>
-</div>
-<p><img alt="networkinfo" src="../images/35.png" /></p>
-<h3 id="weather">weather<a class="headerlink" href="#weather" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Fetch and display the current weather for your configured location.</p>
-</div>
-<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Usage</label><div class="tabbed-content">
-<p><div class="highlight"><span class="filename">Show weather for your default location</span><pre><span></span><code><span class="n">weather</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Show weather for a specific city</span><pre><span></span><code><span class="n">weather</span> <span class="s2">&quot;New York&quot;</span>
-</code></pre></div></p>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
-<ul>
-<li>Requires internet connection</li>
-</ul>
-</div>
-<p><img alt="weather" src="../images/36.png" /></p>
-<h3 id="update">update<a class="headerlink" href="#update" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Check for available updates for winget, chocolatey, and PowerShell modules, displaying a clear summary.</p>
-</div>
-<div class="tabbed-set" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">Usage</label><div class="tabbed-content">
-<div class="highlight"><span class="filename">List all available updates</span><pre><span></span><code><span class="n">update</span>
-</code></pre></div>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
-<ul>
-<li>Does not install updates, only lists them</li>
-</ul>
-</div>
-<h3 id="upgrade">upgrade<a class="headerlink" href="#upgrade" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Purpose</p>
-<p>Install all available updates for winget, chocolatey, and PowerShell modules.</p>
-</div>
-<div class="tabbed-set" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Usage</label><div class="tabbed-content">
-<div class="highlight"><span class="filename">Upgrade everything in one go</span><pre><span></span><code><span class="n">upgrade</span>
-</code></pre></div>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">How it works</p>
-<ul>
-<li>Provides a summary of updated packages and modules</li>
-</ul>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Usage Tips</p>
-<ul>
-<li>All functions are modular and can be called directly (e.g., <code>server</code>, <code>timer</code>, <code>trash</code>).</li>
-<li>For detailed help, run:
-    <div class="highlight"><pre><span></span><code>    <span class="nb">Get-Help</span> <span class="p">&lt;</span><span class="n">FunctionName</span><span class="p">&gt;</span>
-</code></pre></div>
-    (Requires comment-based help in the function script.)</li>
-</ul>
-</div>
-<hr />
-<h2 id="aliases">Aliases<a class="headerlink" href="#aliases" title="Permanent link">&para;</a></h2>
-<p>Below are the most useful and productivity-boosting aliases and functions included in your profile. All aliases are modular and can be customized in <code>Aliases.ps1</code>.</p>
-<hr />
-<h3 id="git-shortcuts">Git Shortcuts<a class="headerlink" href="#git-shortcuts" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">gst</td>
-<td style="text-align: left;">Git status</td>
-<td style="text-align: left;"><code>gst</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gbr</td>
-<td style="text-align: left;">Git branch</td>
-<td style="text-align: left;"><code>gbr</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gcomit</td>
-<td style="text-align: left;">Git commit</td>
-<td style="text-align: left;"><code>gcomit</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gcmmit</td>
-<td style="text-align: left;">Git commit with message</td>
-<td style="text-align: left;"><code>gcmmit "Initial commit"</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gammend</td>
-<td style="text-align: left;">Git commit --amend</td>
-<td style="text-align: left;"><code>gammend</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gamendnm</td>
-<td style="text-align: left;">Git commit --amend --no-edit</td>
-<td style="text-align: left;"><code>gamendnm</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">glog</td>
-<td style="text-align: left;">Git log</td>
-<td style="text-align: left;"><code>glog</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gdf</td>
-<td style="text-align: left;">Git diff</td>
-<td style="text-align: left;"><code>gdf</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gpull</td>
-<td style="text-align: left;">Git pull</td>
-<td style="text-align: left;"><code>gpull</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gfetch</td>
-<td style="text-align: left;">Git fetch</td>
-<td style="text-align: left;"><code>gfetch</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gpush</td>
-<td style="text-align: left;">Git push</td>
-<td style="text-align: left;"><code>gpush</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gad</td>
-<td style="text-align: left;">Git add all changes</td>
-<td style="text-align: left;"><code>gad</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gcl</td>
-<td style="text-align: left;">Git clone</td>
-<td style="text-align: left;"><code>gcl https://github.com/user/repo.git</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">guncommit</td>
-<td style="text-align: left;">Undo last commit, keep changes</td>
-<td style="text-align: left;"><code>guncommit</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gcheckout</td>
-<td style="text-align: left;">Checkout new branch</td>
-<td style="text-align: left;"><code>gcheckout feature-x</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="tig-shortcuts">Tig Shortcuts<a class="headerlink" href="#tig-shortcuts" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">t</td>
-<td style="text-align: left;">Launch tig</td>
-<td style="text-align: left;"><code>t</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">tb</td>
-<td style="text-align: left;">Tig blame</td>
-<td style="text-align: left;"><code>tb</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">tst</td>
-<td style="text-align: left;">Tig status</td>
-<td style="text-align: left;"><code>tst</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">tlog</td>
-<td style="text-align: left;">Tig log</td>
-<td style="text-align: left;"><code>tlog</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">tdf</td>
-<td style="text-align: left;">Tig diff</td>
-<td style="text-align: left;"><code>tdf</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="system-info">System &amp; Info<a class="headerlink" href="#system-info" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">sysinfo</td>
-<td style="text-align: left;">Show system info</td>
-<td style="text-align: left;"><code>sysinfo</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">myip</td>
-<td style="text-align: left;">Show public IP</td>
-<td style="text-align: left;"><code>myip</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">localip</td>
-<td style="text-align: left;">Show local IP</td>
-<td style="text-align: left;"><code>localip</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">flushdns</td>
-<td style="text-align: left;">Flush DNS cache</td>
-<td style="text-align: left;"><code>flushdns</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">path</td>
-<td style="text-align: left;">List PATH entries</td>
-<td style="text-align: left;"><code>path</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="file-directory-navigation">File &amp; Directory Navigation<a class="headerlink" href="#file-directory-navigation" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">..</td>
-<td style="text-align: left;">Go up one directory</td>
-<td style="text-align: left;"><code>..</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">...</td>
-<td style="text-align: left;">Go up two directories</td>
-<td style="text-align: left;"><code>...</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">....</td>
-<td style="text-align: left;">Go up three directories</td>
-<td style="text-align: left;"><code>....</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">mkcd</td>
-<td style="text-align: left;">Make and cd into directory</td>
-<td style="text-align: left;"><code>mkcd MyFolder</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">edit-here</td>
-<td style="text-align: left;">Open current dir in VS Code</td>
-<td style="text-align: left;"><code>edit-here</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">here</td>
-<td style="text-align: left;">Open current dir in Explorer</td>
-<td style="text-align: left;"><code>here</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="file-operations">File Operations<a class="headerlink" href="#file-operations" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">touch</td>
-<td style="text-align: left;">Create empty file</td>
-<td style="text-align: left;"><code>touch file.txt</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">la</td>
-<td style="text-align: left;">List all files (PowerColorLS)</td>
-<td style="text-align: left;"><code>la</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">ll</td>
-<td style="text-align: left;">Long list with sizes</td>
-<td style="text-align: left;"><code>ll</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">lf</td>
-<td style="text-align: left;">List only files</td>
-<td style="text-align: left;"><code>lf</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">ld</td>
-<td style="text-align: left;">List only directories</td>
-<td style="text-align: left;"><code>ld</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">lh</td>
-<td style="text-align: left;">List hidden files</td>
-<td style="text-align: left;"><code>lh</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">back</td>
-<td style="text-align: left;">Go to previous directory</td>
-<td style="text-align: left;"><code>back</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">lastmod</td>
-<td style="text-align: left;">5 most recently modified files</td>
-<td style="text-align: left;"><code>lastmod</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">oldest</td>
-<td style="text-align: left;">5 oldest files</td>
-<td style="text-align: left;"><code>oldest</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">recent</td>
-<td style="text-align: left;">5 most recently accessed files</td>
-<td style="text-align: left;"><code>recent</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="process-system-control">Process &amp; System Control<a class="headerlink" href="#process-system-control" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">pkill</td>
-<td style="text-align: left;">Kill process by name</td>
-<td style="text-align: left;"><code>pkill notepad</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">clr</td>
-<td style="text-align: left;">Clear console</td>
-<td style="text-align: left;"><code>clr</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">reload</td>
-<td style="text-align: left;">Reload profile</td>
-<td style="text-align: left;"><code>reload</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">edit-profile</td>
-<td style="text-align: left;">Edit profile in VS Code</td>
-<td style="text-align: left;"><code>edit-profile</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="file-content-helpers">File Content Helpers<a class="headerlink" href="#file-content-helpers" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">head</td>
-<td style="text-align: left;">Show first n lines</td>
-<td style="text-align: left;"><code>head file.txt 20</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">tail</td>
-<td style="text-align: left;">Show last n lines (follow)</td>
-<td style="text-align: left;"><code>tail file.txt 20 -f</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="hashing">Hashing<a class="headerlink" href="#hashing" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">md5</td>
-<td style="text-align: left;">MD5 hash of file</td>
-<td style="text-align: left;"><code>md5 file.txt</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">sha1</td>
-<td style="text-align: left;">SHA1 hash of file</td>
-<td style="text-align: left;"><code>sha1 file.txt</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">sha256</td>
-<td style="text-align: left;">SHA256 hash of file</td>
-<td style="text-align: left;"><code>sha256 file.txt</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="utility-misc">Utility &amp; Misc<a class="headerlink" href="#utility-misc" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">which</td>
-<td style="text-align: left;">Find command path</td>
-<td style="text-align: left;"><code>which git</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">open</td>
-<td style="text-align: left;">Open file or dir</td>
-<td style="text-align: left;"><code>open file.txt</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">edit</td>
-<td style="text-align: left;">Edit file(s) in VS Code</td>
-<td style="text-align: left;"><code>edit file.txt</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="external-tools-aliases">External Tools Aliases<a class="headerlink" href="#external-tools-aliases" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">cat</td>
-<td style="text-align: left;">Alias for bat.exe (PowerShell 7+)</td>
-<td style="text-align: left;"><code>cat file.txt</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">h</td>
-<td style="text-align: left;">Alias for Get-History (PowerShell 7+)</td>
-<td style="text-align: left;"><code>h</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">grep</td>
-<td style="text-align: left;">Alias for Select-String</td>
-<td style="text-align: left;"><code>grep "pattern" file.txt</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">lg</td>
-<td style="text-align: left;">Launch LazyGit</td>
-<td style="text-align: left;"><code>lg</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">htop</td>
-<td style="text-align: left;">Launch NTop</td>
-<td style="text-align: left;"><code>htop</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">neofetch</td>
-<td style="text-align: left;">Launch FastFetch</td>
-<td style="text-align: left;"><code>neofetch</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">view</td>
-<td style="text-align: left;">Preview Markdown with Glow</td>
-<td style="text-align: left;"><code>view README.md</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">j</td>
-<td style="text-align: left;">Zoxide jump</td>
-<td style="text-align: left;"><code>j folder</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">ji</td>
-<td style="text-align: left;">Zoxide interactive</td>
-<td style="text-align: left;"><code>ji</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">sudo</td>
-<td style="text-align: left;">Windows sudo (gsudo.exe)</td>
-<td style="text-align: left;"><code>sudo notepad</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">gitfetch</td>
-<td style="text-align: left;">Onefetch for git stats</td>
-<td style="text-align: left;"><code>gitfetch</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="custom-locations">Custom Locations<a class="headerlink" href="#custom-locations" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Dotfiles</td>
-<td style="text-align: left;">Go to Dotfiles dir</td>
-<td style="text-align: left;"><code>Dotfiles</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">TEMP</td>
-<td style="text-align: left;">Go to TEMP dir</td>
-<td style="text-align: left;"><code>TEMP</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">Desktop</td>
-<td style="text-align: left;">Go to Desktop</td>
-<td style="text-align: left;"><code>Desktop</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">Documents</td>
-<td style="text-align: left;">Go to Documents</td>
-<td style="text-align: left;"><code>Documents</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">UserProfile</td>
-<td style="text-align: left;">Go to UserProfile</td>
-<td style="text-align: left;"><code>UserProfile</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">Downloads</td>
-<td style="text-align: left;">Go to Downloads</td>
-<td style="text-align: left;"><code>Downloads</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">Pictures</td>
-<td style="text-align: left;">Go to Pictures</td>
-<td style="text-align: left;"><code>Pictures</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">Videos</td>
-<td style="text-align: left;">Go to Videos</td>
-<td style="text-align: left;"><code>Videos</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">ShareXScreenshots</td>
-<td style="text-align: left;">Go to ShareX screenshots</td>
-<td style="text-align: left;"><code>ShareXScreenshots</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="miscellaneous-utilities">Miscellaneous Utilities<a class="headerlink" href="#miscellaneous-utilities" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Alias/Function</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Usage Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">man</td>
-<td style="text-align: left;">Show full help for command</td>
-<td style="text-align: left;"><code>man Get-ChildItem</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">file</td>
-<td style="text-align: left;">Show basic file info</td>
-<td style="text-align: left;"><code>file file.txt</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">winutil</td>
-<td style="text-align: left;">Run WinUtil full-release</td>
-<td style="text-align: left;"><code>winutil</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">winutildev</td>
-<td style="text-align: left;">Run WinUtil dev-release</td>
-<td style="text-align: left;"><code>winutildev</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<div class="admonition tip">
-<p class="admonition-title">Customization</p>
-<ul>
-<li>All aliases are defined in <code>Aliases.ps1</code> and can be edited or extended.</li>
-<li>Use <code>Get-Alias</code> or <code>Get-Command</code> to explore more.</li>
-</ul>
-</div>
 <hr />
 <h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permanent link">&para;</a></h2>
 <details class="question">
-<summary>Can I use my own PowerShell profile or dotfiles?</summary>
-<p>Yes! Back up your current profile before applying Winfig dotfiles. You can always merge or restore your customizations later.</p>
+<summary>How do I add or change hotkeys?</summary>
+<p>Edit your <code>whkdrc</code> file in any text editor. See the <a href="https://github.com/whkd/whkd">whkd documentation</a> for syntax help.</p>
 </details>
 <details class="question">
-<summary>Is it safe to run these scripts?</summary>
-<p>All scripts and configs are open source. Review them on <a href="https://github.com/Get-Winfig/winfig-dots">GitHub</a> before running.</p>
+<summary>How do I change workspace rules or layouts?</summary>
+<p>Edit <code>komorebi.json</code> and reload Komorebi. You can assign apps to workspaces and set layouts per workspace.</p>
 </details>
 <details class="question">
-<summary>How do I update my PowerShell profile?</summary>
-<p>Pull the latest changes from the repo and re-run <code>setup.ps1</code>.</p>
+<summary>How do I make Komorebi/whkd run at startup?</summary>
+<p>Place shortcuts to both in the Windows Startup folder (<code>shell:startup</code>).</p>
 </details>
 <details class="question">
-<summary>How do I reload the profile after editing?</summary>
-<p>Run <code>. $PROFILE</code> or <code>reload</code> in your PowerShell session.</p>
-</details>
-<details class="question">
-<summary>How do I add my own functions or aliases?</summary>
-<p>Place new scripts in <code>functions/</code> or add aliases to <code>Aliases.ps1</code>, then reload the profile.</p>
-</details>
-<details class="question">
-<summary>What if I use both PowerShell 5 and 7?</summary>
-<p>The setup script configures both versions automatically. You can use the same dotfiles for both.</p>
+<summary>Can I use Komorebi with other automation tools?</summary>
+<p>Yes! Komorebi and whkd are designed to work alongside AutoHotkey, Winfig Dots, and other automation tools.</p>
 </details>
 <hr />
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
@@ -2360,32 +1747,28 @@
 </thead>
 <tbody>
 <tr>
-<td>Profile changes not loading</td>
-<td>Run <code>. $PROFILE</code> to reload the profile.</td>
+<td>Komorebi not tiling windows</td>
+<td>Ensure Komorebi is running and config is valid. Check logs for errors.</td>
 </tr>
 <tr>
-<td>fzf or bat not found</td>
-<td>Ensure they are installed and in your PATH.</td>
+<td>Hotkey not working</td>
+<td>Make sure whkd is running and <code>whkdrc</code> is correct.</td>
 </tr>
 <tr>
-<td>Aliases/functions not working</td>
-<td>Check for typos and reload the profile.</td>
+<td>Borders/colors not applied</td>
+<td>Check <code>komorebi.json</code> for color codes and border settings.</td>
 </tr>
 <tr>
-<td>Script errors during setup</td>
-<td>Run PowerShell as Administrator and check execution policy.</td>
+<td>Workspace rules not working</td>
+<td>Ensure app IDs are correct and Komorebi is reloaded after changes.</td>
 </tr>
 <tr>
-<td>Encoding issues</td>
-<td>Make sure your terminal uses UTF-8 encoding.</td>
-</tr>
-<tr>
-<td>Module install errors</td>
-<td>Use <code>Install-Module -Scope CurrentUser</code> and check your internet connection.</td>
+<td>Transparency not working</td>
+<td>Make sure transparency is enabled and supported by your system.</td>
 </tr>
 </tbody>
 </table>
-<p>If your issue isn’t listed, check the <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig Dots Issues</a> or open a new issue for help.</p>
+<p>If your issue isn’t listed, check the <a href="https://github.com/LGUG2Z/komorebi">Komorebi documentation</a>, <a href="https://github.com/whkd/whkd">whkd documentation</a>, or <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig GitHub Issues</a>.</p>
 
 
 
