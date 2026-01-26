@@ -12,13 +12,11 @@
         <meta name="author" content="Armoghan-ul-Mohmin">
       
       
-        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/bat.html">
+        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/dotfiles/ahk.html">
       
       
-        <link rel="prev" href="lazygit.html">
+        <link rel="prev" href="powershell.html">
       
-      
-        <link rel="next" href="starship.html">
       
       
         
@@ -29,7 +27,7 @@
     
     
       
-        <title>Bat - Winfig Documentation</title>
+        <title>AutoHotkey - Winfig Documentation</title>
       
     
     
@@ -117,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bat
+              AutoHotkey
             
           </span>
         </div>
@@ -935,6 +933,90 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="bat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="starship.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Starship
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="powershell.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Powershell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -952,7 +1034,7 @@
   <span class="md-ellipsis">
     
   
-    Bat
+    AutoHotkey
   
 
     
@@ -963,14 +1045,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="bat.html" class="md-nav__link md-nav__link--active">
+      <a href="ahk.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Bat
+    AutoHotkey
   
 
     
@@ -1038,17 +1120,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-highlights" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Highlights
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1061,21 +1132,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-usage" class="md-nav__link">
+  <a href="#hotkey-quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic Usage
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-custom-filetype-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example: Custom Filetype Mapping
+        Hotkey Quick Reference
       
     </span>
   </a>
@@ -1088,7 +1148,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-highlights_1" class="md-nav__link">
+  <a href="#configuration-highlights" class="md-nav__link">
     <span class="md-ellipsis">
       
         Configuration Highlights
@@ -1129,90 +1189,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="starship.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Starship
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="powershell.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Powershell
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ahk.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AutoHotkey
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1240,7 +1216,7 @@
   
 
 
-<h1 align="center">Bat: Modern Catppuccin-Powered File Viewer</h1>
+<h1 align="center">AutoHotkey: Winfig Dots Custom Hotkeys & Automation</h1>
 
 <p><img alt="Winfig Banner" src="../images/Banner.png" /></p>
 <div align="center">
@@ -1249,22 +1225,21 @@
 
 <hr />
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p><strong>Bat</strong> is a modern, feature-rich alternative to <code>cat</code> for the terminal. It provides beautiful syntax highlighting, Git integration, paging, and theming—making file viewing and code review a delight. With Winfig Dots, Bat is pre-configured with the Catppuccin Mocha theme, advanced filetype mapping, and seamless paging for a premium experience on Windows.</p>
+<p><strong>AutoHotkey</strong> is a powerful scripting language for Windows automation, hotkeys, and workflow customization. With Winfig Dots, you get a curated set of ergonomic, productivity-focused hotkeys for window management, terminal launching, and seamless integration with tiling managers and automation tools.</p>
 <hr />
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Catppuccin Mocha Theme:</strong> Beautiful, modern syntax highlighting for over 100 languages.</li>
-<li><strong>Advanced Filetype Mapping:</strong> Custom mappings for Markdown, YAML, TOML, INI, JSON, scripts, configs, and more.</li>
-<li><strong>Paging &amp; Navigation:</strong> Always-on paging with mouse support and smooth navigation via <code>less</code>.</li>
-<li><strong>Git Integration:</strong> Show Git changes in the gutter for quick code review.</li>
-<li><strong>Line Numbers &amp; Highlighting:</strong> Full support for line numbers, highlighting, and code style.</li>
-<li><strong>Tabs &amp; Indentation:</strong> Consistent 4-space tabs for all files.</li>
-<li><strong>Fast &amp; Lightweight:</strong> Instant output, even for large files.</li>
+<li>Fast, ergonomic hotkeys for window and workspace management</li>
+<li>One-touch restart/reload for whkd, komorebic, and yasbc</li>
+<li>Quick launch for Windows Terminal and WSL</li>
+<li>Minimize all windows except the active one</li>
+<li>Close focused window instantly</li>
+<li>Designed for seamless integration with Winfig Dots and tiling managers</li>
 </ul>
 <hr />
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/sharkdp/bat">Bat</a> installed on Windows 11</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://www.autohotkey.com/">AutoHotkey v2.0+</a> installed on Windows 11</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> for Git gutter integration (optional)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for certain configurations</li>
@@ -1273,8 +1248,8 @@
 <div class="admonition tip">
 <p class="admonition-title">Quick Install</p>
 <ul>
-<li><strong>Bat:</strong>
-  <code>winget install --id sharkdp.bat -e</code></li>
+<li><strong>AutoHotkey:</strong>
+  <code>winget install --id AutoHotkey.AutoHotkey -e</code></li>
 <li><strong>Git:</strong>
   <code>winget install --id Git.Git -e</code></li>
 <li><strong>PowerShell 7 (optional, recommended):</strong>
@@ -1319,81 +1294,76 @@
 </div>
 </div>
 <hr />
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<p>All hotkeys are active as soon as the script is running. You can edit the script to add, remove, or change hotkeys as needed. For advanced automation, combine these hotkeys with your tiling manager or other Winfig Dots tools.</p>
+<h3 id="hotkey-quick-reference">Hotkey Quick Reference<a class="headerlink" href="#hotkey-quick-reference" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Action/Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Alt</kbd> + <kbd>O</kbd></td>
+<td>Restart whkd (tiling window manager)</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></td>
+<td>Reload komorebic configuration</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+<td>Reload yasbc</td>
+</tr>
+<tr>
+<td><kbd>Win</kbd> + <kbd>F2</kbd></td>
+<td>Toggle komorebic shortcuts</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd> + <kbd>W</kbd></td>
+<td>Close active/focused window/app</td>
+</tr>
+<tr>
+<td><kbd>Win</kbd> + <kbd>T</kbd></td>
+<td>Open Windows Terminal</td>
+</tr>
+<tr>
+<td><kbd>Win</kbd> + <kbd>K</kbd></td>
+<td>Open Windows Terminal with WSL</td>
+</tr>
+<tr>
+<td><kbd>Alt</kbd> + <kbd>M</kbd></td>
+<td>Minimize all except active window</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="configuration-highlights">Configuration Highlights<a class="headerlink" href="#configuration-highlights" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Catppuccin Mocha Theme:</strong>
-  Bat uses the Catppuccin Mocha theme for a modern, visually appealing look.</li>
-<li><strong>Full Style &amp; Italics:</strong>
-  Always use full style and italic text for code and prose.</li>
-<li><strong>Tabs:</strong>
-  4-space tabs for consistent indentation.</li>
-<li><strong>Paging:</strong>
-  Always-on paging with mouse support via <code>less</code>.</li>
-<li><strong>Filetype Mapping:</strong>
-  Extensive custom filetype mapping for accurate syntax highlighting (see below).</li>
-</ul>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<h3 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>View a file with syntax highlighting:</strong>
-  <div class="highlight"><pre><span></span><code>bat<span class="w"> </span>myfile.py
-</code></pre></div></li>
-<li><strong>Show line numbers and Git changes:</strong>
-  <div class="highlight"><pre><span></span><code>bat<span class="w"> </span>myfile.js
-</code></pre></div></li>
-<li><strong>Page through large files with mouse support:</strong>
-  <div class="highlight"><pre><span></span><code>bat<span class="w"> </span>myfile.md
-</code></pre></div></li>
-<li><strong>Use as a drop-in replacement for <code>cat</code>:</strong>
-  <div class="highlight"><pre><span></span><code>bat<span class="w"> </span>README.md
-</code></pre></div></li>
-</ul>
-<h3 id="example-custom-filetype-mapping">Example: Custom Filetype Mapping<a class="headerlink" href="#example-custom-filetype-mapping" title="Permanent link">&para;</a></h3>
-<p>Bat is configured to recognize and highlight a wide range of filetypes. For example:</p>
-<div class="highlight"><pre><span></span><code>bat<span class="w"> </span>--map-syntax<span class="w"> </span><span class="s2">&quot;*.md:Markdown&quot;</span><span class="w"> </span>--map-syntax<span class="w"> </span><span class="s2">&quot;*.yml:YAML&quot;</span><span class="w"> </span>--map-syntax<span class="w"> </span><span class="s2">&quot;*.ps1:PowerShell&quot;</span><span class="w"> </span>myfile.md
-</code></pre></div>
-<p>All mappings are pre-configured in your Winfig Dots bat config for maximum compatibility.</p>
-<hr />
-<h2 id="configuration-highlights_1">Configuration Highlights<a class="headerlink" href="#configuration-highlights_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Catppuccin Theme:</strong>
-  All diffs, logs, and status outputs are styled with Catppuccin via Delta (<code>features = catppuccin-macchiato</code>, <code>syntax-theme = catppuccin-frappe</code>).</li>
-<li><strong>Delta as Pager &amp; Diff Tool:</strong>
-  Delta is set as the default pager and diff tool for all relevant commands.</li>
-<li><strong>VS Code Integration:</strong>
-  Both the editor and merge tool are set to VS Code for a seamless experience.</li>
-<li><strong>GPG Signing:</strong>
-  Commits are signed by default for security and authenticity.</li>
-<li><strong>Global Ignore &amp; Includes:</strong>
-  Uses a global <code>.gitignore</code> and includes modular config snippets (e.g., Catppuccin settings).</li>
-<li><strong>Custom Log Format:</strong>
-  Logs are decorated with color, author, date, GPG status, and more for clarity.</li>
+<li>All hotkeys use AutoHotkey v2.0+ syntax for reliability and performance</li>
+<li>Designed for minimal conflicts with other shortcuts</li>
+<li>Easily extensible: add your own hotkeys or automation blocks</li>
+<li>Integrates with PowerShell, whkd, komorebi, yasbc, and Windows Terminal</li>
 </ul>
 <hr />
 <h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permanent link">&para;</a></h2>
 <details class="question">
-<summary>How do I change the Bat theme?</summary>
-<p>Use the <code>--theme</code> flag or set it in your config file. Winfig Dots uses Catppuccin Mocha by default.</p>
+<summary>How do I add or change hotkeys?</summary>
+<p>Edit the script in any text editor. Use the <a href="https://www.autohotkey.com/docs/v2/">AutoHotkey documentation</a> for syntax help.</p>
 </details>
 <details class="question">
-<summary>How do I enable paging and mouse support?</summary>
-<p>Paging is always on with the provided config. Mouse support is enabled via the <code>less</code> pager.</p>
+<summary>How do I make the script run at startup?</summary>
+<p>Place a shortcut to your script in the Windows Startup folder (<code>shell:startup</code>).</p>
 </details>
 <details class="question">
-<summary>How do I add or change filetype mappings?</summary>
-<p>Edit your bat config and add more <code>--map-syntax</code> lines as needed.</p>
+<summary>Can I use these hotkeys with other automation tools?</summary>
+<p>Yes! These hotkeys are designed to work alongside Winfig Dots, whkd, komorebi, and other automation tools.</p>
 </details>
 <details class="question">
-<summary>How do I use Bat as a cat replacement?</summary>
-<p>Just use <code>bat</code> instead of <code>cat</code> in your terminal commands.</p>
-</details>
-<details class="question">
-<summary>How do I update Bat?</summary>
-<p>Use your package manager (<code>winget upgrade sharkdp.bat</code>) or download the latest release from GitHub.</p>
-</details>
-<details class="question">
-<summary>Where is my Bat config file?</summary>
-<p>Usually at <code>%APPDATA%\bat\config</code> on Windows or <code>~/.config/bat/config</code> on Linux/macOS.</p>
+<summary>How do I reload or restart the script?</summary>
+<p>Right-click the AHK tray icon and choose Reload Script, or double-click the script again.</p>
 </details>
 <hr />
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
@@ -1406,28 +1376,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Bat not found</td>
-<td>Ensure it’s installed and in your PATH. Try restarting your terminal.</td>
+<td>Hotkey not working</td>
+<td>Make sure AutoHotkey v2.0+ is installed and script is running.</td>
 </tr>
 <tr>
-<td>Theme/colors not applied</td>
-<td>Check your config and terminal color support.</td>
+<td>Conflicting shortcut</td>
+<td>Change the hotkey in the script to avoid conflicts.</td>
 </tr>
 <tr>
-<td>Filetype not highlighted</td>
-<td>Add or adjust <code>--map-syntax</code> in your config.</td>
+<td>Integration not working</td>
+<td>Ensure whkd, komorebi, or yasbc are installed and in your PATH.</td>
 </tr>
 <tr>
-<td>Paging/mouse not working</td>
-<td>Ensure <code>less</code> is installed and your terminal supports mouse events.</td>
-</tr>
-<tr>
-<td>Git gutter not showing</td>
-<td>Make sure Git is installed and the file is in a Git repo.</td>
+<td>Script errors</td>
+<td>Check the AHK syntax and use the v2.0+ documentation for reference.</td>
 </tr>
 </tbody>
 </table>
-<p>If your issue isn’t listed, check the <a href="https://github.com/sharkdp/bat#readme">Bat documentation</a> or <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig GitHub Issues</a>.</p>
+<p>If your issue isn’t listed, check the <a href="https://www.autohotkey.com/docs/v2/">AutoHotkey documentation</a> or <a href="https://github.com/Get-Winfig/winfig-docs/issues">Winfig GitHub Issues</a>.</p>
 
 
 
