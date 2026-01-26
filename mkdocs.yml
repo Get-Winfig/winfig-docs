@@ -123,6 +123,7 @@ nav:
     - Starship: dotfiles/starship.md
     - Powershell: dotfiles/powershell.md
     - AutoHotkey: dotfiles/ahk.md
+    - Komorebi: dotfiles/komorebi.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
