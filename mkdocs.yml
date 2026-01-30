@@ -125,6 +125,7 @@ nav:
     - AutoHotkey: dotfiles/ahk.md
     - Komorebi: dotfiles/komorebi.md
     - YASB: dotfiles/yasb.md
+  - Browsers: browsers.md
 
 # ------------------------------------------------------------------
 # 3. MARKDOWN EXTENSIONS CONFIGURATION
