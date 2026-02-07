@@ -197,3 +197,141 @@ Vertical tabs in Microsoft Edge help you organize and manage multiple tabs more 
     ![Local Install Demo](images/11.png)
 
 ---
+
+## Zen Browser Setup
+
+### Requirements
+
+- [x] [Zen](https://zen-browser.app/download) installed on Windows 11
+- [x] [PowerShell 5+](https://github.com/PowerShell/PowerShell) for automation and scripting
+- [x] [Git](https://git-scm.com/download/win) for automation script.
+- [x] Administrator privileges for certain configurations
+- [x] Internet access for downloading dependencies
+
+---
+
+### Installation Methods
+
+=== "Web Install (Recommended)"
+
+    **One-line installation** - Downloads and runs automatically:
+
+    ```powershell title="Run in Administrative PowerShell"
+    Invoke-RestMethod -useb https://raw.githubusercontent.com/Get-Winfig/winfig-browser/refs/heads/main/Zen/setup.ps1 | Invoke-Expression
+    ```
+
+    !!! success "Why Web Install?"
+        - Always gets the latest version
+        - No manual download required
+        - Automatic script verification
+    ![Web Install Demo](images/9.png)
+
+=== "Local Install"
+
+    **Download and run manually** for offline environments:
+
+    ```powershell title="1. Set Execution Policy"
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
+
+    ```powershell title="2. Download Script"
+    # Download from GitHub
+    Invoke-WebRequest -useb "https://raw.githubusercontent.com/Get-Winfig/winfig-browser/refs/heads/main/Zen/setup.ps1" -OutFile "setup.ps1"
+    ```
+
+    ```powershell title="3. Unblock and Run"
+    Unblock-File -Path .\setup.ps1
+    .\setup.ps1
+    ```
+
+    !!! warning "Note"
+        - Ensure you have the latest script version
+        - Manual updates required for new releases
+        - Verify script integrity before running
+    ![Local Install Demo](images/11.png)
+
+---
+
+### Post-Installation Steps
+
+After running the Winfig automation for Zen Browser, follow these steps to complete your setup and ensure all customizations and extensions are properly configured.
+
+#### Customize Toolbar & Bookmarks
+
+A streamlined toolbar makes your workflow faster and more productive.
+
+1. **Left-click** on the top bar of Zen Browser.
+2. Click **Customize toolbar**.
+   ![Customize Toolbar](./images/55.png)
+3. **Drag the bookmark menu** and place it in the top bar for quick access.
+   ![Bookmark Menu Placement](./images/56.png)
+
+#### Import Stylus Configuration
+
+Stylus allows you to apply custom user styles to websites. To import your Winfig Stylus configuration:
+
+1. **Open Zen Browser** and wait for all extensions to finish installing.
+2. Go to the add-ons page: [about:addons](about:addons)
+3. In the search bar, type `Stylus` and locate the extension.
+4. Click the **three dots** next to Stylus and select **Options**.
+5. In the Stylus options page, choose **Import** and select your provided Stylus configuration file.
+
+![Stylus Options](./images/49.png)
+
+#### Import Dark Reader Settings
+
+Dark Reader provides a customizable dark mode for all websites. To import your Winfig Dark Reader settings:
+
+1. In the Zen Browser, locate the **pinned extensions** area and find `Dark Reader`.
+2. Click the **More** button (three dots) next to Dark Reader.
+3. Select **All Options** to open the settings page.
+
+![Dark Reader Options](./images/50.png)
+
+4. Navigate to the **Advanced** tab.
+5. Click **Import Settings** and upload your Dark Reader configuration file.
+
+![Dark Reader Import](./images/51.png)
+
+Zen Browser supports advanced mods for UI and productivity enhancements. Here’s how to apply your Winfig mods:
+
+**Bookmark Toolbar Tweaks**
+
+1. Navigate to [about:settings#sineMods](about:settings#sineMods)
+2. Search for **"BookmarkToolbarTweaks"**
+3. Click the **Gear icon** to open settings
+4. Enable:
+    - **Center the bookmark toolbar**
+    - **Auto Hide: Expand by hovering**
+    - **Auto Hide: Expand when searching**
+
+   ![Bookmarks Toolbar Tweaks](./images/52.png)
+
+**Custom UI Fonts**
+
+1. Search for **"Custom Ui Fonts"**
+2. Click the **Gear icon** to open settings
+3. Set **Select fonts** to `Custom`
+4. Set **font family** to `Hack Nerd Fonts`
+
+   ![Custom UI Fonts](./images/53.png)
+
+**Zen Minimal Exit Menu**
+
+1. Search for **"Zen Minimal Exit Menu"**
+2. Click the **Gear icon** to open settings
+3. Enable:
+    - **Make theme more identical to macOS**
+    - **Show Window icon**
+
+   ![Zen Minimal Exit Menu](./images/54.png)
+
+#### Import Bookmarks (Optional)
+
+1. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> to open the bookmarks manager.
+2. Click on **Import and backup** in the top menu.
+3. Select **Restore** from the dropdown.
+4. Click **Choose File** to browse for your bookmarks backup file.
+   ![Bookmarks Import Dialog](./images/57.png)
+5. Select your backup file and confirm the import.
+   ![Bookmarks Imported](./images/58.png)
