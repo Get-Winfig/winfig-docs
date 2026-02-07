@@ -1379,6 +1379,106 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#zen-browser-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zen Browser Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zen Browser Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-methods_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-Installation Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-Installation Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customize-toolbar-bookmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customize Toolbar &amp; Bookmarks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-stylus-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import Stylus Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-dark-reader-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import Dark Reader Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-bookmarks-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import Bookmarks (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1632,6 +1732,130 @@
 </div>
 </div>
 <hr />
+<h2 id="zen-browser-setup">Zen Browser Setup<a class="headerlink" href="#zen-browser-setup" title="Permanent link">&para;</a></h2>
+<h3 id="requirements_1">Requirements<a class="headerlink" href="#requirements_1" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://zen-browser.app/download">Zen</a> installed on Windows 11</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> for automation script.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for certain configurations</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
+</ul>
+<hr />
+<h3 id="installation-methods_1">Installation Methods<a class="headerlink" href="#installation-methods_1" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Web Install (Recommended)</label><div class="tabbed-content">
+<p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
+<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-browser</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Zen</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Why Web Install?</p>
+<ul>
+<li>Always gets the latest version</li>
+<li>No manual download required</li>
+<li>Automatic script verification</li>
+</ul>
+</div>
+<p><img alt="Web Install Demo" src="images/9.png" /></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Local Install</label><div class="tabbed-content">
+<p><strong>Download and run manually</strong> for offline environments:</p>
+<div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-browser/refs/heads/main/Zen/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+<span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Ensure you have the latest script version</li>
+<li>Manual updates required for new releases</li>
+<li>Verify script integrity before running</li>
+</ul>
+</div>
+<p><img alt="Local Install Demo" src="images/11.png" /></p>
+</div>
+</div>
+<hr />
+<h3 id="post-installation-steps">Post-Installation Steps<a class="headerlink" href="#post-installation-steps" title="Permanent link">&para;</a></h3>
+<p>After running the Winfig automation for Zen Browser, follow these steps to complete your setup and ensure all customizations and extensions are properly configured.</p>
+<h4 id="customize-toolbar-bookmarks">Customize Toolbar &amp; Bookmarks<a class="headerlink" href="#customize-toolbar-bookmarks" title="Permanent link">&para;</a></h4>
+<p>A streamlined toolbar makes your workflow faster and more productive.</p>
+<ol>
+<li><strong>Left-click</strong> on the top bar of Zen Browser.</li>
+<li>Click <strong>Customize toolbar</strong>.
+   <img alt="Customize Toolbar" src="images/55.png" /></li>
+<li><strong>Drag the bookmark menu</strong> and place it in the top bar for quick access.
+   <img alt="Bookmark Menu Placement" src="images/56.png" /></li>
+</ol>
+<h4 id="import-stylus-configuration">Import Stylus Configuration<a class="headerlink" href="#import-stylus-configuration" title="Permanent link">&para;</a></h4>
+<p>Stylus allows you to apply custom user styles to websites. To import your Winfig Stylus configuration:</p>
+<ol>
+<li><strong>Open Zen Browser</strong> and wait for all extensions to finish installing.</li>
+<li>Go to the add-ons page: <a href="about:addons">about:addons</a></li>
+<li>In the search bar, type <code>Stylus</code> and locate the extension.</li>
+<li>Click the <strong>three dots</strong> next to Stylus and select <strong>Options</strong>.</li>
+<li>In the Stylus options page, choose <strong>Import</strong> and select your provided Stylus configuration file.</li>
+</ol>
+<p><img alt="Stylus Options" src="images/49.png" /></p>
+<h4 id="import-dark-reader-settings">Import Dark Reader Settings<a class="headerlink" href="#import-dark-reader-settings" title="Permanent link">&para;</a></h4>
+<p>Dark Reader provides a customizable dark mode for all websites. To import your Winfig Dark Reader settings:</p>
+<ol>
+<li>In the Zen Browser, locate the <strong>pinned extensions</strong> area and find <code>Dark Reader</code>.</li>
+<li>Click the <strong>More</strong> button (three dots) next to Dark Reader.</li>
+<li>Select <strong>All Options</strong> to open the settings page.</li>
+</ol>
+<p><img alt="Dark Reader Options" src="images/50.png" /></p>
+<ol>
+<li>Navigate to the <strong>Advanced</strong> tab.</li>
+<li>Click <strong>Import Settings</strong> and upload your Dark Reader configuration file.</li>
+</ol>
+<p><img alt="Dark Reader Import" src="images/51.png" /></p>
+<p>Zen Browser supports advanced mods for UI and productivity enhancements. Here’s how to apply your Winfig mods:</p>
+<p><strong>Bookmark Toolbar Tweaks</strong></p>
+<ol>
+<li>Navigate to <a href="about:settings#sineMods">about:settings#sineMods</a></li>
+<li>Search for <strong>"BookmarkToolbarTweaks"</strong></li>
+<li>Click the <strong>Gear icon</strong> to open settings</li>
+<li>Enable:<ul>
+<li><strong>Center the bookmark toolbar</strong></li>
+<li><strong>Auto Hide: Expand by hovering</strong></li>
+<li><strong>Auto Hide: Expand when searching</strong></li>
+</ul>
+</li>
+</ol>
+<p><img alt="Bookmarks Toolbar Tweaks" src="images/52.png" /></p>
+<p><strong>Custom UI Fonts</strong></p>
+<ol>
+<li>Search for <strong>"Custom Ui Fonts"</strong></li>
+<li>Click the <strong>Gear icon</strong> to open settings</li>
+<li>Set <strong>Select fonts</strong> to <code>Custom</code></li>
+<li>Set <strong>font family</strong> to <code>Hack Nerd Fonts</code></li>
+</ol>
+<p><img alt="Custom UI Fonts" src="images/53.png" /></p>
+<p><strong>Zen Minimal Exit Menu</strong></p>
+<ol>
+<li>Search for <strong>"Zen Minimal Exit Menu"</strong></li>
+<li>Click the <strong>Gear icon</strong> to open settings</li>
+<li>Enable:<ul>
+<li><strong>Make theme more identical to macOS</strong></li>
+<li><strong>Show Window icon</strong></li>
+</ul>
+</li>
+</ol>
+<p><img alt="Zen Minimal Exit Menu" src="images/54.png" /></p>
+<h4 id="import-bookmarks-optional">Import Bookmarks (Optional)<a class="headerlink" href="#import-bookmarks-optional" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> to open the bookmarks manager.</li>
+<li>Click on <strong>Import and backup</strong> in the top menu.</li>
+<li>Select <strong>Restore</strong> from the dropdown.</li>
+<li>Click <strong>Choose File</strong> to browse for your bookmarks backup file.
+   <img alt="Bookmarks Import Dialog" src="images/57.png" /></li>
+<li>Select your backup file and confirm the import.
+   <img alt="Bookmarks Imported" src="images/58.png" /></li>
+</ol>
 
 
 
@@ -1654,7 +1878,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 30, 2026 01:34:08 UTC">January 30, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 7, 2026 22:18:05 UTC">February 7, 2026</span>
   </span>
 
     
@@ -1664,7 +1888,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 30, 2026 01:34:08 UTC">January 30, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 7, 2026 22:18:05 UTC">February 7, 2026</span>
   </span>
 
     
