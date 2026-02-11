@@ -335,3 +335,209 @@ Zen Browser supports advanced mods for UI and productivity enhancements. Here’
    ![Bookmarks Import Dialog](./images/57.png)
 5. Select your backup file and confirm the import.
    ![Bookmarks Imported](./images/58.png)
+---
+
+## Brave Setup
+
+### Requirements
+
+- [x] [Brave](https://brave.com/download/) installed on Windows 11
+- [x] [PowerShell 5+](https://github.com/PowerShell/PowerShell) for automation and scripting
+- [x] [Git](https://git-scm.com/download/win) for automation script.
+- [x] Administrator privileges for certain configurations
+- [x] Internet access for downloading dependencies
+
+---
+
+### Pre-Installation
+
+Before running the Winfig automation, it’s recommended to declutter your Brave home page for a cleaner, distraction-free experience. Follow these steps:
+
+#### Brave Home Page Cleanup
+
+1. **Open Brave**
+2. **Navigate to the Home Page** and click the **Settings** icon.
+   ![Brave Home Settings](./images/59.png)
+3. In the settings panel, adjust the following toggles for a minimal look:
+    - **Show Background Image:** Set to `Off`
+    - **Brave VPN:** Set to `Off`
+    - **Brave Rewards:** Set to `Off`
+    - **Brave Talk:** Set to `Off`
+
+   ![Brave Home Customization](./images/60.png)
+
+#### Appearance Settings
+
+Customize Brave's appearance for a cleaner, more productive browsing experience:
+
+1. Navigate to [brave://settings/appearance](brave://settings/appearance)
+2. **Theme Settings:** Click **"Theme"** and set it to **"Dark"**
+3. **Toolbar Customization:**
+    - Click **"Customize your toolbar"**
+    - Enable: **"Home"** and **"Downloads"**
+    - Disable all other toolbar items for a minimal look
+4. **Bookmarks Bar:**
+    - Set **"Show bookmarks bar"** to **"Always"**
+    - Set **"Automatically pin new tab groups created on any device to the bookmarks"** to `Off`
+5. **Address Bar:**
+    - Set **"Show autocomplete suggestions in address bar"** to `Off`
+7. **Tabs & Layout:**
+    - Set **"Use vertical tabs"** to `On`
+    - Set **"Show title bar"** to `On`
+    - Set **"Tab hover mode"** to **"Card with Preview"**
+8. **Sidebar:**
+    - Set **"Show Sidebar"** to **"Never"**
+
+#### Enable Vertical Tabs
+
+1. After enabling vertical tabs in settings, locate the vertical tabs panel on the left side.
+2. Click the **tab icon** to compress the sidebar and maximize your workspace.
+
+   ![Vertical Tabs Compressed](./images/61.png)
+
+> **Tip:** Vertical tabs help you manage multiple tabs efficiently, especially on widescreen monitors. You can expand or collapse the panel at any time.
+
+#### System Settings
+
+Optimize Brave's system behavior for better performance and privacy:
+
+1. Navigate to [brave://settings/system](brave://settings/system)
+2. **Background Apps:**
+    - Set **"Continue running background apps when Brave is closed"** to `Off`
+3. **Tab Warnings:**
+    - Set **"Warn me before closing window with multiple tabs"** to `Off`
+5. **Performance:**
+    - Enable **"Memory Saver"** and set it to **"Maximum"**
+    - Enable **"Energy saver"**
+
+> **Tip:** Disabling background apps and enabling memory/energy savers improves system performance and extends battery life on laptops.
+
+#### Import Bookmarks (Optional)
+
+Easily restore your bookmarks for Brave Browser using the built-in import feature:
+
+1. Navigate to [brave://bookmarks/](brave://bookmarks/)
+2. Click on the **three dots** (menu icon) in the top-right corner.
+3. Select **"Import bookmarks"** from the dropdown menu.
+   ![Import Bookmarks](./images/62.png)
+4. Browse and select your bookmarks file  `hacking.html` and confirm the import.
+   ![Bookmarks Imported](./images/63.png)
+
+> **Tip:** Importing bookmarks ensures your favorite sites and folders are instantly available in your new Brave Browser profile.
+
+---
+
+### Installation Methods
+
+=== "Web Install (Recommended)"
+
+    **One-line installation** - Downloads and runs automatically:
+
+    ```powershell title="Run in Administrative PowerShell"
+    Invoke-RestMethod -useb https://raw.githubusercontent.com/Get-Winfig/winfig-browser/refs/heads/main/Brave/setup.ps1 | Invoke-Expression
+    ```
+
+    !!! success "Why Web Install?"
+        - Always gets the latest version
+        - No manual download required
+        - Automatic script verification
+    ![Web Install Demo](images/9.png)
+
+=== "Local Install"
+
+    **Download and run manually** for offline environments:
+
+    ```powershell title="1. Set Execution Policy"
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
+
+    ```powershell title="2. Download Script"
+    # Download from GitHub
+    Invoke-WebRequest -useb "https://raw.githubusercontent.com/Get-Winfig/winfig-browser/refs/heads/main/Brave/setup.ps1" -OutFile "setup.ps1"
+    ```
+
+    ```powershell title="3. Unblock and Run"
+    Unblock-File -Path .\setup.ps1
+    .\setup.ps1
+    ```
+
+    !!! warning "Note"
+        - Ensure you have the latest script version
+        - Manual updates required for new releases
+        - Verify script integrity before running
+    ![Local Install Demo](images/11.png)
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+??? question "Can I use Winfig Browsers on a work or school computer?"
+    You need administrator rights for full automation. Some organizations may restrict browser installs or script execution. Check with your IT department before running these scripts.
+
+??? question "Will this overwrite my existing browser settings?"
+    By default, Winfig creates new profiles or modifies existing ones based on the script. It's recommended to backup your current settings before running the automation.
+
+??? question "How do I add my own extensions or settings?"
+    You can customize the installation scripts by editing the configuration files in the Winfig repository before running setup. Look for `extensions.json` or similar config files.
+
+??? question "Is this safe to use?"
+    All scripts are open source and can be reviewed on the [Winfig GitHub repository](https://github.com/Get-Winfig) before running. Always verify the source and integrity of scripts you download.
+
+??? question "Can I run these scripts on multiple machines?"
+    Yes! Winfig Browsers is designed for portable, reproducible setups across fresh installs, VMs, and multi-user environments.
+
+??? question "How do I update my browser configuration after installation?"
+    You can re-run the installation scripts at any time to update settings, or manually adjust configurations in your browser's settings pages.
+
+??? question "Does Winfig Browsers support other browsers like Firefox or Chrome?"
+    Currently, Winfig Browsers supports Microsoft Edge, Brave, and Zen. Support for additional browsers may be added in future releases.
+
+??? question "How do I uninstall or revert changes?"
+    You can manually reset browser settings, delete profiles, or reinstall the browser to restore defaults. Some scripts may include rollback options.
+
+---
+
+## Troubleshooting Guide
+
+??? warning "Browser not installing or script errors"
+    - **Check your internet connection** and ensure you have a stable connection
+    - **Run PowerShell as Administrator** for full permissions
+    - **Update PowerShell** to the latest version: `winget install Microsoft.Powershell`
+    - **Verify Git is installed**: `git --version`
+    - **Check execution policy**: `Get-ExecutionPolicy` (should be `RemoteSigned` or `Unrestricted`)
+
+??? warning "Extensions not syncing or installing"
+    - **Ensure your browser is up to date** before running the script
+    - **Check if the extensions are still available** in the browser's extension store
+    - **Manually install missing extensions** from the browser's add-ons page
+    - **Review the script output** for specific error messages about failed extensions
+
+??? warning "Bookmarks not importing correctly"
+    - **Verify the bookmarks file format** (should be HTML or JSON)
+    - **Check file permissions** and ensure the file is accessible
+    - **Try importing manually** using the browser's built-in import feature
+    - **Ensure the bookmarks file path is correct** in your script or manual import
+
+??? warning "Settings not applying or reverting"
+    - **Close and reopen the browser** after running the script
+    - **Check if browser sync is enabled** and conflicting with local settings
+    - **Disable browser sync temporarily** during setup to prevent conflicts
+    - **Manually verify settings** in the browser's settings pages
+
+??? warning "Vertical tabs not working as expected"
+    - **Restart the browser** after enabling vertical tabs
+    - **Check browser version** (some features require specific browser versions)
+    - **Try toggling vertical tabs off and on again** in settings
+    - **Clear browser cache** if UI elements are not rendering correctly
+
+??? warning "Script hangs or takes too long"
+    - **Check your internet speed** for slow downloads
+    - **Temporarily disable antivirus** if it's blocking script execution
+    - **Run the script in a clean environment** (close other programs)
+    - **Check system resources** (CPU, RAM, disk usage)
+
+??? warning "Themes or custom styles not applying"
+    - **Verify theme files are in the correct location**
+    - **Restart the browser** after applying themes
+    - **Check for conflicting extensions** that may override themes
+    - **Manually apply themes** through browser settings if automation fails
