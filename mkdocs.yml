@@ -106,6 +106,7 @@ nav:
   - Home: index.md
   - Setup: setup.md
   - Bootstrap: bootstrap.md
+  - Customization: customization.md
   - Wallpapers: https://get-winfig.github.io/winfig-wallpaper/
   - Apps: apps.md
   - Terminal: terminal.md
@@ -156,6 +157,12 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+      url_download: true
+      url_max_size: 33554432
+      url_timeout: 10
 
 # ------------------------------------------------------------------
 # 4. PLUGIN CONFIGURATION
