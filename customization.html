@@ -1,0 +1,2653 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Winfig, a Windows configuration management tool.">
+      
+      
+        <meta name="author" content="Armoghan-ul-Mohmin">
+      
+      
+        <link rel="canonical" href="https://get-winfig.github.io/winfig-docs/customization.html">
+      
+      
+        <link rel="prev" href="bootstrap.html">
+      
+      
+        <link rel="next" href="apps.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Customization - Winfig Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="docs/assets/unpkg.com/iframe-worker/shim.js"></script>
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="docs/assets/fonts.googleapis.com/css.622a93ca.css">
+        <style>:root{--md-text-font:"JetBrains Mono";--md-code-font:"Hack Nerd Font"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/Css/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Winfig Documentation" class="md-header__button md-logo" aria-label="Winfig Documentation" data-md-component="logo">
+      
+  <img src="images/Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Winfig Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Customization
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Get-Winfig/winfig-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="setup.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="bootstrap.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bootstrap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="customization.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Customization
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://get-winfig.github.io/winfig-wallpaper/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Wallpapers
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="apps.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Apps
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="terminal.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Terminal
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="nvim.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Nvim
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="code.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  VsCode
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="subl.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sublime Text
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="dotfiles/shareX.html" class="md-tabs__link">
+          
+  
+  
+  Dotfiles
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="browsers.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Browsers
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Winfig Documentation" class="md-nav__button md-logo" aria-label="Winfig Documentation" data-md-component="logo">
+      
+  <img src="images/Icon.png" alt="logo">
+
+    </a>
+    Winfig Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Get-Winfig/winfig-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bootstrap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bootstrap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customization
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="customization.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-winfig-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use Winfig Customization?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nerd-fonts-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nerd Fonts Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nerd Fonts Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cursor-themes-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cursor Themes Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cursor Themes Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-methods_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-cursor-themes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Cursor Themes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-Installation Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-Installation Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-manual-installation-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Manual Installation (Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-apply-cursor-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Apply Cursor Theme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-restart-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Restart (Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windhawk-mods-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windhawk Mods Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windhawk Mods Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-windhawk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Windhawk?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-windhawk-mods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Windhawk Mods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Instructions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-install-windhawk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Install Windhawk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-install-a-mod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Install a Mod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-import-winfig-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Import Winfig Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-apply-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Apply Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mod-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mod Configurations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mod Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taskbar-dock-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taskbar Dock Animation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taskbar-icon-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taskbar Icon Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taskbar-tray-system-icon-tweaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taskbar Tray System Icon Tweaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-11-taskbar-styler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows 11 Taskbar Styler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-file-sizes-in-explorer-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Better File Sizes in Explorer Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disk-pie-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disk Pie Chart
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-11-file-explorer-styler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows 11 File Explorer Styler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extension-change-no-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extension Change No Warning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modernize-folder-picker-dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modernize Folder Picker Dialog
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translucent-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translucent Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon-resource-redirect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Icon Resource Redirect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-virtual-desktop-transition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable Virtual Desktop Transition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-11-start-menu-styler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows 11 Start Menu Styler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-11-notification-center-styler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows 11 Notification Center Styler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifications-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notifications Placement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequently-asked-questions-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frequently Asked Questions (FAQ)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Guide
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://get-winfig.github.io/winfig-wallpaper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wallpapers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="apps.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="terminal.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nvim.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nvim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="code.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VsCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="subl.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sublime Text
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dotfiles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dotfiles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/shareX.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShareX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/powertoys.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PowerToys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/nilesoft.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nilesoft Shell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/fastfetch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fastfetch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/git.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/lazygit.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lazygit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/bat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/starship.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Starship
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/powershell.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Powershell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/ahk.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AutoHotkey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/komorebi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Komorebi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotfiles/yasb.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    YASB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="browsers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browsers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 align="center">Winfig Customization: Windows Themes, Fonts & Cursors</h1>
+
+<p><img alt="Winfig Banner" src="images/Banner.png" /></p>
+<div align="center">
+  <strong>Personalize your Windows experience with beautiful fonts, cursor themes, and visual customizations</strong>
+</div>
+
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><strong>Winfig Customization</strong> provides automated scripts to install and configure custom fonts, cursor themes, and visual enhancements for Windows. Transform your desktop with beautiful Nerd Fonts, modern cursor themes, and seamless integration with your Winfig Dots ecosystem.</p>
+<hr />
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Automated Font Install</strong>: One-command install for Hack and JetBrainsMono Nerd Fonts.</li>
+<li><strong>Cursor Theme Manager</strong>:  Interactive menu for selecting and installing cursor themes.</li>
+<li><strong>Windhawk Mods</strong> (UI tweaks, taskbar enhancements, system modifications)</li>
+</ul>
+<hr />
+<h2 id="why-use-winfig-customization">Why Use Winfig Customization?<a class="headerlink" href="#why-use-winfig-customization" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Save time</strong> with automated, one-click installation</li>
+<li><strong>Beautiful fonts</strong> optimized for terminals and code editors</li>
+<li><strong>Modern cursor themes</strong> for a polished desktop experience</li>
+<li><strong>Powerful Windhawk mods</strong> for deep Windows UI customization</li>
+<li><strong>Consistent theming</strong> across your entire Winfig ecosystem</li>
+<li><strong>Easy rollback</strong> and uninstall options</li>
+<li><strong>Portable &amp; reproducible</strong> setups for fresh installs or VMs</li>
+</ul>
+<hr />
+<h2 id="nerd-fonts-setup">Nerd Fonts Setup<a class="headerlink" href="#nerd-fonts-setup" title="Permanent link">&para;</a></h2>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> for cloning the customization repository</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for font installation</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
+</ul>
+<h3 id="installation-methods">Installation Methods<a class="headerlink" href="#installation-methods" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Web Install (Recommended)</label><div class="tabbed-content">
+<p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
+<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-customization</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Fonts</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Why Web Install?</p>
+<ul>
+<li>Always gets the latest version</li>
+<li>No manual download required</li>
+<li>Automatic script verification</li>
+<li>Clones repo and installs fonts in one step</li>
+</ul>
+</div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Local Install</label><div class="tabbed-content">
+<p><strong>Download and run manually</strong> for offline environments:</p>
+<div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-customization/refs/heads/main/Fonts/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+<span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Ensure you have the latest script version</li>
+<li>Manual updates required for new releases</li>
+<li>Verify script integrity before running</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="post-installation">Post-Installation<a class="headerlink" href="#post-installation" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Restart Windows</strong> to apply font changes system-wide</li>
+<li><strong>Refresh font cache</strong> (automatically done by the script)</li>
+<li><strong>Select your new font</strong> in:<ul>
+<li>Windows Terminal: Settings → Appearance → Font face</li>
+<li>VS Code: Settings → Font Family</li>
+<li>Your favorite terminal or code editor</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Use <code>JetBrainsMono Nerd Font</code> or <code>Hack Nerd Font</code> for the best icon support in Starship, Oh My Posh, and other terminal prompts.</p>
+</blockquote>
+<hr />
+<h2 id="cursor-themes-setup">Cursor Themes Setup<a class="headerlink" href="#cursor-themes-setup" title="Permanent link">&para;</a></h2>
+<h3 id="requirements_1">Requirements<a class="headerlink" href="#requirements_1" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/PowerShell/PowerShell">PowerShell 5+</a> for automation and scripting</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://git-scm.com/download/win">Git</a> for cloning the customization repository</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges for cursor installation</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading dependencies</li>
+</ul>
+<h3 id="installation-methods_1">Installation Methods<a class="headerlink" href="#installation-methods_1" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Web Install (Recommended)</label><div class="tabbed-content">
+<p><strong>One-line installation</strong> - Downloads and runs automatically:</p>
+<div class="highlight"><span class="filename">Run in Administrative PowerShell</span><pre><span></span><code><span class="nb">Invoke-RestMethod</span> <span class="n">-useb</span> <span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">Get-Winfig</span><span class="p">/</span><span class="n">winfig-customization</span><span class="p">/</span><span class="n">refs</span><span class="p">/</span><span class="n">heads</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">Cursors</span><span class="p">/</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Why Web Install?</p>
+<ul>
+<li>Always gets the latest version</li>
+<li>No manual download required</li>
+<li>Automatic script verification</li>
+<li>Interactive menu for theme selection</li>
+</ul>
+</div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Local Install</label><div class="tabbed-content">
+<p><strong>Download and run manually</strong> for offline environments:</p>
+<div class="highlight"><span class="filename">1. Set Execution Policy</span><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">2. Download Script</span><pre><span></span><code><span class="c"># Download from GitHub</span>
+<span class="nb">Invoke-WebRequest</span> <span class="n">-useb</span> <span class="s2">&quot;https://raw.githubusercontent.com/Get-Winfig/winfig-customization/refs/heads/main/Cursors/setup.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;setup.ps1&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">3. Unblock and Run</span><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+<span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Ensure you have the latest script version</li>
+<li>Manual updates required for new releases</li>
+<li>Verify script integrity before running</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="available-cursor-themes">Available Cursor Themes<a class="headerlink" href="#available-cursor-themes" title="Permanent link">&para;</a></h3>
+<p>The script provides an interactive menu to choose from multiple modern cursor themes:</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Sunity Cursors</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Dark Variant</th>
+<th style="text-align: center;">Light Variant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Sunity Dark Theme" src="images/64.png" /></td>
+<td style="text-align: center;"><img alt="Sunity Light Theme" src="images/65.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Perfect for dark mode enthusiasts</td>
+<td style="text-align: center;">Ideal for light interface users</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Features</p>
+<ul>
+<li>Smooth animations</li>
+<li>High-DPI support</li>
+<li>Multiple pointer styles</li>
+<li>Available in Light and Dark variants</li>
+</ul>
+</div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Win 11 Concept</label><div class="tabbed-content">
+<p><div align="center">
+    <img src="./images/66.jpg" alt="Win 11 Concept Theme" width="600">
+    <p><em>Available in both Dark and Light variants</em></p>
+</div></p>
+<div class="admonition info">
+<p class="admonition-title">Features</p>
+<ul>
+<li>Modern Windows 11 aesthetic</li>
+<li>Consistent with system design language</li>
+<li>Optimized for 4K displays</li>
+<li>Available in Light and Dark variants</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="post-installation-steps">Post-Installation Steps<a class="headerlink" href="#post-installation-steps" title="Permanent link">&para;</a></h3>
+<h4 id="1-manual-installation-required">1. Manual Installation (Required)<a class="headerlink" href="#1-manual-installation-required" title="Permanent link">&para;</a></h4>
+<p>The script will open the cursor folder and display instructions. Follow these steps:</p>
+<ol>
+<li>In the opened folder, <strong>right-click</strong> on <code>Install.inf</code></li>
+<li>Select <strong>"Install"</strong> from the context menu</li>
+<li>Follow any prompts to complete installation</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Windows requires manual installation for security reasons. The script guides you through this process.</p>
+</blockquote>
+<h4 id="2-apply-cursor-theme">2. Apply Cursor Theme<a class="headerlink" href="#2-apply-cursor-theme" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Personalization</strong> → <strong>Themes</strong> → <strong>Mouse cursor</strong></li>
+<li>Select your new cursor theme from the list</li>
+<li>Click <strong>Apply</strong></li>
+</ol>
+<h4 id="3-restart-recommended">3. Restart (Recommended)<a class="headerlink" href="#3-restart-recommended" title="Permanent link">&para;</a></h4>
+<p>For best results, <strong>restart Windows</strong> after applying the cursor theme.</p>
+<hr />
+<h2 id="windhawk-mods-setup">Windhawk Mods Setup<a class="headerlink" href="#windhawk-mods-setup" title="Permanent link">&para;</a></h2>
+<h3 id="what-is-windhawk">What is Windhawk?<a class="headerlink" href="#what-is-windhawk" title="Permanent link">&para;</a></h3>
+<p><a href="https://windhawk.net/">Windhawk</a> is a powerful customization platform for Windows that allows you to modify system UI and behavior using community-created mods. Winfig Customization provides pre-configured settings for 15 carefully selected mods to enhance your Windows experience.</p>
+<h3 id="requirements_2">Requirements<a class="headerlink" href="#requirements_2" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://windhawk.net/">Windhawk</a> installed on Windows 11</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Internet access for downloading mods</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Administrator privileges (recommended)</li>
+</ul>
+<h3 id="supported-windhawk-mods">Supported Windhawk Mods<a class="headerlink" href="#supported-windhawk-mods" title="Permanent link">&para;</a></h3>
+<p>Below are all 15 Winfig-optimized mods available with pre-configured settings:</p>
+<table>
+<thead>
+<tr>
+<th>Mod Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Taskbar Dock Animation</strong></td>
+<td>Smooth dock-style animations for taskbar icons</td>
+</tr>
+<tr>
+<td><strong>Taskbar Icon Size</strong></td>
+<td>Customize taskbar icon sizes for better visibility</td>
+</tr>
+<tr>
+<td><strong>Taskbar Tray System Icon Tweaks</strong></td>
+<td>Fine-tune system tray icon spacing and behavior</td>
+</tr>
+<tr>
+<td><strong>Windows 11 Taskbar Styler</strong></td>
+<td>Advanced taskbar appearance customization</td>
+</tr>
+<tr>
+<td><strong>Better File Sizes in Explorer Details</strong></td>
+<td>Show more readable file sizes in Explorer</td>
+</tr>
+<tr>
+<td><strong>Disk Pie Chart</strong></td>
+<td>Visual disk space representation in Explorer</td>
+</tr>
+<tr>
+<td><strong>Windows 11 File Explorer Styler</strong></td>
+<td>Customize File Explorer colors, spacing, and UI</td>
+</tr>
+<tr>
+<td><strong>Extension Change No Warning</strong></td>
+<td>Disable file extension change warnings</td>
+</tr>
+<tr>
+<td><strong>Modernize Folder Picker Dialog</strong></td>
+<td>Update old-style folder picker to modern UI</td>
+</tr>
+<tr>
+<td><strong>Translucent Windows</strong></td>
+<td>Enable transparency and blur effects on windows</td>
+</tr>
+<tr>
+<td><strong>Icon Resource Redirect</strong></td>
+<td>Replace system icons with custom alternatives</td>
+</tr>
+<tr>
+<td><strong>Disable Virtual Desktop Transition</strong></td>
+<td>Remove virtual desktop switching animations</td>
+</tr>
+<tr>
+<td><strong>Windows 11 Start Menu Styler</strong></td>
+<td>Customize Start Menu appearance and layout</td>
+</tr>
+<tr>
+<td><strong>Windows 11 Notification Center Styler</strong></td>
+<td>Style notification center colors and design</td>
+</tr>
+<tr>
+<td><strong>Notifications Placement</strong></td>
+<td>Control where notifications appear on screen</td>
+</tr>
+</tbody>
+</table>
+<h3 id="installation-instructions">Installation Instructions<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h3>
+<p>Follow these steps to install and configure any Windhawk mod with Winfig settings:</p>
+<h4 id="step-1-install-windhawk">Step 1: Install Windhawk<a class="headerlink" href="#step-1-install-windhawk" title="Permanent link">&para;</a></h4>
+<p>If you haven't installed Windhawk yet:</p>
+<ol>
+<li>Download from <a href="https://windhawk.net/">windhawk.net</a></li>
+<li>Run the installer and follow the setup wizard</li>
+<li>Launch Windhawk from the Start menu or system tray</li>
+</ol>
+<h4 id="step-2-install-a-mod">Step 2: Install a Mod<a class="headerlink" href="#step-2-install-a-mod" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Open <strong>Windhawk</strong></li>
+<li>Go to the <strong>Explore</strong> tab</li>
+<li>Use the search bar to find the mod you want (e.g., "Taskbar Dock Animation")</li>
+<li>Click <strong>Install</strong> and wait for installation to complete</li>
+<li>The mod will appear in the <strong>Installed Mods</strong> tab</li>
+</ol>
+<h4 id="step-3-import-winfig-configuration">Step 3: Import Winfig Configuration<a class="headerlink" href="#step-3-import-winfig-configuration" title="Permanent link">&para;</a></h4>
+<ol>
+<li>In Windhawk, click on the installed mod to open its <strong>Details</strong> page</li>
+<li>Navigate to the <strong>Advanced</strong> section</li>
+<li>Copy the configuration JSON from the mod's config section below</li>
+<li>Paste the copied config into the <strong>Mod settings</strong> field</li>
+<li>Click <strong>Save</strong> to apply the configuration</li>
+</ol>
+<h4 id="step-4-apply-changes">Step 4: Apply Changes<a class="headerlink" href="#step-4-apply-changes" title="Permanent link">&para;</a></h4>
+<p>Most mods require restarting Windows Explorer:</p>
+<div class="highlight"><span class="filename">Restart Windows Explorer</span><pre><span></span><code><span class="nb">Stop-Process</span> <span class="n">-Name</span> <span class="n">explorer</span> <span class="n">-Force</span>
+</code></pre></div>
+<p>Or use Windhawk's built-in restart:
+- Right-click Windhawk tray icon → <strong>Restart Explorer</strong></p>
+<div class="admonition success">
+<p class="admonition-title">Done!</p>
+<p>Your mod is now installed and configured with Winfig's optimized settings!</p>
+</div>
+<h3 id="mod-configurations">Mod Configurations<a class="headerlink" href="#mod-configurations" title="Permanent link">&para;</a></h3>
+<p>Below are the pre-configured settings for each mod. Click to download or view the config directly from GitHub.</p>
+<h4 id="taskbar-dock-animation">Taskbar Dock Animation<a class="headerlink" href="#taskbar-dock-animation" title="Permanent link">&para;</a></h4>
+<p>Adds smooth, macOS-style dock animations when hovering over taskbar icons.</p>
+<div class="highlight"><span class="filename">taskbar-dock-animation.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;AnimationType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;MaxScale&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">140</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;EffectRadius&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;SpacingFactor&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;BounceDelay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;FocusDuration&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;MirrorForTopTaskbar&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;DisableVerticalBounce&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TaskbarLabelsMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="taskbar-icon-size">Taskbar Icon Size<a class="headerlink" href="#taskbar-icon-size" title="Permanent link">&para;</a></h4>
+<p>Sets taskbar icons to 32px for optimal balance between visibility and space efficiency.</p>
+<div class="highlight"><span class="filename">taskbar-icon-size.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;IconSize&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TaskbarHeight&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">45</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TaskbarButtonWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;IconSizeSmall&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TaskbarButtonWidthSmall&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="taskbar-tray-system-icon-tweaks">Taskbar Tray System Icon Tweaks<a class="headerlink" href="#taskbar-tray-system-icon-tweaks" title="Permanent link">&para;</a></h4>
+<p>Reduces system tray clutter with optimized spacing and hidden redundant icons.</p>
+<div class="highlight"><span class="filename">taskbar-tray-system-icon-tweaks.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;hideVolumeIcon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideNetworkIcon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideBatteryIcon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideMicrophoneIcon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideGeolocationIcon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideStudioEffectsIcon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideLanguageBar&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideLanguageSupplementaryIcons&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hideBellIcon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;whenInactive&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;showDesktopButtonWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="windows-11-taskbar-styler">Windows 11 Taskbar Styler<a class="headerlink" href="#windows-11-taskbar-styler" title="Permanent link">&para;</a></h4>
+<p>Applies beautiful Catppuccin theming to your taskbar with transparency and modern styling.</p>
+<div class="highlight"><span class="filename">windows-11-taskbar-styler.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TranslucentTaskbar&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;controlStyles[0].target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;controlStyles[0].styles[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;styleConstants[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].variableKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="better-file-sizes-in-explorer-details">Better File Sizes in Explorer Details<a class="headerlink" href="#better-file-sizes-in-explorer-details" title="Permanent link">&para;</a></h4>
+<p>Displays file sizes in a more readable format (e.g., "1.5 GB" instead of "1,536 MB").</p>
+<div class="highlight"><span class="filename">Better-file-sizes-in-Explorer-details.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;calculateFolderSizes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;withShiftKey&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sortSizesMixFolders&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;disableKbOnlySizes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;useIecTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="disk-pie-chart">Disk Pie Chart<a class="headerlink" href="#disk-pie-chart" title="Permanent link">&para;</a></h4>
+<p>Adds visual pie charts to "This PC" view showing disk space usage at a glance.</p>
+<div class="highlight"><span class="filename">disk-pie-chart.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;classic&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="windows-11-file-explorer-styler">Windows 11 File Explorer Styler<a class="headerlink" href="#windows-11-file-explorer-styler" title="Permanent link">&para;</a></h4>
+<p>Transforms File Explorer with beautiful Catppuccin theming and improved UI.</p>
+<div class="highlight"><span class="filename">windows-11-file-explorer-styler.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MicaBar&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;controlStyles[0].target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;controlStyles[0].styles[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;styleConstants[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].variableKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;explorerFrameContainerHeight&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="extension-change-no-warning">Extension Change No Warning<a class="headerlink" href="#extension-change-no-warning" title="Permanent link">&para;</a></h4>
+<p>Removes the annoying warning when changing file extensions (for power users).</p>
+<div class="highlight"><span class="filename">extension-change-no-warning.json</span><pre><span></span><code><span class="p">{}</span>
+</code></pre></div>
+<hr />
+<h4 id="modernize-folder-picker-dialog">Modernize Folder Picker Dialog<a class="headerlink" href="#modernize-folder-picker-dialog" title="Permanent link">&para;</a></h4>
+<p>Replaces old-style folder picker dialogs with modern Windows 11 UI.</p>
+<div class="highlight"><span class="filename">modernize-folder-picker-dialog.json</span><pre><span></span><code><span class="p">{}</span>
+</code></pre></div>
+<h4 id="translucent-windows">Translucent Windows<a class="headerlink" href="#translucent-windows" title="Permanent link">&para;</a></h4>
+<p>Adds beautiful transparency and blur effects to windows for a modern, macOS-like aesthetic.</p>
+<div class="highlight"><span class="filename">translucent-windows.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ThemeBackground&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TextAlphaBlend&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mica&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;AccentBlurBehind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#6666a0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ImmersiveDarkTitle&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ExtendFrame&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;CornerOption&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;smallround&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RainbowSpeed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarColor.ColorTitlebar&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarColor.RainbowTitlebar&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarColor.titlerbarstyles_active&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FF0000&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarColor.titlerbarstyles_inactive&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00FFFF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarTextColor.ColorTitlebarText&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarTextColor.RainbowTextColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarTextColor.titlerbarcolorstyles_active&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6666a0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TitlebarTextColor.titlerbarcolorstyles_inactive&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00FFFF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;BorderColor.ColorBorder&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;BorderColor.RainbowBorder&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;BorderColor.borderstyles_active&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FF0000&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;BorderColor.borderstyles_inactive&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00FFFF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;BorderColor.MenuBorderColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mspaint.exe&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].ThemeBackground&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TextAlphaBlend&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].AccentBlurBehind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00000000&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].ImmersiveDarkTitle&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].ExtendFrame&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].CornerOption&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;default&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].RainbowSpeed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarColor.ColorTitlebar&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarColor.RainbowTitlebar&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarColor.titlerbarstyles_active&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FF0000&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarColor.titlerbarstyles_inactive&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00FFFF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarTextColor.ColorTitlebarText&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarTextColor.RainbowTextColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_active&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FF0000&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_inactive&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00FFFF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].BorderColor.ColorBorder&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].BorderColor.RainbowBorder&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].BorderColor.borderstyles_active&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FF0000&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RuledPrograms[0].BorderColor.borderstyles_inactive&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00FFFF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RenderingMod.ThemeBackground&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;RenderingMod.AccentColorControls&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="icon-resource-redirect">Icon Resource Redirect<a class="headerlink" href="#icon-resource-redirect" title="Permanent link">&para;</a></h4>
+<p>Replaces default Windows system icons with custom alternatives.</p>
+<div class="highlight"><span class="filename">icon-resource-redirect.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;iconTheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Catppuccin Mocha|themes/icons/niivu/Catppuccin%20Mocha.zip&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;themePaths[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;redirectionResourcePaths[0].original&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;redirectionResourcePaths[0].redirect&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;allResourceRedirect&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;themeFolder&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="disable-virtual-desktop-transition">Disable Virtual Desktop Transition<a class="headerlink" href="#disable-virtual-desktop-transition" title="Permanent link">&para;</a></h4>
+<p>Removes the sliding animation when switching virtual desktops for instant transitions.</p>
+<div class="highlight"><span class="filename">disable-virtual-desktop-transition.json</span><pre><span></span><code><span class="p">{}</span>
+</code></pre></div>
+<h4 id="windows-11-start-menu-styler">Windows 11 Start Menu Styler<a class="headerlink" href="#windows-11-start-menu-styler" title="Permanent link">&para;</a></h4>
+<p>Customizes Start Menu with beautiful theming and improved layout.</p>
+<div class="highlight"><span class="filename">windows-11-start-menu-styler.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SideBySide&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;disableNewStartMenuLayout&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;controlStyles[0].target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;controlStyles[0].styles[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;webContentStyles[0].target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;webContentStyles[0].styles[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;webContentCustomJs&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;styleConstants[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].variableKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="windows-11-notification-center-styler">Windows 11 Notification Center Styler<a class="headerlink" href="#windows-11-notification-center-styler" title="Permanent link">&para;</a></h4>
+<p>Styles notification center to match your Catppuccin theme.</p>
+<div class="highlight"><span class="filename">windows-11-notification-center-styler.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Matter&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].variableKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;resourceVariables[0].value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;themeResourceVariables[0]&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="notifications-placement">Notifications Placement<a class="headerlink" href="#notifications-placement" title="Permanent link">&para;</a></h4>
+<p>Controls notification placement on screen (great for multi-monitor setups).</p>
+<div class="highlight"><span class="filename">notifications-placement.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;monitor&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;monitorInterfaceName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;horizontalPlacement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;right&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;horizontalDistanceFromScreenEdge&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;verticalPlacement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;top&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;verticalDistanceFromScreenEdge&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>Do I need administrator privileges?</summary>
+<p>Yes, both font and cursor installation require administrator rights for system-wide installation.</p>
+</details>
+<details class="question">
+<summary>Will this overwrite my existing fonts or cursors?</summary>
+<p>Fonts are added alongside existing ones. Cursor themes can be switched at any time without removing old ones.</p>
+</details>
+<details class="question">
+<summary>Can I uninstall these customizations?</summary>
+<p>Yes. Fonts can be removed from <code>C:\Windows\Fonts</code>, and cursor themes can be uninstalled via Settings → Mouse cursor settings.</p>
+</details>
+<details class="question">
+<summary>Do these work on Windows 10?</summary>
+<p>Yes, both scripts work on Windows 10 and Windows 11.</p>
+</details>
+<details class="question">
+<summary>How do I update to the latest fonts/cursors?</summary>
+<p>Re-run the installation scripts. They will automatically update the Winfig Customization repository.</p>
+</details>
+<details class="question">
+<summary>Why do I need to manually install cursors?</summary>
+<p>Windows security policies require manual installation of cursor themes via right-click → Install.</p>
+</details>
+<details class="question">
+<summary>Can I use these fonts in other applications?</summary>
+<p>Yes! Once installed, Nerd Fonts work in any application that supports custom fonts (VS Code, terminals, browsers, etc.).</p>
+</details>
+<details class="question">
+<summary>Are these scripts safe?</summary>
+<p>All scripts are open source and can be reviewed on the <a href="https://github.com/Get-Winfig/winfig-customization">Winfig GitHub repository</a>.</p>
+</details>
+<hr />
+<h2 id="troubleshooting-guide">Troubleshooting Guide<a class="headerlink" href="#troubleshooting-guide" title="Permanent link">&para;</a></h2>
+<details class="warning">
+<summary>Fonts not appearing after installation</summary>
+<ul>
+<li><strong>Restart Windows</strong> to refresh the font cache</li>
+<li><strong>Check font installation</strong>: Open <code>C:\Windows\Fonts</code> and verify Nerd Fonts are present</li>
+<li><strong>Clear font cache manually</strong>:
+  <div class="highlight"><pre><span></span><code><span class="nb">Stop-Service</span> <span class="n">-Name</span> <span class="s2">&quot;FontCache&quot;</span>
+<span class="nb">Remove-Item</span> <span class="n">-Path</span> <span class="s2">&quot;$env:LOCALAPPDATA\Microsoft\Windows\Caches\*&quot;</span> <span class="n">-Recurse</span> <span class="n">-Force</span>
+<span class="nb">Start-Service</span> <span class="n">-Name</span> <span class="s2">&quot;FontCache&quot;</span>
+</code></pre></div></li>
+<li><strong>Reinstall fonts</strong>: Run the script again with elevated privileges</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Cursor theme not applying</summary>
+<ul>
+<li><strong>Restart Windows</strong> after installing the cursor theme</li>
+<li><strong>Manually apply</strong>: Go to Settings → Personalization → Themes → Mouse cursor</li>
+<li><strong>Check installation</strong>: Verify the cursor files are in <code>C:\Windows\Cursors</code></li>
+<li><strong>Use Control Panel</strong>: Search for "Change mouse pointer" and select your theme from the list</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Script execution blocked or errors</summary>
+<ul>
+<li><strong>Check execution policy</strong>:
+  <div class="highlight"><pre><span></span><code><span class="nb">Get-ExecutionPolicy</span>
+<span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div></li>
+<li><strong>Run as Administrator</strong>: Right-click PowerShell → Run as Administrator</li>
+<li><strong>Unblock downloaded files</strong>:
+  <div class="highlight"><pre><span></span><code><span class="nb">Unblock-File</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">setup</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div></li>
+<li><strong>Check antivirus</strong>: Temporarily disable antivirus if it's blocking script execution</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Windhawk mods not working or crashing</summary>
+<ul>
+<li><strong>Update Windhawk</strong>: Download the latest version from <a href="https://windhawk.net/">windhawk.net</a></li>
+<li><strong>Restart Windows Explorer</strong>: <code>Stop-Process -Name explorer -Force</code></li>
+<li><strong>Disable conflicting mods</strong>: Some mods may conflict with each other (e.g., multiple taskbar mods)</li>
+<li><strong>Check mod compatibility</strong>: Ensure the mod supports your Windows version</li>
+<li><strong>Reinstall the mod</strong>: Uninstall and reinstall the problematic mod</li>
+<li><strong>Clear Windhawk cache</strong>: Settings → Advanced → Clear cache</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Repository clone or download fails</summary>
+<ul>
+<li><strong>Check internet connection</strong>: Ensure stable internet access</li>
+<li><strong>Verify Git installation</strong>: <code>git --version</code></li>
+<li><strong>Use HTTPS instead of SSH</strong>: Clone with HTTPS URL if SSH fails</li>
+<li><strong>Check GitHub status</strong>: Visit <a href="https://githubstatus.com">githubstatus.com</a></li>
+<li><strong>Manual download</strong>: Download ZIP from GitHub and extract manually</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Performance issues after installing mods</summary>
+<ul>
+<li><strong>Disable resource-heavy mods</strong>: Such as Translucent Windows or animations</li>
+<li><strong>Reduce transparency levels</strong>: Lower opacity settings in mod configs</li>
+<li><strong>Check system resources</strong>: Open Task Manager to monitor CPU/RAM usage</li>
+<li><strong>Disable unnecessary mods</strong>: Keep only essential mods enabled</li>
+<li><strong>Update graphics drivers</strong>: Ensure GPU drivers are up to date</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Nerd Font icons not displaying correctly</summary>
+<ul>
+<li><strong>Select the correct font variant</strong>: Use "Nerd Font" or "Nerd Font Mono" versions</li>
+<li><strong>Check terminal/editor settings</strong>: Ensure the font is properly selected</li>
+<li><strong>Verify Unicode support</strong>: Your application must support Unicode characters</li>
+<li><strong>Update your terminal</strong>: Use Windows Terminal, Alacritty, or other modern terminals</li>
+<li><strong>Test with font preview</strong>: Open <code>C:\Windows\Fonts</code> and preview the font</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Cursor animation or effects not working</summary>
+<ul>
+<li><strong>Enable cursor shadow</strong>: Settings → Mouse → Additional mouse options → Pointer Options → Enable pointer shadow</li>
+<li><strong>Check display scaling</strong>: High DPI settings may affect cursor rendering</li>
+<li><strong>Use native resolution</strong>: Cursor themes work best at native display resolution</li>
+<li><strong>Disable hardware acceleration</strong>: In some apps if cursor appears glitchy</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Config import fails in Windhawk</summary>
+<ul>
+<li><strong>Verify JSON syntax</strong>: Ensure the config file is valid JSON</li>
+<li><strong>Copy entire content</strong>: Select all and copy the complete JSON object</li>
+<li><strong>Use raw GitHub link</strong>: Copy from raw.githubusercontent.com URLs</li>
+<li><strong>Check mod version</strong>: Ensure config matches your mod version</li>
+<li><strong>Manually edit settings</strong>: Input values directly in Windhawk settings UI</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Need more help?</summary>
+<ul>
+<li>Visit the <a href="https://github.com/Get-Winfig/winfig-customization/issues">Winfig GitHub Issues</a> page</li>
+<li>Check <a href="https://github.com/Get-Winfig/winfig-customization/discussions">Winfig Discussions</a> for community help</li>
+<li>Review the full documentation at <a href="https://get-winfig.github.io/winfig-docs">winfig-docs</a></li>
+<li>Open a new issue with detailed error logs and system information</li>
+</ul>
+</details>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 14, 2026 13:06:47 UTC">February 14, 2026</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 14, 2026 13:06:47 UTC">February 14, 2026</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 <a href="https://github.com/Get-Winfig" target="_blank" rel="noopener">Get-Winfig</a>. All rights reserved.
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Get-Winfig" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/Armoghan12" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="http://www.linkedin.com/in/armoghan-ul-mohmin-4289a9248" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/___armoghan/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/armoghanul.mohmin" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:Armoghan@proton.me" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://Armoghan.netlify.app" target="_blank" rel="noopener" title="Armoghan.netlify.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+  
+
+<h4>Cookie consent</h4>
+<p>We use cookies to improve your browsing experience and remember your preferences. These cookies are only used locally and no data is shared with third parties.</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+    
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.top", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.sections", "navigation.instant", "header.autohide", "service-worker", "manifest"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="docs/assets/unpkg.com/mermaid@11.12.2/dist/mermaid.min.js"></script>
+      
+        <script src="assets/Js/mermaid-config.js"></script>
+      
+        <script src="assets/Js/script.js"></script>
+      
+    
+  </body>
+</html>

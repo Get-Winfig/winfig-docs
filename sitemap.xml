@@ -2,86 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/index.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/apps.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/bootstrap.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/browsers.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/code.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://get-winfig.github.io/winfig-docs/customization.html</loc>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/nvim.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/setup.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/subl.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/terminal.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/ahk.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/bat.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/fastfetch.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/git.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/komorebi.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/lazygit.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/nilesoft.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/powershell.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/powertoys.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/shareX.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/starship.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
     <url>
          <loc>https://get-winfig.github.io/winfig-docs/dotfiles/yasb.html</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-02-14</lastmod>
     </url>
 </urlset>
